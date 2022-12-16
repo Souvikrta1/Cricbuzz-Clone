@@ -1,0 +1,548 @@
+@import url("");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family: helvetica,"Segoe UI",Arial,sans-serif;
+    background-color: #c4c6c4;
+}
+
+header{
+    width: 70%;
+    height: 12%;
+    margin-left: 15%;
+    margin-bottom: 0.25%;
+}
+
+.line1{
+    display:flex ;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(63, 146, 63);
+    align-items: center;
+    position: relative;
+}
+
+.line1 img{
+    height: 80%;
+    width: 10%;
+    padding: 1%;
+}
+
+.menu-btn{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+
+.search-area{
+    width: 150%;
+    height: 40px;
+    display: none;
+    
+}
+
+#search-btn{
+    width: 10%;
+    background-color: rgb(4, 121, 4);
+}
+
+#search-input{
+    width: 90%;
+    color: white;
+    background-color: rgb(60, 126, 60);
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.line1-btn{
+    border : none;
+    color: white;
+    background-color:rgb(63, 146, 63);
+    margin-right : 3%;
+    cursor: pointer;
+}
+
+.user-area{
+    width: 10%;
+    display: flex;
+}
+
+.user-area button{
+    border: none;
+    background-color: rgb(63, 146, 63);
+    width: 25%;
+    margin-left: 15%;
+    margin-right: 10%;
+    font-size: larger;
+    color: white;
+    cursor: pointer;
+}
+
+.plus{
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    padding: 0.5%;
+    cursor: pointer;
+}
+
+.news-drop{
+    position:absolute;
+    display: none;
+    flex-direction: column;
+    width: max-content;
+    background-color: whitesmoke;
+    padding: 1%;
+    padding-right: 4%;
+    top: 6%;
+    left: 40%;
+}
+
+.news-drop button{
+    width: max-content;
+    text-align: left;
+    border: none;
+    padding: 2%;
+    font-size: medium;
+    line-height: 180%;
+    background-color: whitesmoke;
+}
+
+.series-drop{
+    position:absolute;
+    display: none;
+    flex-direction: column;
+    width: max-content;
+    background-color: whitesmoke;
+    padding: 1%;
+    padding-right: 1%;
+    top: 6%;
+    left: 45%;
+}
+
+.series-drop button{
+    width: max-content;
+    text-align: left;
+    border: none;
+    padding: 2%;
+    font-size: medium;
+    line-height: 180%;
+    background-color: whitesmoke;
+}
+
+.teams-drop{
+    position:absolute;
+    display: none;
+    background-color: whitesmoke;
+    top: 6%;
+    left: 50%;
+}
+
+.test-teams{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    background-color: whitesmoke;
+    padding: 2%;
+    padding-right: 4%;
+    margin-right: 25%;
+}
+
+.test-teams h4{
+    width: max-content;
+}
+
+.associate-teams{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    background-color: whitesmoke;
+    padding: 2%;
+    padding-right: 4%;
+}
+
+.teams-drop button{
+    width: max-content;
+    text-align: left;
+    border: none;
+    line-height: 180%;
+    font-size: medium;
+    background-color: whitesmoke;
+}
+
+.videos-drop{
+    position:absolute;
+    display: none;
+    flex-direction: column;
+    width: max-content;
+    background-color: whitesmoke;
+    padding: 0.5%;
+    padding-right: 1%;
+    top: 6%;
+    left: 55%;
+}
+
+.videos-drop button{
+    width: max-content;
+    text-align: left;
+    border: none;
+    line-height: 180%;
+    font-size: medium;
+    background-color: whitesmoke;
+}
+
+.rankings-drop{
+    position:absolute;
+    display: none;
+    flex-direction: column;
+    width: max-content;
+    background-color: whitesmoke;
+    padding: 0.5%;
+    padding-right: 1%;
+    top: 6%;
+    left: 60%;
+}
+
+.rankings-drop button{
+    width: max-content;
+    text-align: left;
+    border: none;
+    line-height: 180%;
+    font-size: medium;
+    background-color: whitesmoke;
+}
+
+.more-drop{
+    position:absolute;
+    display: none;
+    flex-direction: column;
+    width: max-content;
+    background-color: whitesmoke;
+    padding: 0.5%;
+    padding-right: 1%;
+    top: 6%;
+    left: 56%;
+}
+
+.more-drop button{
+    width: max-content;
+    text-align: left;
+    border: none;
+    line-height: 180%;
+    font-size: medium;
+    background-color: whitesmoke;
+}
+
+.line2{
+    background-color: rgb(67, 64, 64);
+    color: white;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.match{
+    height: 100%;
+    padding: 1%;
+    background-color: rgb(67, 64, 64);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.matches{
+    height: 100%;
+    background-color:rgb(46, 43, 43) ;
+    border: none;
+    color: white;
+    padding: 1%;
+    cursor: pointer;
+}
+.all-btn{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    height: 100%;
+    background-color: rgb(67, 64, 64);
+    padding: 1%;
+    color: white;
+    border: none;
+}
+
+.check{
+    height: 50%;
+    background-color: black;
+}
+
+.featured-matches{
+    height: 25%;
+    width: 70%;
+    margin-left: 15%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.featured-matches h4{
+    padding: 1%;
+}
+
+.match-stats-p1{
+    display: flex;
+    height: 90%;
+    flex-direction: row;
+    
+}
+
+.first-match{
+    display: flex;
+    flex-direction: column;
+    width: 24.8%;
+    background-color: white;
+    border-right: 1px solid black;
+}
+
+.stat-btn{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: none;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+
+.stat-btn span{
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    padding-left: 7%;
+    font-weight: bolder;
+}
+
+.firstMatch-runs1{
+    margin-left: 30%;
+}
+
+.firstMatch-runs2{
+    margin-left: 28%;
+}
+
+.match1-status{
+    color: red;
+    font-size: small;
+    padding-left: 7%;
+    margin-top: 1%;
+}
+
+.fantasy{
+    text-align: left;
+    font-size: medium;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    width: max-content;
+    padding-left: 7%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.second-match{
+    display: flex;
+    flex-direction: column;
+    width: 24.8%;
+    border-right: 1px solid black;
+}
+
+.stat-btn2{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    padding-left: 1%;
+}
+
+.stat-btn2 span{
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    font-weight: bolder;
+}
+
+.secondMatch-runs1{
+    margin-left: 30%;
+}
+
+.secondMatch-runs2{
+    margin-left: 31%;
+}
+
+.match2-status{
+    color: rgb(58, 58, 250);
+    font-size: small;
+    padding-left: 1.5%;
+    margin-top: 1%;
+}
+
+.third-match{
+    display: flex;
+    flex-direction: column;
+    width: 24.8%;
+    border-right: 1px solid black;
+}
+
+.stat-btn3{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 1%;
+}
+
+.stat-btn3 span{
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    font-weight: bolder;
+}
+
+.thirdMatch-runs1{
+    margin-left: 26%;
+}
+
+.thirdMatch-runs2{
+    margin-left: 30.5%;
+}
+
+.match3-status{
+    color: rgb(58, 58, 250);
+    font-size: small;
+    padding-left: 2.5%;
+    margin-top: 1%;
+}
+
+.fourth-match{
+    display: flex;
+    flex-direction: column;
+    width: 24.8%;
+    border-right: 1px solid black;
+    position: relative;
+}
+
+.stat-btn4{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 1%;
+}
+
+.stat-btn4 span{
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    font-weight: bolder;
+}
+
+.fourthMatch-runs1{
+    margin-left: 30%;
+}
+
+.fourthMatch-runs2{
+    margin-left: 30%;
+}
+
+.match4-status{
+    color: rgb(58, 58, 250);
+    font-size: small;
+    padding-left: 2%;
+    margin-top: 1%;
+}
+
+.slider{
+    position: absolute;
+    right: 0;
+    top: 15%;
+    width: 17%;
+    height: 40%;
+    border-radius: 50%;
+    background-color: rgb(63, 146, 63);
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.match-stats-p2{
+    display: none;
+    height: 90%;
+    flex-direction: row;
+    
+}
+
+.p2-first-match{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 24.8%;
+    background-color: white;
+    border-right: 1px solid black;
+    padding-bottom: 3.5%;
+}
+
+.p2-match1-status{
+    color: rgb(218, 170, 108);
+    font-size: small;
+    padding-left: 7%;
+    margin-top: 1%;
+}
+
+.slider-left{
+    position: absolute;
+    left: 0;
+    top: 15%;
+    height: 40%;
+    width: 18%;
+    border-radius: 50%;
+    background-color: rgb(63, 146, 63);
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    opacity: 70%;
+    cursor: pointer;
+}
+
+
+@keyframes going{
+    from{
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+    to {
+        transform: translateX(-800px);
+        opacity: 0%;
+    }
+}
+
+@keyframes coming{
+    from{
+        transform: translateX(-800px);
+        opacity: 0%;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
