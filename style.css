@@ -85,11 +85,11 @@ header{
 }
 
 .plus{
-    border-radius: 10px;
+    border-radius: 20px;
     color: black;
     background-color: white;
     border: 1px solid white;
-    padding: 0.5%;
+    padding: 1%;
     cursor: pointer;
 }
 
