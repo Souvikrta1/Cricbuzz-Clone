@@ -28,6 +28,7 @@ header{
     background-color: rgb(63, 146, 63);
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .line1 img{
@@ -604,7 +605,7 @@ main{
 
 /*this center-container is for left part of main content */
 .center-container{
-    width: 48.5%;
+    width: 49%;
     background-color: white;
     /* border: 1px solid black; this border & background color not required  ,given to understand the area */
 }
@@ -644,8 +645,7 @@ main{
 /* footer css */
 footer{
     background-color: #4a4a4a;
-    /* width:100%; */
-
+    margin-top: 4em;
     box-sizing: border-box;
 }
 
@@ -663,46 +663,53 @@ footer{
     margin-right: 5em;
 }
 /* footer heading for icons  */
-.heading-div{
-    flex-grow: 1;
 
-}
 .heading-div h2{
     color: white;
     margin-left:1.5em;
     font-family:Arial, Helvetica, sans-serif;
+    margin-top: 1em;
 
 }
 /* designing the footer icons */
 .icon{
     width:5%;
 }
-li a{
+.anchor-tag{
     display: flex;
     width:auto;
     text-decoration: none;
+    margin-left:2.3rem;
+    margin-top:2em;
     color: white;
 }
 /* designing icon name */
 .icon-name{
-    font-size:15px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size:18px;
     padding-left:0.5em;
+    
 }
 
 /* designing company details */
+.company-container{
+    width:20vw;
+}
+.company-container li{
+    margin-top:10%;
+    margin-left:20%;
+}
 .company-container h2{
     color: white;
     margin-left:1.5em;
-    font-family:Arial, Helvetica, sans-serif;
+    margin-top:1em;
 }
-a span{
-    font-size:18px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left:0.5em;
-    padding-top:1.2em;
-    
+.company-list{
+    text-decoration: none;
+    color: white;
+    margin-left:2.3rem;
+    font-size: 18px;
 }
+
 
 ul{
     list-style: none;
@@ -710,18 +717,21 @@ ul{
 
 
 .copyright {
-    font-size:1rem;
     color: #bababa;
     display:flex;
     justify-content: center;
     padding: 1em;
-    max-width:50%;
     margin: 0 auto;
 }
 
 .copyright a{
     color: #bababa;
+    text-decoration: none;
+    text-indent:5px;
 }
 
+.copyright a:hover{
+    text-decoration:underline;
+}
 
 /* footer ends here */
