@@ -547,3 +547,91 @@ header{
         opacity: 100%;
     }
 }
+
+
+
+/* footer css */
+
+footer{
+    background-color: #4a4a4a;
+    /* width:100%; */
+
+    box-sizing: border-box;
+}
+
+/* footer flex container design */
+.flex-container{
+    display: flex;
+    justify-content:center;
+    max-width:55%;
+    margin: 0 auto;
+}
+/* footer logo design */
+img{
+   max-width:12% ; 
+    margin-bottom:13em;
+    margin-right: 5em;
+}
+/* footer heading for icons  */
+.heading-div{
+    flex-grow: 1;
+
+}
+.heading-div h2{
+    color: white;
+    margin-left:1.5em;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+/* designing the footer icons */
+.icon{
+    width:5%;
+}
+li a{
+    display: flex;
+    width:auto;
+    text-decoration: none;
+    color: white;
+}
+/* designing icon name */
+.icon-name{
+    font-size:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left:0.5em;
+}
+
+/* designing company details */
+.company-container h2{
+    color: white;
+    margin-left:1.5em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+a span{
+    font-size:18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left:0.5em;
+    padding-top:1.2em;
+    
+}
+
+ ul{
+    list-style: none;
+ }
+
+
+ .copyright {
+    font-size:1rem;
+    color: #bababa;
+    display:flex;
+    justify-content: center;
+    padding: 1em;
+    max-width:50%;
+    margin: 0 auto;
+ }
+
+ .copyright a{
+    color: #bababa;
+ }
+
+ 
+/* footer ends here */
