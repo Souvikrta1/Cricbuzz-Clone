@@ -5,6 +5,8 @@ const search = document.getElementById("search");
 const menuDiv = document.getElementById("menu");
 const bodyDiv = document.querySelector("body");
 
+
+
 const newsDrop = document.querySelector(".news-drop");
 const seriesDrop = document.querySelector(".series-drop");
 const teamsDrop = document.querySelector(".teams-drop");
@@ -132,15 +134,10 @@ bodyDiv.addEventListener("mouseover",(e)=>{
 })
 
 
-
-
-
-
-
 // search features
 search.addEventListener("click",()=>{
-    menuDiv.style.animation = "coming 0.1s";
-    searchArea.style.animation = "going 0.1s"
+    menuDiv.style.animation = "coming 0.25s";
+    searchArea.style.animation = "going 0.25s"
     setTimeout(()=>{
         search.style.display = "none";
     menuDiv.style.display = "none";
@@ -154,8 +151,6 @@ searchArea.addEventListener("focusout",()=>{
         menuDiv.style.display = "flex";
         searchArea.style.display = "none";
 })
-
-
 
 
 
