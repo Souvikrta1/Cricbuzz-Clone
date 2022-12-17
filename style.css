@@ -567,8 +567,8 @@ footer{
     margin: 0 auto;
 }
 /* footer logo design */
-img{
-   max-width:12% ; 
+.flex-container img{
+    max-width:12% ; 
     margin-bottom:13em;
     margin-right: 5em;
 }
