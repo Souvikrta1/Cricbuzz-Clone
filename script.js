@@ -3,6 +3,7 @@ const searchBtn = document.getElementById("search-btn");
 const searchArea = document.getElementById("search-area");
 const search = document.getElementById("search");
 const menuDiv = document.getElementById("menu");
+const bodyDiv = document.querySelector("body");
 
 const newsDrop = document.querySelector(".news-drop");
 const seriesDrop = document.querySelector(".series-drop");
@@ -18,90 +19,118 @@ const statpage2 = document.getElementById("stat-page2");
 const slideToRight = document.getElementById("slide-right");
 const slideToLeft = document.getElementById("slide-left");
 
-
-
-
-
-
-// calling menu bar dropdown event functions
+// menu button hover event listeners when user hover over button
 menuBtn.forEach(ele =>{
-
     if(ele.classList.contains("news")){
-        newsDropdown(ele);
+        ele.addEventListener("mouseover",(e)=>{
+            newsDrop.style.display = "flex";
+        })
     }
     if(ele.classList.contains("series")){
-        seriesDropdown(ele);
+        ele.addEventListener("mouseover",(e)=>{
+            seriesDrop.style.display = "flex";
+        })
     }
     if(ele.classList.contains("teams")){
-        teamsDropdown(ele);
+        ele.addEventListener("mouseover",(e)=>{
+            teamsDrop.style.display = "flex";
+        })
     }
     if(ele.classList.contains("videos")){
-        videoDropdown(ele);
+        ele.addEventListener("mouseover",(e)=>{
+            videoDrop.style.display = "flex";
+        })
     }
     if(ele.classList.contains("rankings")){
-        rankingDropdown(ele);
+        ele.addEventListener("mouseover",(e)=>{
+            rankingDrop.style.display = "flex";
+        })
     }
     if(ele.classList.contains("more")){
-        moreDropdown(ele);
+        ele.addEventListener("mouseover",(e)=>{
+            moreDrop.style.display = "flex";
+        })
     }
 })
 
+// newsDrop event listeners
+newsDrop.addEventListener("mousemove",()=>{
+    newsDrop.style.display = "flex"
+})
 
-// functions events for dropdown in menu-bar
-function newsDropdown(ele){
-    ele.addEventListener('mouseover',(e)=>{
-        newsDrop.style.display = "flex";  
-    })
-    ele.addEventListener('mouseout',(e)=>{
-        newsDrop.style.display = "none";
-    })
-}
+newsDrop.addEventListener("mouseout",()=>{
+    newsDrop.style.display = "none"
+})
 
-function seriesDropdown(ele){
-    ele.addEventListener('mouseover',(e)=>{
-        seriesDrop.style.display = "flex";
-    })
-    ele.addEventListener('mouseout',(e)=>{
-        seriesDrop.style.display = "none";
-    })
-}
+//seriesDrop event listeners
+seriesDrop.addEventListener("mousemove",()=>{
+    seriesDrop.style.display = "flex"
+})
 
-function teamsDropdown(ele){
-    ele.addEventListener('mouseover',(e)=>{
-        teamsDrop.style.display = "flex";
-    })
-    ele.addEventListener('mouseout',(e)=>{
-        teamsDrop.style.display = "none";
-    })
-}
+seriesDrop.addEventListener("mouseout",()=>{
+    seriesDrop.style.display = "none"
+})
 
-function videoDropdown(ele){
-    ele.addEventListener('mouseover',(e)=>{
-        videoDrop.style.display = "flex";
-        
-    })
-    ele.addEventListener('mouseout',(e)=>{
-        videoDrop.style.display = "none";
-    })
-}
+//teams drop event listeners 
+teamsDrop.addEventListener("mousemove",()=>{
+    teamsDrop.style.display = "flex"
+})
 
-function rankingDropdown(ele){
-    ele.addEventListener('mouseover',(e)=>{
-        rankingDrop.style.display = "flex";
-    })
-    ele.addEventListener('mouseout',(e)=>{
-        rankingDrop.style.display = "none";
-    })
-}
+teamsDrop.addEventListener("mouseout",()=>{
+    teamsDrop.style.display = "none"
+})
 
-function moreDropdown(ele){
-    ele.addEventListener('mouseover',(e)=>{
-        moreDrop.style.display = "flex";
-    })
-    ele.addEventListener('mouseout',(e)=>{
-        moreDrop.style.display = "none";
-    })
-}
+//videoDrop event listeners
+videoDrop.addEventListener("mousemove",()=>{
+    videoDrop.style.display = "flex"
+})
+
+videoDrop.addEventListener("mouseout",()=>{
+    videoDrop.style.display = "none"
+})
+
+// rankingDrop event listeners
+rankingDrop.addEventListener("mousemove",()=>{
+    rankingDrop.style.display = "flex"
+})
+
+rankingDrop.addEventListener("mouseout",()=>{
+    rankingDrop.style.display = "none"
+})
+
+//moreDrop event listeners
+moreDrop.addEventListener("mousemove",()=>{
+    moreDrop.style.display = "flex"
+})
+
+moreDrop.addEventListener("mouseout",()=>{
+    moreDrop.style.display = "none"
+})
+
+
+
+// mouseout feature on user go out of the dropdown
+bodyDiv.addEventListener("mouseover",(e)=>{
+    if(!e.target.classList.contains("news")){
+        newsDrop.style.display = "none"
+    }
+    if(!e.target.classList.contains("series")){
+        seriesDrop.style.display = "none"
+    }
+    if(!e.target.classList.contains("teams")){
+        teamsDrop.style.display = "none"
+    }
+    if(!e.target.classList.contains("videos")){
+        videoDrop.style.display = "none"
+    }
+    if(!e.target.classList.contains("rankings")){
+        rankingDrop.style.display = "none"
+    }
+    if(!e.target.classList.contains("more")){
+        moreDrop.style.display = "none"
+    }
+})
+
 
 
 
