@@ -44,7 +44,6 @@ header{
     width: 150%;
     height: 40px;
     display: none;
-    
 }
 
 #search-btn{
@@ -67,6 +66,7 @@ header{
     margin-right : 3%;
     cursor: pointer;
 }
+
 
 .user-area{
     width: 10%;
@@ -143,6 +143,7 @@ header{
     background-color: whitesmoke;
     top: 6%;
     left: 50%;
+    width: max-content;
 }
 
 .test-teams{
