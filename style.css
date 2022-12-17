@@ -1,5 +1,5 @@
 @import url("");
-
+/* Don't update anything here */
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +11,9 @@ body{
     font-family: helvetica,"Segoe UI",Arial,sans-serif;
     background-color: #c4c6c4;
 }
+/*don't update anything above */
 
+/*Header and menu button section */
 header{
     width: 70%;
     height: 12%;
@@ -241,6 +243,9 @@ header{
     background-color: whitesmoke;
 }
 
+/*Header and menu button section line 1 code is above */
+
+/*Header and menu button section line 2 code is below */
 .line2{
     background-color: rgb(67, 64, 64);
     color: white;
@@ -276,12 +281,9 @@ header{
     color: white;
     border: none;
 }
+/*Header and menu button section line 2 code is above */
 
-.check{
-    height: 50%;
-    background-color: black;
-}
-
+/* Featured Matches area sliding view */
 .featured-matches{
     height: 25%;
     width: 70%;
@@ -293,7 +295,7 @@ header{
 .featured-matches h4{
     padding: 1%;
 }
-
+/* page 1 of sliding featured matches */
 .match-stats-p1{
     display: flex;
     height: 90%;
@@ -485,6 +487,9 @@ header{
     cursor: pointer;
 }
 
+/* page 1 of sliding featured matches is above */ 
+
+/* page 2 of sliding featured matches */
 .match-stats-p2{
     display: none;
     height: 90%;
@@ -524,8 +529,10 @@ header{
     opacity: 65%;
     cursor: pointer;
 }
+/* page 2 of sliding featured matches is above */
+/* Featured Matches area sliding view is above */
 
-
+/* animation for sliding view in featured matches */
 @keyframes going{
     from{
         transform: translateX(0px);
@@ -547,11 +554,47 @@ header{
         opacity: 100%;
     }
 }
+/* animation for sliding view in featured matches is above */
+
+/* Dont update anything below in main */
+main{
+    width: 70%;
+    display: flex;
+    margin-left: 15%;
+    margin-top: 0.25%;
+}
+/* dont update anything above in main */
+
+/*this left-aside-container is for left part of main content */
+.left-aside-container{
+    width: 20%;
+    background-color: red;
+    border: 1px solid black; /*this border & background color not required ,given to understand the area */
+}
+
+
+
+/*this center-container is for left part of main content */
+.center-container{
+    width: 50%;
+    background-color: yellow;
+    border: 1px solid black; /*this border & background color not required  ,given to understand the area */
+}
+
+
+
+/*this right-aside-container is for left part of main content */
+.right-aside-container{
+    width: 30%;
+    background-color: green;
+    border: 1px solid black; /*this border & background color not required, given to understand the area */
+}
+
+
 
 
 
 /* footer css */
-
 footer{
     background-color: #4a4a4a;
     /* width:100%; */
@@ -614,12 +657,12 @@ a span{
     
 }
 
- ul{
+ul{
     list-style: none;
- }
+}
 
 
- .copyright {
+.copyright {
     font-size:1rem;
     color: #bababa;
     display:flex;
@@ -627,11 +670,11 @@ a span{
     padding: 1em;
     max-width:50%;
     margin: 0 auto;
- }
+}
 
- .copyright a{
+.copyright a{
     color: #bababa;
- }
+}
 
- 
+
 /* footer ends here */
