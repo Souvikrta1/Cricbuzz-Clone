@@ -644,7 +644,7 @@ main{
 /* footer css */
 footer{
     background-color: #4a4a4a;
-     margin-top: 4em;
+    margin-top: 4em;
     box-sizing: border-box;
 }
 
@@ -695,7 +695,7 @@ footer{
     
 }
 .company-container li{
-  margin-top:17%;
+margin-top:17%;
 }
 .company-container h2{
     color: white;
@@ -710,12 +710,12 @@ footer{
 }
 
 
- ul{
+ul{
     list-style: none;
 }
 
 
- .copyright {
+.copyright {
     color: #bababa;
     display:flex;
     justify-content: center;
@@ -727,10 +727,10 @@ footer{
     color: #bababa;
     text-decoration: none;
     text-indent:5px;
- }
+}
 
- .copyright a:hover{
+.copyright a:hover{
     text-decoration:underline;
- }
+}
 
 /* footer ends here */

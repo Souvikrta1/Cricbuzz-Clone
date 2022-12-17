@@ -132,11 +132,6 @@ bodyDiv.addEventListener("mouseover",(e)=>{
 })
 
 
-
-
-
-
-
 // search features
 search.addEventListener("click",()=>{
     menuDiv.style.animation = "coming 0.1s";
@@ -154,11 +149,6 @@ searchArea.addEventListener("focusout",()=>{
         menuDiv.style.display = "flex";
         searchArea.style.display = "none";
 })
-
-
-
-
-
 
 // featured matches sliding animation 
 slideToRight.addEventListener("click",()=>{
