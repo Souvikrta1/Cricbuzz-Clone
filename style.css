@@ -28,6 +28,7 @@ header{
     background-color: rgb(63, 146, 63);
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .line1 img{
@@ -694,8 +695,8 @@ footer{
     width:20vw;
 }
 .company-container li{
-  margin-top:10%;
-  margin-left:20%;
+    margin-top:10%;
+    margin-left:20%;
 }
 .company-container h2{
     color: white;
