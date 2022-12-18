@@ -4,7 +4,7 @@ const searchArea = document.getElementById("search-area");
 const search = document.getElementById("search");
 const menuDiv = document.getElementById("menu");
 const bodyDiv = document.querySelector("body");
-const cricPlus = document.querySelector(".plus")
+
 
 // these are mainly for dropdown in menu btn mainly
 const newsDrop = document.querySelector(".news-drop");
@@ -53,12 +53,6 @@ menuBtn.forEach(ele => {
             moreDrop.style.display = "flex";
         })
     }
-    ele.addEventListener("mouseover",()=>{
-        ele.style.background = "green";
-    })
-    ele.addEventListener("mouseout",()=>{
-        ele.style.background = "initial";
-    })
 })
 
 // newsDrop event listeners
@@ -143,8 +137,7 @@ bodyDiv.addEventListener("mouseover", (e) => {
 // search features
 search.addEventListener("click", () => {
     menuDiv.style.animation = "coming 0.25s";
-    searchArea.style.animation = "going 0.25s";
-    cricPlus.style.display = "none"
+    searchArea.style.animation = "going 0.25s"
     setTimeout(() => {
         search.style.display = "none";
         menuDiv.style.display = "none";
@@ -202,20 +195,17 @@ setInterval(() => {
     show.innerHTML = "";
     show.innerHTML = `<img class="ads" src="${randomAds}"></img>`
 }, 7000);
-
 //video features
 const videos = document.querySelectorAll('.videos');
-
-videos.forEach((ele)=>{
-    ele.addEventListener('mouseover', function(){
-        ele.play();
+for (let i = 0; i < videos.length; i++) {
+    videos[i].addEventListener('mouseover', function(){
+        videos[i].play();
     })
-    ele.addEventListener('mouseout', function(){
-        ele.pause();
+    videos[i].addEventListener('mouseout', function(){
+        videos[i].pause();
     })
-})
+}
 // let clip=document.querySelector(".videos")
 // clip.addEventListener('mouseover',function(e){
 //     clip.play();
 // })
-

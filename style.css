@@ -39,13 +39,8 @@ header{
 
 .menu-btn{
     display: flex;
-    width: 68%;
-    align-items: center;
-    height: 7vh;
-}
-
-.menu-btn button p{
-    margin-right: 5%;
+    width: 90%;
+    justify-content: center;
 }
 
 .search-area{
@@ -71,63 +66,34 @@ header{
     border : none;
     color: white;
     background-color:rgb(63, 146, 63);
+    margin-right : 3%;
     cursor: pointer;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    display: flex;
-    width: 15%;
-    justify-content: center;
 }
 
 
 .user-area{
-    width: 20%;
+    width: 10%;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-#search{
+.user-area button{
     border: none;
     background-color: rgb(63, 146, 63);
+    width: 25%;
+    margin-left: 15%;
+    margin-right: 10%;
     font-size: larger;
     color: white;
     cursor: pointer;
-    margin-right: 5%;
-}
-
-#user-login{
-    border: none;
-    background-color: rgb(63, 146, 63);
-    font-size: larger;
-    color: white;
-    cursor: pointer;
-    margin-right: 5%;
 }
 
 .plus{
-    width: 50%;
     border-radius: 20px;
-    border: none;
-    background-color: white;
-    font-size: larger;
-    color: white;
-    cursor: pointer;
-    border: 1px solid white;
-    margin-right: 5%;
-    padding-top:1%;
-    padding-bottom: 1%;
-}
-
-.plus p{
-    width: 100%;
-    text-align: center;
-    font-weight: 500;
-    font-size: 14px;
     color: black;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    background-color: white;
+    border: 1px solid white;
+    padding: 1%;
+    cursor: pointer;
 }
 
 .news-drop{
