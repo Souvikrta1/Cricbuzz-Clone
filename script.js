@@ -150,20 +150,6 @@ searchArea.addEventListener("focusout", () => {
     search.style.display = "flex";
     menuDiv.style.display = "flex";
     searchArea.style.display = "none";
-    cricPlus.style.display = "flex";
-})
-
-
-//for line 2 of header effects
-const match = document.querySelectorAll(".match");
-
-match.forEach((ele)=>{
-    ele.addEventListener("mouseover",()=>{
-        ele.style.background = "#373737";
-    })
-    ele.addEventListener("mouseout",()=>{
-        ele.style.background = "initial"
-    })
 })
 
 
