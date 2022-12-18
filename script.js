@@ -161,7 +161,7 @@ searchArea.addEventListener("focusout", () => {
 })
 
 
-//for line 2 of header
+//for line 2 of header effects
 const match = document.querySelectorAll(".match");
 
 match.forEach((ele)=>{
