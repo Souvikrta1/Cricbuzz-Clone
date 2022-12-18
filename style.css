@@ -608,9 +608,17 @@ main{
     background-color:white;
     /* border: 1px solid black; this border & background color not required ,given to understand the area */
 }
+.left-aside-container button{
+    color: blue;
+    font-size:.95rem;
+    border: 1px solid transparent;
+    margin-left: 1rem;
+    padding:0.50rem
+}
 .l-content{
     /* width: 90%; */
     margin: 5%;
+   
 }
 .l-content .latest-news{
     color: green;
@@ -633,6 +641,42 @@ main{
     margin-top: 1.5vh;
     margin-bottom: 1.5vh;
 }
+/* designing the left side content2 latest photos section */
+.latest-photos{
+    color: #009270;
+    font-weight: bold;
+    margin-bottom: 1vh;
+}
+.content-2 img{
+    width:100%;
+    border: 1px solid transparent;
+    border-radius:3%;
+
+}
+.content-2{
+    margin: 5%;
+}
+.content-2 hr{
+    margin-top:0.5rem;
+}
+.content-2 a{
+    text-decoration: none;
+}
+.content-2 .text{
+    /* font-size: 1rem; */
+    color: black;
+    padding-top:0.5rem;
+}
+.date-time{
+    padding-top: 0.5rem;
+    color: #4a4a4a;
+    cursor: pointer;
+}
+.content-2 .text:hover{
+    text-decoration: underline;
+}
+/* latest photos section ends here */
+
 .m-content{
     margin: 3%;
 }
