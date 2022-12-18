@@ -15,10 +15,11 @@ body{
 
 /*Header and menu button section */
 header{
-    width: 70%;
+    max-width: 1080px;
     height: 12%;
     margin-left: 15%;
     margin-bottom: 0.25%;
+    margin: 0 auto;
 }
 
 .line1{
@@ -321,10 +322,11 @@ header{
 /* Featured Matches area sliding view */
 .featured-matches{
     height: 25%;
-    width: 70%;
+    width: 1080px;
     margin-left: 15%;
     background-color: white;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .featured-matches h4{
@@ -594,11 +596,12 @@ header{
 /* Dont update anything below in main */
 /* main start*/
 main{
-    width: 70%;
+    max-width: 1080px;
     display: flex;
     justify-content: space-between;
     margin-left: 15%;
     margin-top: 0.25%;
+    margin: 0 auto;
 }
 /* dont update anything above in main */
 
