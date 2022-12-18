@@ -28,6 +28,7 @@ header{
     background-color: rgb(63, 146, 63);
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .line1 img{
@@ -38,8 +39,13 @@ header{
 
 .menu-btn{
     display: flex;
-    width: 90%;
-    justify-content: center;
+    width: 68%;
+    align-items: center;
+    height: 7vh;
+}
+
+.menu-btn button p{
+    margin-right: 5%;
 }
 
 .search-area{
@@ -65,34 +71,63 @@ header{
     border : none;
     color: white;
     background-color:rgb(63, 146, 63);
-    margin-right : 3%;
     cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    display: flex;
+    width: 15%;
+    justify-content: center;
 }
 
 
 .user-area{
-    width: 10%;
+    width: 20%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.user-area button{
+#search{
     border: none;
     background-color: rgb(63, 146, 63);
-    width: 25%;
-    margin-left: 15%;
-    margin-right: 10%;
     font-size: larger;
     color: white;
     cursor: pointer;
+    margin-right: 5%;
+}
+
+#user-login{
+    border: none;
+    background-color: rgb(63, 146, 63);
+    font-size: larger;
+    color: white;
+    cursor: pointer;
+    margin-right: 5%;
 }
 
 .plus{
+    width: 50%;
     border-radius: 20px;
-    color: black;
+    border: none;
     background-color: white;
-    border: 1px solid white;
-    padding: 1%;
+    font-size: larger;
+    color: white;
     cursor: pointer;
+    border: 1px solid white;
+    margin-right: 5%;
+    padding-top:1%;
+    padding-bottom: 1%;
+}
+
+.plus p{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .news-drop{
@@ -672,18 +707,72 @@ main{
 }
 
 
-/*this right-aside-container is for left part of main content */
+/*this right-aside-container is for right part of main content */
 .right-aside-container{
     width: 30%;
-    background-color: green;
-    border: 1px solid black; /*this border & background color not required, given to understand the area */
+    background-color:white;
+    /* border: 1px solid black; this border & background color not required, given to understand the area */
+}
+/*ad area starts here*/
+.show-ad{
+    width: 100%;
+    height: 15em;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.ads{
+    height: 95%;
+    width: 95%;
+    /* border: 0.25px solid black; */
+}
+/* ad area ends here */
+
+/* featured videos start */
+
+.content{
+    margin: 5%;
+}
+.featured{
+    font-size: 1.2rem;
+    color: green;
+    margin-bottom: .5em;
+}
+.videos1{
+    margin-bottom: 3%;
+}
+.videos1 .videos{
+    width: 100%;
+    height: 12em;
+    border-radius: 10px;
+}
+.videos1 a{
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+.videos1 a:hover{
+    text-decoration: underline;
+}
+.content .more{
+    display: flex;
+    justify-content: center;
+}
+.more button{
+    font-size: 1rem;
+    padding: .5rem;
+    color: white;
+    background: green;
+    border: none;
+    cursor: pointer;
+}
+.more button:hover{
+    opacity: .7;
+}
+/*featured videos end*/
+
 /*main-end*/
-
-
-
-
 
 /* footer css */
 footer{

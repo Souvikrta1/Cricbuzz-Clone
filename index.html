@@ -16,22 +16,22 @@
         <div class="line1">
             <img src="https://www.cricbuzz.com/images/cb_logo.svg">
             <div id="menu" class="menu-btn">
-                <button class="line1-btn">Live Scores</button>
-                <button class="line1-btn">Schedules</button>
-                <button class="line1-btn">Archives</button>
-                <button class="line1-btn news">News <i class="fa-solid fa-caret-down"></i></button>
-                <button class="line1-btn series">Series <i class="fa-solid fa-caret-down"></i></button>
-                <button class="line1-btn teams">Teams <i class="fa-solid fa-caret-down"></i></button>
-                <button class="line1-btn videos">Videos <i class="fa-solid fa-caret-down"></i></button>
-                <button class="line1-btn rankings">Rankings <i class="fa-solid fa-caret-down"></i></button>
-                <button class="line1-btn more">More <i class="fa-solid fa-caret-down"></i></button>
-                <button class="plus">Cricbuzz Plus</button>
+                <button class="line1-btn"><p>Live Scores</p></button>
+                <button class="line1-btn"><p>Schedules</p></button>
+                <button class="line1-btn"><p>Archives</p></button>
+                <button class="line1-btn news"><p class="news">News</p><i class="fa-solid fa-caret-down news"></i></button>
+                <button class="line1-btn series"><p class="series">Series</p><i class="fa-solid fa-caret-down series"></i></button>
+                <button class="line1-btn teams"><p class="teams">Teams</p><i class="fa-solid fa-caret-down teams"></i></button>
+                <button class="line1-btn videos"><p class="videos">Videos</p><i class="fa-solid fa-caret-down videos"></i></button>
+                <button class="line1-btn rankings"><p class="rankings">Rankings</p><i class="fa-solid fa-caret-down rankings"></i></button>
+                <button class="line1-btn more"><p class="more">More</p><i class="fa-solid fa-caret-down more"></i></button>
             </div>
             <div id="search-area" class="search-area">
                 <input type="text" id="search-input" placeholder="Search for players"></input>
                 <button id="search-btn">Search</button>
             </div>
             <div class="user-area">
+                <button class="plus"><p>Cricbuzz Plus</p></button>
                 <button id="search"><i class="fa-solid fa-magnifying-glass"></i></i></button>
                 <button id="user-login"><i class="fa-regular fa-circle-user"></i></button>
             </div>
@@ -215,6 +215,7 @@
                 <p class="text-time">1h ago</p>
                 <hr width="100%">
 
+
                 <a href="https://www.cricbuzz.com/cricket-news/124871/focus-was-on-being-patient-mhambrey-on-indias-bowling" class="text">"All I wanted was to bat long" - Zakir Hasan on debut ton</a>
                 <p class="text-time">1h ago</p>
                 <hr width="100%">
@@ -307,7 +308,30 @@
         </div>
         <div class="right-aside-container">
             <!-- write HTML for right Content of MAin section -->
-            Hello Right Content
+            <div class="show-ad">
+                <img class="ads" src="https://previews.123rf.com/images/hstrongart/hstrongart1701/hstrongart170100151/69269523-mouth-rinse-ads-refreshing-mouthwash-products-with-mints-leaves-and-splashing-liquids-in-3d-illustra.jpg">
+            </div>
+            <div class="content">
+                <div class="featured">FEATURED VIDEOS</div>
+                <div class="videos1">
+                    <video src="videos/video1.mp4" class="videos" type="video/mp4" loop controls muted ></video>
+                    <a href="https://www.cricbuzz.com/cricket-videos/58666/caught-kuldeep-finally-gets-rid-of-litton">CAUGHT! Kuldeep finally gets rid of Litton</a>
+                    <div class="small">34m ago</div>
+                </div>
+                <div class="videos1">
+                    <video src="videos/video2.mp4" class="videos" type="video/mp4" loop controls muted ></video>
+                    <a href="https://www.cricbuzz.com/cricket-videos/58653/kuldeep-yadav-will-be-key-to-indias-test-side-going-forward-dinesh-karthik">Kuldeep Yadav will be key to India's Test side going forward: Dinesh Karthik</a>
+                    <div class="small">2h ago</div>
+                </div>
+                <div class="videos1">
+                    <video src="videos/video3.mp4" class="videos" type="video/mp4" loop controls muted></video>
+                    <a href="https://www.cricbuzz.com/cricket-videos/58663/bowled-axar-patel-knocks-over-yasir-ali">BOWLED! Axar Patel knocks over Yasir Ali</a>
+                    <div class="small">20h ago</div>
+                </div>
+                <div class="more">
+                    <a href="https://www.cricbuzz.com/cricket-videos"><button class="btn">MORE VIDEOS</button></a>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -414,7 +438,7 @@
 
                     <li>
                         <a class="company-list" href="https://www.cricbuzz.com/info/advertise">
-                           <p>Advertise</p>
+                            <p>Advertise</p>
                         </a>
                     </li>
 
@@ -432,7 +456,7 @@
 
                     <li>
                         <a class="company-list" href="https://www.cricbuzz.com/product-blog/cricbuzz-mobile-apps-tv-ad-cricket-ka-keeda">
-                           <p> Cricbuzz TV Ads</p>
+                            <p> Cricbuzz TV Ads</p>
                         </a>
                     </li>
                 </ul>
