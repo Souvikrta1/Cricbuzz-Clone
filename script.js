@@ -4,7 +4,7 @@ const searchArea = document.getElementById("search-area");
 const search = document.getElementById("search");
 const menuDiv = document.getElementById("menu");
 const bodyDiv = document.querySelector("body");
-
+const cricPlus = document.querySelector(".plus")
 
 // these are mainly for dropdown in menu btn mainly
 const newsDrop = document.querySelector(".news-drop");
@@ -53,6 +53,12 @@ menuBtn.forEach(ele => {
             moreDrop.style.display = "flex";
         })
     }
+    ele.addEventListener("mouseover",()=>{
+        ele.style.background = "green";
+    })
+    ele.addEventListener("mouseout",()=>{
+        ele.style.background = "initial";
+    })
 })
 
 // newsDrop event listeners
@@ -137,7 +143,8 @@ bodyDiv.addEventListener("mouseover", (e) => {
 // search features
 search.addEventListener("click", () => {
     menuDiv.style.animation = "coming 0.25s";
-    searchArea.style.animation = "going 0.25s"
+    searchArea.style.animation = "going 0.25s";
+    cricPlus.style.display = "none"
     setTimeout(() => {
         search.style.display = "none";
         menuDiv.style.display = "none";
@@ -150,6 +157,20 @@ searchArea.addEventListener("focusout", () => {
     search.style.display = "flex";
     menuDiv.style.display = "flex";
     searchArea.style.display = "none";
+    cricPlus.style.display = "flex";
+})
+
+
+//for line 2 of header
+const match = document.querySelectorAll(".match");
+
+match.forEach((ele)=>{
+    ele.addEventListener("mouseover",()=>{
+        ele.style.background = "#373737";
+    })
+    ele.addEventListener("mouseout",()=>{
+        ele.style.background = "initial"
+    })
 })
 
 
@@ -181,17 +202,20 @@ setInterval(() => {
     show.innerHTML = "";
     show.innerHTML = `<img class="ads" src="${randomAds}"></img>`
 }, 7000);
+
 //video features
 const videos = document.querySelectorAll('.videos');
-for (let i = 0; i < videos.length; i++) {
-    videos[i].addEventListener('mouseover', function(){
-        videos[i].play();
+
+videos.forEach((ele)=>{
+    ele.addEventListener('mouseover', function(){
+        ele.play();
     })
-    videos[i].addEventListener('mouseout', function(){
-        videos[i].pause();
+    ele.addEventListener('mouseout', function(){
+        ele.pause();
     })
-}
+})
 // let clip=document.querySelector(".videos")
 // clip.addEventListener('mouseover',function(e){
 //     clip.play();
 // })
+
