@@ -53,6 +53,12 @@ menuBtn.forEach(ele => {
             moreDrop.style.display = "flex";
         })
     }
+    ele.addEventListener("mouseover",()=>{
+        ele.style.background = "rgb(2, 119, 2)";
+    })
+    ele.addEventListener("mouseout",()=>{
+        ele.style.background = "initial";
+    })
 })
 
 // newsDrop event listeners
@@ -60,7 +66,7 @@ newsDrop.addEventListener("mousemove", () => {
     newsDrop.style.display = "flex"
 })
 
-newsDrop.addEventListener("mouseout", () => {
+newsDrop.addEventListener("mouseout",() => {
     newsDrop.style.display = "none"
 })
 
@@ -133,11 +139,12 @@ bodyDiv.addEventListener("mouseover", (e) => {
     }
 })
 
-
+const cricPlus = document.querySelector(".plus");
 // search features
 search.addEventListener("click", () => {
     menuDiv.style.animation = "coming 0.25s";
-    searchArea.style.animation = "going 0.25s"
+    searchArea.style.animation = "going 0.25s";
+    cricPlus.style.display = "none";
     setTimeout(() => {
         search.style.display = "none";
         menuDiv.style.display = "none";
@@ -197,14 +204,14 @@ setInterval(() => {
 }, 7000);
 //video features
 const videos = document.querySelectorAll('.videos');
-for (let i = 0; i < videos.length; i++) {
-    videos[i].addEventListener('mouseover', function(){
-        videos[i].play();
+videos.forEach((ele)=>{
+    ele.addEventListener('mouseover', function(){
+        ele.play();
     })
-    videos[i].addEventListener('mouseout', function(){
-        videos[i].pause();
+    ele.addEventListener('mouseout', function(){
+        ele.pause();
     })
-}
+})
 // let clip=document.querySelector(".videos")
 // clip.addEventListener('mouseover',function(e){
 //     clip.play();
