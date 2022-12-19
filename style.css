@@ -17,7 +17,7 @@ body{
 header{
     max-width: 1080px;
     height: 12%;
-    margin-left: 15%;
+    /* margin-left: 15%; */
     margin-bottom: 0.25%;
     margin: 0 auto;
     position: relative;;
@@ -752,11 +752,13 @@ main{
     height: 12em;
     border-radius: 10px;
 }
-.videos1 a{
+.fonts-right a{
     font-size: 1.1rem;
+    color: black;
     text-decoration: none;
+    font-weight: 600;
 }
-.videos1 a:hover{
+.fonts-right a:hover{
     text-decoration: underline;
 }
 .content .more{
@@ -770,12 +772,22 @@ main{
     background: green;
     border: none;
     cursor: pointer;
+    margin-bottom: 3vh;
 }
 .more button:hover{
     opacity: .7;
 }
 /*featured videos end*/
-
+/* special section */
+.special-section img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.right-text{
+    font-size: .9rem;
+}
 /*main-end*/
 
 /* footer css */
