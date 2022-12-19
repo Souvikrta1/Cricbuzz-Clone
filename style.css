@@ -1,62 +1,66 @@
 @import url("");
-
 /* Don't update anything here */
-* {
+*{
     margin: 0;
     padding: 0;
 }
 
-body {
+body{
     height: 100%;
     width: 100%;
-    font-family: helvetica, "Segoe UI", Arial, sans-serif;
+    font-family: helvetica,"Segoe UI",Arial,sans-serif;
     background-color: #c4c6c4;
 }
-
 /*don't update anything above */
 
 /*Header and menu button section */
-header {
-    width: 70%;
+header{
+    max-width: 1080px;
     height: 12%;
-    margin-left: 15%;
+    /* margin-left: 15%; */
     margin-bottom: 0.25%;
+    margin: 0 auto;
+    position: relative;;
 }
 
-.line1 {
-    display: flex;
+.line1{
+    display:flex ;
     width: 100%;
     height: 50%;
     background-color: rgb(63, 146, 63);
     align-items: center;
-    position: relative;
     overflow: hidden;
 }
 
-.line1 img {
+.line1 img{
     height: 80%;
     width: 10%;
     padding: 1%;
 }
 
-.menu-btn {
+.menu-btn{
     display: flex;
-    width: 90%;
-    justify-content: center;
+    width: 68%;
+    align-items: center;
+    height: 8vh;
 }
 
-.search-area {
+.menu-btn button p{
+    margin-right: 5%;
+}
+
+.search-area{
     width: 150%;
     height: 40px;
     display: none;
 }
 
-#search-btn {
+#search-btn{
     width: 10%;
     background-color: rgb(4, 121, 4);
 }
 
-#search-input {
+#search-input{
     width: 90%;
     color: white;
     background-color: rgb(60, 126, 60);
@@ -64,118 +68,145 @@ header {
     font-weight: bolder;
 }
 
-.line1-btn {
-    border: none;
+.line1-btn{
+    border : none;
     color: white;
-    background-color: rgb(63, 146, 63);
-    margin-right: 3%;
+    background-color:rgb(63, 146, 63);
     cursor: pointer;
-}
-
-
-.user-area {
-    width: 10%;
+    height: 100%;
     display: flex;
+    align-items: center;
+    display: flex;
+    width: 15%;
+    justify-content: center;
 }
 
-.user-area button {
+
+.user-area{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search{
     border: none;
     background-color: rgb(63, 146, 63);
-    width: 25%;
-    margin-left: 15%;
-    margin-right: 10%;
     font-size: larger;
     color: white;
     cursor: pointer;
+    margin-right: 5%;
 }
 
-.plus {
-    border-radius: 20px;
-    color: black;
-    background-color: white;
-    border: 1px solid white;
-    padding: 1%;
+#user-login{
+    border: none;
+    background-color: rgb(63, 146, 63);
+    font-size: larger;
+    color: white;
     cursor: pointer;
+    margin-right: 5%;
 }
 
-.news-drop {
-    position: absolute;
+.plus{
+    width: 50%;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    font-size: larger;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    margin-right: 5%;
+    padding-top:1%;
+    padding-bottom: 1%;
+}
+
+.plus p{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.news-drop{
+    position:absolute;
     display: none;
     flex-direction: column;
     width: max-content;
     background-color: whitesmoke;
-    padding: 1%;
-    padding-right: 4%;
-    top: 6%;
-    left: 40%;
+    width: 12%;
+    top: 56%;
+    left: 34.5%;
 }
 
-.news-drop button {
+.news-drop button{
     width: max-content;
     text-align: left;
     border: none;
     padding: 2%;
     font-size: medium;
     line-height: 180%;
-    background-color: whitesmoke;
+    width: 100%;
 }
 
-.series-drop {
-    position: absolute;
+.series-drop{
+    position:absolute;
     display: none;
     flex-direction: column;
-    width: max-content;
+    width: 28%;
     background-color: whitesmoke;
-    padding: 1%;
-    padding-right: 1%;
-    top: 6%;
-    left: 45%;
+    top: 60%;
+    left: 42%;
 }
 
-.series-drop button {
+.series-drop button{
     width: max-content;
     text-align: left;
     border: none;
-    padding: 2%;
+    width: 100%;
+    padding: 1%;
     font-size: medium;
     line-height: 180%;
     background-color: whitesmoke;
 }
 
-.teams-drop {
-    position: absolute;
+.teams-drop{
+    position:absolute;
     display: none;
     background-color: whitesmoke;
-    top: 6%;
-    left: 50%;
-    width: max-content;
+    top: 56%;
+    left: 49.5%;
+    width: 22%;
 }
 
-.test-teams {
+.test-teams{
     display: flex;
     flex-direction: column;
-    width: max-content;
+    width: 40%;
     background-color: whitesmoke;
     padding: 2%;
     padding-right: 4%;
-    margin-right: 25%;
+    margin-right: 20%;
 }
 
-.test-teams h4 {
+.test-teams h4{
     width: max-content;
 }
 
-.associate-teams {
+.associate-teams{
     display: flex;
     flex-direction: column;
-    width: max-content;
+    width: 40%;
     background-color: whitesmoke;
     padding: 2%;
     padding-right: 4%;
 }
 
-.teams-drop button {
-    width: max-content;
+.teams-drop button{
+    width: 100%;
     text-align: left;
     border: none;
     line-height: 180%;
@@ -183,20 +214,19 @@ header {
     background-color: whitesmoke;
 }
 
-.videos-drop {
-    position: absolute;
+.videos-drop{
+    position:absolute;
     display: none;
     flex-direction: column;
-    width: max-content;
+    width: 10%;
     background-color: whitesmoke;
-    padding: 0.5%;
-    padding-right: 1%;
-    top: 6%;
-    left: 55%;
+    top: 56%;
+    left: 57.2%;
 }
 
-.videos-drop button {
-    width: max-content;
+.videos-drop button{
+    width: 100%;
+    padding-left: 5%;
     text-align: left;
     border: none;
     line-height: 180%;
@@ -204,42 +234,40 @@ header {
     background-color: whitesmoke;
 }
 
-.rankings-drop {
-    position: absolute;
+.rankings-drop{
+    position:absolute;
     display: none;
     flex-direction: column;
-    width: max-content;
+    width: 20%;
     background-color: whitesmoke;
-    padding: 0.5%;
-    padding-right: 1%;
-    top: 6%;
+    top: 56%;
+    left: 65%;
+}
+
+.rankings-drop button{
+    width: 100%;
+    text-align: left;
+    border: none;
+    padding-left: 5%;
+    line-height: 180%;
+    font-size: medium;
+    background-color: white;
+}
+
+.more-drop{
+    position:absolute;
+    display: none;
+    flex-direction: column;
+    width: 20%;
+    background-color: whitesmoke;
+    top: 56%;
     left: 60%;
 }
 
-.rankings-drop button {
-    width: max-content;
+.more-drop button{
+    width: 100%;
     text-align: left;
-    border: none;
-    line-height: 180%;
-    font-size: medium;
-    background-color: whitesmoke;
-}
-
-.more-drop {
-    position: absolute;
-    display: none;
-    flex-direction: column;
-    width: max-content;
-    background-color: whitesmoke;
-    padding: 0.5%;
-    padding-right: 1%;
-    top: 6%;
-    left: 56%;
-}
-
-.more-drop button {
-    width: max-content;
-    text-align: left;
+    padding-left: 5%;
     border: none;
     line-height: 180%;
     font-size: medium;
@@ -249,7 +277,7 @@ header {
 /*Header and menu button section line 1 code is above */
 
 /*Header and menu button section line 2 code is below */
-.line2 {
+.line2{
     background-color: rgb(67, 64, 64);
     color: white;
     height: 50%;
@@ -258,7 +286,12 @@ header {
     position: relative;
 }
 
-.match {
+.line2 a{
+    width: 15%;
+    text-align: center;
+}
+
+.match{
     height: 100%;
     padding: 1%;
     background-color: rgb(67, 64, 64);
@@ -266,17 +299,15 @@ header {
     border: none;
     cursor: pointer;
 }
-
-.matches {
+.matches{
     height: 100%;
-    background-color: rgb(46, 43, 43);
+    background-color:rgb(46, 43, 43) ;
     border: none;
     color: white;
     padding: 1%;
     cursor: pointer;
 }
-
-.all-btn {
+.all-btn{
     position: absolute;
     right: 0;
     cursor: pointer;
@@ -286,31 +317,30 @@ header {
     color: white;
     border: none;
 }
-
 /*Header and menu button section line 2 code is above */
 
 /* Featured Matches area sliding view */
-.featured-matches {
+.featured-matches{
     height: 25%;
-    width: 70%;
+    width: 1080px;
     margin-left: 15%;
     background-color: white;
     overflow: hidden;
+    margin: 0.25% auto;
 }
 
-.featured-matches h4 {
+.featured-matches h4{
     padding: 1%;
 }
-
 /* page 1 of sliding featured matches */
-.match-stats-p1 {
+.match-stats-p1{
     display: flex;
     height: 90%;
     flex-direction: row;
-
+    
 }
 
-.first-match {
+.first-match{
     display: flex;
     flex-direction: column;
     width: 24.8%;
@@ -318,7 +348,7 @@ header {
     border-right: 1px solid black;
 }
 
-.stat-btn {
+.stat-btn{
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -327,7 +357,7 @@ header {
     cursor: pointer;
 }
 
-.stat-btn span {
+.stat-btn span{
     width: 100%;
     display: flex;
     padding: 2%;
@@ -335,22 +365,22 @@ header {
     font-weight: bolder;
 }
 
-.firstMatch-runs1 {
+.firstMatch-runs1{
     margin-left: 30%;
 }
 
-.firstMatch-runs2 {
-    margin-left: 28%;
+.firstMatch-runs2{
+    margin-left: 29.5%;
 }
 
-.match1-status {
+.match1-status{
     color: red;
     font-size: small;
     padding-left: 7%;
     margin-top: 1%;
 }
 
-.fantasy {
+.fantasy{
     text-align: left;
     font-size: medium;
     border: none;
@@ -362,14 +392,14 @@ header {
     padding-bottom: 5%;
 }
 
-.second-match {
+.second-match{
     display: flex;
     flex-direction: column;
     width: 24.8%;
     border-right: 1px solid black;
 }
 
-.stat-btn2 {
+.stat-btn2{
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -379,36 +409,36 @@ header {
     padding-left: 1%;
 }
 
-.stat-btn2 span {
+.stat-btn2 span{
     width: 100%;
     display: flex;
     padding: 2%;
     font-weight: bolder;
 }
 
-.secondMatch-runs1 {
+.secondMatch-runs1{
     margin-left: 30%;
 }
 
-.secondMatch-runs2 {
-    margin-left: 31%;
+.secondMatch-runs2{
+    margin-left: 28%;
 }
 
-.match2-status {
+.match2-status{
     color: rgb(58, 58, 250);
     font-size: small;
     padding-left: 1.5%;
     margin-top: 1%;
 }
 
-.third-match {
+.third-match{
     display: flex;
     flex-direction: column;
     width: 24.8%;
     border-right: 1px solid black;
 }
 
-.stat-btn3 {
+.stat-btn3{
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -417,29 +447,29 @@ header {
     padding-left: 1%;
 }
 
-.stat-btn3 span {
+.stat-btn3 span{
     width: 100%;
     display: flex;
     padding: 2%;
     font-weight: bolder;
 }
 
-.thirdMatch-runs1 {
-    margin-left: 26%;
+.thirdMatch-runs1{
+    margin-left: 30%;
 }
 
-.thirdMatch-runs2 {
-    margin-left: 30.5%;
+.thirdMatch-runs2{
+    margin-left: 29%;
 }
 
-.match3-status {
+.match3-status{
     color: rgb(58, 58, 250);
     font-size: small;
     padding-left: 2.5%;
     margin-top: 1%;
 }
 
-.fourth-match {
+.fourth-match{
     display: flex;
     flex-direction: column;
     width: 24.8%;
@@ -447,7 +477,7 @@ header {
     position: relative;
 }
 
-.stat-btn4 {
+.stat-btn4{
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -456,29 +486,29 @@ header {
     padding-left: 1%;
 }
 
-.stat-btn4 span {
+.stat-btn4 span{
     width: 100%;
     display: flex;
     padding: 2%;
     font-weight: bolder;
 }
 
-.fourthMatch-runs1 {
+.fourthMatch-runs1{
     margin-left: 30%;
 }
 
-.fourthMatch-runs2 {
-    margin-left: 30%;
+.fourthMatch-runs2{
+    margin-left: 29%;
 }
 
-.match4-status {
+.match4-status{
     color: rgb(58, 58, 250);
     font-size: small;
     padding-left: 2%;
     margin-top: 1%;
 }
 
-.slider {
+.slider{
     position: absolute;
     right: 0;
     top: 15%;
@@ -494,17 +524,17 @@ header {
     cursor: pointer;
 }
 
-/* page 1 of sliding featured matches is above */
+/* page 1 of sliding featured matches is above */ 
 
 /* page 2 of sliding featured matches */
-.match-stats-p2 {
+.match-stats-p2{
     display: none;
     height: 90%;
     flex-direction: row;
-
+    
 }
 
-.p2-first-match {
+.p2-first-match{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -512,16 +542,17 @@ header {
     background-color: white;
     border-right: 1px solid black;
     padding-bottom: 3.5%;
+    
 }
 
-.p2-match1-status {
+.p2-match1-status{
     color: rgb(218, 170, 108);
     font-size: small;
     padding-left: 7%;
     margin-top: 1%;
 }
 
-.slider-left {
+.slider-left{
     position: absolute;
     left: 0;
     top: 15%;
@@ -535,143 +566,127 @@ header {
     border: none;
     opacity: 65%;
     cursor: pointer;
+    
 }
-
 /* page 2 of sliding featured matches is above */
 /* Featured Matches area sliding view is above */
 
 /* animation for sliding view in featured matches */
-@keyframes going {
-    from {
+@keyframes going{
+    from{
         transform: translateX(0px);
         opacity: 100%;
     }
-
     to {
         transform: translateX(-800px);
         opacity: 0%;
     }
 }
 
-@keyframes coming {
-    from {
+@keyframes coming{
+    from{
         transform: translateX(-800px);
         opacity: 0%;
     }
-
-    to {
+    to{
         transform: translateX(0px);
         opacity: 100%;
     }
 }
-
 /* animation for sliding view in featured matches is above */
 
 /* Dont update anything below in main */
 /* main start*/
-main {
-    width: 70%;
+main{
+    max-width: 1080px;
     display: flex;
     justify-content: space-between;
     margin-left: 15%;
-    margin-top: 0.25%;
+    margin: 0 auto;
 }
-
 /* dont update anything above in main */
 
 /*this left-aside-container is for left part of main content */
-.left-aside-container {
+.left-aside-container{
     width: 20%;
-    background-color: white;
+    background-color:white;
     /* border: 1px solid black; this border & background color not required ,given to understand the area */
 }
-
-.left-aside-container button {
+.left-aside-container button{
     color: blue;
-    font-size: .95rem;
+    font-size:.95rem;
     border: 1px solid transparent;
     margin-left: 1rem;
-    padding: 0.50rem;
-    margin-top: 2%;
+    padding:0.50rem
 }
-
-.left-aside-container button:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.l-content {
+.l-content{
     /* width: 90%; */
     margin: 5%;
-
+   
 }
-
-.l-content .latest-news {
+.l-content .latest-news{
     color: green;
     font-weight: bold;
     margin-bottom: 1vh;
 }
-
-.l-content .text {
+.l-content .text{
     font-size: .95rem;
     text-decoration: none;
     color: black;
 }
-
-.l-content .text:hover {
+.l-content .text:hover{
     text-decoration: underline;
 }
-
-.l-content .text-time {
+.l-content .text-time{
     font-size: .7rem;
     /* margin-bottom: 1.5vh; */
 }
-
-.l-content hr {
+.l-content hr{
     margin-top: 1.5vh;
     margin-bottom: 1.5vh;
 }
-
 /* designing the left side content2 latest photos section */
-.latest-photos {
+.latest-photos{
     color: #009270;
     font-weight: bold;
     margin-bottom: 1vh;
 }
-
-.content-2 img {
-    width: 100%;
+.content-2 img{
+    width:100%;
     border: 1px solid transparent;
-    border-radius: 3%;
+    border-radius:3%;
 
 }
-
-.content-2 {
+.content-2{
     margin: 5%;
 }
-
-.content-2 hr {
-    margin-top: 0.5rem;
+.content-2 hr{
+    margin-top:0.5rem;
 }
-
-.content-2 a {
+.content-2 a{
     text-decoration: none;
 }
-
-.content-2 .text {
+.content-2 .text{
     /* font-size: 1rem; */
     color: black;
-    padding-top: 0.5rem;
+    padding-top:0.5rem;
 }
-
-.date-time {
+.date-time{
     padding-top: 0.5rem;
     color: #4a4a4a;
     cursor: pointer;
 }
-
-.content-2 .text:hover {
+.content-2 .text:hover{
     text-decoration: underline;
+}
+/* latest photos section ends here */
+
+
+/* my left part and middle part css starts here */
+
+.left-aside-container button:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .image2 {
@@ -818,44 +833,48 @@ main {
     margin-top: 4%;
 }
 /*  */
+
+
+/* left and center part css ends here */
+
+.m-content{
+    margin: 3%;
+}
+
 /*this center-container is for left part of main content */
-.center-container {
+.center-container{
     width: 49%;
     background-color: white;
     /* border: 1px solid black; this border & background color not required  ,given to understand the area */
 }
-
-.small {
+.small{
     font-size: .7rem;
 }
-
-.m-content img {
+.m-content img{
     width: 100%;
     margin-top: 1.5vh;
     margin-bottom: 1.5vh;
 }
 
-.m-content .bold-text {
+.m-content .bold-text{
     font-size: 2rem;
     font-weight: bold;
     text-decoration: none;
     color: black;
 }
-
-.m-content .bold-text:hover {
+.m-content .bold-text:hover{
     text-decoration: underline;
 }
 
 
 /*this right-aside-container is for right part of main content */
-.right-aside-container {
+.right-aside-container{
     width: 30%;
-    background-color: white;
+    background-color:white;
     /* border: 1px solid black; this border & background color not required, given to understand the area */
 }
-
 /*ad area starts here*/
-.show-ad {
+.show-ad{
     width: 100%;
     height: 15em;
     background-color: whitesmoke;
@@ -864,165 +883,159 @@ main {
     align-items: center;
 }
 
-.ads {
+.ads{
     height: 95%;
     width: 95%;
     /* border: 0.25px solid black; */
 }
-
 /* ad area ends here */
 
 /* featured videos start */
 
-.content {
+.content{
     margin: 5%;
 }
-
-.featured {
+.featured{
     font-size: 1.2rem;
     color: green;
     margin-bottom: .5em;
 }
-
-.videos1 {
+.videos1{
     margin-bottom: 3%;
 }
-
-.videos1 .videos {
+.videos1 .videos{
     width: 100%;
     height: 12em;
     border-radius: 10px;
 }
-
-.videos1 a {
+.fonts-right a{
     font-size: 1.1rem;
+    color: black;
     text-decoration: none;
+    font-weight: 600;
 }
-
-.videos1 a:hover {
+.fonts-right a:hover{
     text-decoration: underline;
 }
-
-.content .more {
+.content .more{
     display: flex;
     justify-content: center;
 }
-
-.more button {
+.more button{
     font-size: 1rem;
     padding: .5rem;
     color: white;
     background: green;
     border: none;
     cursor: pointer;
+    margin-bottom: 3vh;
 }
-
-.more button:hover {
+.more button:hover{
     opacity: .7;
 }
-
 /*featured videos end*/
-
+/* special section */
+.special-section img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom:4%;
+    margin-top:8%;
+}
+.right-text{
+    font-size: .9rem;
+}
 /*main-end*/
 
 /* footer css */
-footer {
+footer{
     background-color: #4a4a4a;
     margin-top: 4em;
     box-sizing: border-box;
 }
 
 /* footer flex container design */
-.flex-container {
+.flex-container{
     display: flex;
-    justify-content: center;
-    max-width: 55%;
+    justify-content:center;
+    max-width:55%;
     margin: 0 auto;
 }
-
 /* footer logo design */
-.flex-container img {
-    max-width: 12%;
-    margin-bottom: 13em;
+.flex-container img{
+    max-width:12% ; 
+    margin-bottom:13em;
     margin-right: 5em;
 }
-
 /* footer heading for icons  */
 
-.heading-div h2 {
+.heading-div h2{
     color: white;
-    margin-left: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-left:1.5em;
+    font-family:Arial, Helvetica, sans-serif;
     margin-top: 1em;
 
 }
-
 /* designing the footer icons */
-.icon {
-    width: 5%;
+.icon{
+    width:5%;
 }
-
-.anchor-tag {
+.anchor-tag{
     display: flex;
-    width: auto;
+    width:auto;
     text-decoration: none;
-    margin-left: 2.3rem;
-    margin-top: 2em;
+    margin-left:2.3rem;
+    margin-top:2em;
     color: white;
 }
-
 /* designing icon name */
-.icon-name {
-    font-size: 18px;
-    padding-left: 0.5em;
-
+.icon-name{
+    font-size:18px;
+    padding-left:0.5em;
+    
 }
 
 /* designing company details */
-.company-container {
-    width: 20vw;
+.company-container{
+    width:20vw;
 }
-
-.company-container li {
-    margin-top: 10%;
-    margin-left: 20%;
+.company-container li{
+    margin-top:10%;
+    margin-left:20%;
 }
-
-.company-container h2 {
+.company-container h2{
     color: white;
-    margin-left: 1.5em;
-    margin-top: 1em;
+    margin-left:1.5em;
+    margin-top:1em;
 }
-
-.company-list {
+.company-list{
     text-decoration: none;
     color: white;
-    margin-left: 2.3rem;
+    margin-left:2.3rem;
     font-size: 18px;
 }
 
 
-ul {
+ul{
     list-style: none;
 }
 
 
 .copyright {
     color: #bababa;
-    display: flex;
+    display:flex;
     justify-content: center;
     padding: 1em;
     margin: 0 auto;
 }
 
-.copyright a {
+.copyright a{
     color: #bababa;
     text-decoration: none;
-    text-indent: 5px;
+    text-indent:5px;
 }
 
-.copyright a:hover {
-    text-decoration: underline;
+.copyright a:hover{
+    text-decoration:underline;
 }
 
 /* footer ends here */

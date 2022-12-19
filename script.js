@@ -53,60 +53,68 @@ menuBtn.forEach(ele => {
             moreDrop.style.display = "flex";
         })
     }
+    ele.addEventListener("mouseover",()=>{
+        ele.style.background = "rgb(2, 119, 2)";
+    })
+    ele.addEventListener("mouseout",()=>{
+        ele.style.background = "initial";
+    })
 })
+
+
 
 // newsDrop event listeners
 newsDrop.addEventListener("mousemove", () => {
-    newsDrop.style.display = "flex"
+    newsDrop.style.display = "flex";
 })
 
-newsDrop.addEventListener("mouseout", () => {
-    newsDrop.style.display = "none"
+newsDrop.addEventListener("mouseout",() => {
+    newsDrop.style.display = "none";
 })
 
 //seriesDrop event listeners
 seriesDrop.addEventListener("mousemove", () => {
-    seriesDrop.style.display = "flex"
+    seriesDrop.style.display = "flex";
 })
 
 seriesDrop.addEventListener("mouseout", () => {
-    seriesDrop.style.display = "none"
+    seriesDrop.style.display = "none";
 })
 
 //teams drop event listeners 
 teamsDrop.addEventListener("mousemove", () => {
-    teamsDrop.style.display = "flex"
+    teamsDrop.style.display = "flex";
 })
 
 teamsDrop.addEventListener("mouseout", () => {
-    teamsDrop.style.display = "none"
+    teamsDrop.style.display = "none";
 })
 
 //videoDrop event listeners
 videoDrop.addEventListener("mousemove", () => {
-    videoDrop.style.display = "flex"
+    videoDrop.style.display = "flex";
 })
 
 videoDrop.addEventListener("mouseout", () => {
-    videoDrop.style.display = "none"
+    videoDrop.style.display = "none";
 })
 
 // rankingDrop event listeners
 rankingDrop.addEventListener("mousemove", () => {
-    rankingDrop.style.display = "flex"
+    rankingDrop.style.display = "flex";
 })
 
 rankingDrop.addEventListener("mouseout", () => {
-    rankingDrop.style.display = "none"
+    rankingDrop.style.display = "none";
 })
 
 //moreDrop event listeners
 moreDrop.addEventListener("mousemove", () => {
-    moreDrop.style.display = "flex"
+    moreDrop.style.display = "flex";
 })
 
 moreDrop.addEventListener("mouseout", () => {
-    moreDrop.style.display = "none"
+    moreDrop.style.display = "none";
 })
 
 
@@ -114,30 +122,31 @@ moreDrop.addEventListener("mouseout", () => {
 // mouseout feature on user go out of the dropdown
 bodyDiv.addEventListener("mouseover", (e) => {
     if (!e.target.classList.contains("news")) {
-        newsDrop.style.display = "none"
+        newsDrop.style.display = "none";
     }
     if (!e.target.classList.contains("series")) {
-        seriesDrop.style.display = "none"
+        seriesDrop.style.display = "none";
     }
     if (!e.target.classList.contains("teams")) {
-        teamsDrop.style.display = "none"
+        teamsDrop.style.display = "none";
     }
     if (!e.target.classList.contains("videos")) {
-        videoDrop.style.display = "none"
+        videoDrop.style.display = "none";
     }
     if (!e.target.classList.contains("rankings")) {
-        rankingDrop.style.display = "none"
+        rankingDrop.style.display = "none";
     }
     if (!e.target.classList.contains("more")) {
-        moreDrop.style.display = "none"
+        moreDrop.style.display = "none";
     }
 })
 
-
+const cricPlus = document.querySelector(".plus");
 // search features
 search.addEventListener("click", () => {
     menuDiv.style.animation = "coming 0.25s";
-    searchArea.style.animation = "going 0.25s"
+    searchArea.style.animation = "going 0.25s";
+    cricPlus.style.display = "none";
     setTimeout(() => {
         search.style.display = "none";
         menuDiv.style.display = "none";
@@ -150,6 +159,20 @@ searchArea.addEventListener("focusout", () => {
     search.style.display = "flex";
     menuDiv.style.display = "flex";
     searchArea.style.display = "none";
+    cricPlus.style.display = "flex";
+})
+
+
+//for line 2 of header effects
+const match = document.querySelectorAll(".match");
+
+match.forEach((ele)=>{
+    ele.addEventListener("mouseover",()=>{
+        ele.style.background = "#373737";
+    })
+    ele.addEventListener("mouseout",()=>{
+        ele.style.background = "initial"
+    })
 })
 
 
@@ -183,15 +206,51 @@ setInterval(() => {
 }, 7000);
 //video features
 const videos = document.querySelectorAll('.videos');
-for (let i = 0; i < videos.length; i++) {
-    videos[i].addEventListener('mouseover', function(){
-        videos[i].play();
+videos.forEach((ele)=>{
+    ele.addEventListener('mouseover', function(){
+        ele.play();
     })
-    videos[i].addEventListener('mouseout', function(){
-        videos[i].pause();
+    ele.addEventListener('mouseout', function(){
+        ele.pause();
     })
-}
+})
 // let clip=document.querySelector(".videos")
 // clip.addEventListener('mouseover',function(e){
 //     clip.play();
 // })
+
+
+const newsDropBtns = document.querySelectorAll(".news-drop button");
+const seriesDropBtns = document.querySelectorAll(".series-drop button");
+const teamsDropBtns = document.querySelectorAll(".teams-drop button");
+const videoDropBtns = document.querySelectorAll(".videos-drop button");
+const rankDropBtns = document.querySelectorAll(".rankings-drop button");
+const moreDropBtns = document.querySelectorAll(".more-drop button");
+newsDropBtns.forEach((ele)=>{
+    dropBtnHover(ele);
+})
+seriesDropBtns.forEach((ele)=>{
+    dropBtnHover(ele);
+})
+teamsDropBtns.forEach((ele)=>{
+    dropBtnHover(ele);
+})
+videoDropBtns.forEach((ele)=>{
+    dropBtnHover(ele);
+})
+rankDropBtns.forEach((ele)=>{
+    dropBtnHover(ele);
+})
+moreDropBtns.forEach((ele)=>{
+    dropBtnHover(ele);
+})
+
+
+function dropBtnHover(ele){
+    ele.addEventListener("mouseover",()=>{
+        ele.style.background = "rgb(208, 204, 204)";
+    })
+    ele.addEventListener("mouseout",()=>{
+        ele.style.background = "initial";
+    })
+}
