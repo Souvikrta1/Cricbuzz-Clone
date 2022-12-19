@@ -20,6 +20,7 @@ header{
     /* margin-left: 15%; */
     margin-bottom: 0.25%;
     margin: 0 auto;
+    position: relative;;
 }
 
 .line1{
@@ -28,7 +29,6 @@ header{
     height: 50%;
     background-color: rgb(63, 146, 63);
     align-items: center;
-    position: relative;
     overflow: hidden;
 }
 
@@ -42,7 +42,7 @@ header{
     display: flex;
     width: 68%;
     align-items: center;
-    height: 7vh;
+    height: 8vh;
 }
 
 .menu-btn button p{
@@ -137,10 +137,9 @@ header{
     flex-direction: column;
     width: max-content;
     background-color: whitesmoke;
-    padding: 1%;
-    padding-right: 4%;
-    top: 6%;
-    left: 40%;
+    width: 12%;
+    top: 56%;
+    left: 34.5%;
 }
 
 .news-drop button{
@@ -150,26 +149,25 @@ header{
     padding: 2%;
     font-size: medium;
     line-height: 180%;
-    background-color: whitesmoke;
+    width: 100%;
 }
 
 .series-drop{
     position:absolute;
     display: none;
     flex-direction: column;
-    width: max-content;
+    width: 28%;
     background-color: whitesmoke;
-    padding: 1%;
-    padding-right: 1%;
-    top: 6%;
-    left: 45%;
+    top: 60%;
+    left: 42%;
 }
 
 .series-drop button{
     width: max-content;
     text-align: left;
     border: none;
-    padding: 2%;
+    width: 100%;
+    padding: 1%;
     font-size: medium;
     line-height: 180%;
     background-color: whitesmoke;
@@ -179,19 +177,19 @@ header{
     position:absolute;
     display: none;
     background-color: whitesmoke;
-    top: 6%;
-    left: 50%;
-    width: max-content;
+    top: 56%;
+    left: 49.5%;
+    width: 22%;
 }
 
 .test-teams{
     display: flex;
     flex-direction: column;
-    width: max-content;
+    width: 40%;
     background-color: whitesmoke;
     padding: 2%;
     padding-right: 4%;
-    margin-right: 25%;
+    margin-right: 20%;
 }
 
 .test-teams h4{
@@ -201,14 +199,14 @@ header{
 .associate-teams{
     display: flex;
     flex-direction: column;
-    width: max-content;
+    width: 40%;
     background-color: whitesmoke;
     padding: 2%;
     padding-right: 4%;
 }
 
 .teams-drop button{
-    width: max-content;
+    width: 100%;
     text-align: left;
     border: none;
     line-height: 180%;
@@ -220,16 +218,15 @@ header{
     position:absolute;
     display: none;
     flex-direction: column;
-    width: max-content;
+    width: 10%;
     background-color: whitesmoke;
-    padding: 0.5%;
-    padding-right: 1%;
-    top: 6%;
-    left: 55%;
+    top: 56%;
+    left: 57.2%;
 }
 
 .videos-drop button{
-    width: max-content;
+    width: 100%;
+    padding-left: 5%;
     text-align: left;
     border: none;
     line-height: 180%;
@@ -241,38 +238,36 @@ header{
     position:absolute;
     display: none;
     flex-direction: column;
-    width: max-content;
+    width: 20%;
     background-color: whitesmoke;
-    padding: 0.5%;
-    padding-right: 1%;
-    top: 6%;
-    left: 60%;
+    top: 56%;
+    left: 65%;
 }
 
 .rankings-drop button{
-    width: max-content;
+    width: 100%;
     text-align: left;
     border: none;
+    padding-left: 5%;
     line-height: 180%;
     font-size: medium;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .more-drop{
     position:absolute;
     display: none;
     flex-direction: column;
-    width: max-content;
+    width: 20%;
     background-color: whitesmoke;
-    padding: 0.5%;
-    padding-right: 1%;
-    top: 6%;
-    left: 56%;
+    top: 56%;
+    left: 60%;
 }
 
 .more-drop button{
-    width: max-content;
+    width: 100%;
     text-align: left;
+    padding-left: 5%;
     border: none;
     line-height: 180%;
     font-size: medium;
@@ -289,6 +284,11 @@ header{
     display: flex;
     align-items: center;
     position: relative;
+}
+
+.line2 a{
+    width: 15%;
+    text-align: center;
 }
 
 .match{
@@ -326,7 +326,7 @@ header{
     margin-left: 15%;
     background-color: white;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 0.25% auto;
 }
 
 .featured-matches h4{
@@ -370,7 +370,7 @@ header{
 }
 
 .firstMatch-runs2{
-    margin-left: 28%;
+    margin-left: 29.5%;
 }
 
 .match1-status{
@@ -421,7 +421,7 @@ header{
 }
 
 .secondMatch-runs2{
-    margin-left: 31%;
+    margin-left: 28%;
 }
 
 .match2-status{
@@ -455,11 +455,11 @@ header{
 }
 
 .thirdMatch-runs1{
-    margin-left: 26%;
+    margin-left: 30%;
 }
 
 .thirdMatch-runs2{
-    margin-left: 30.5%;
+    margin-left: 29%;
 }
 
 .match3-status{
@@ -498,7 +498,7 @@ header{
 }
 
 .fourthMatch-runs2{
-    margin-left: 30%;
+    margin-left: 29%;
 }
 
 .match4-status{
@@ -542,6 +542,7 @@ header{
     background-color: white;
     border-right: 1px solid black;
     padding-bottom: 3.5%;
+    
 }
 
 .p2-match1-status{
@@ -565,6 +566,7 @@ header{
     border: none;
     opacity: 65%;
     cursor: pointer;
+    
 }
 /* page 2 of sliding featured matches is above */
 /* Featured Matches area sliding view is above */
@@ -599,8 +601,7 @@ main{
     max-width: 1080px;
     display: flex;
     justify-content: space-between;
-    /* margin-left: 15%; */
-    margin-top: 0.25%;
+    margin-left: 15%;
     margin: 0 auto;
 }
 /* dont update anything above in main */
@@ -751,12 +752,13 @@ main{
     height: 12em;
     border-radius: 10px;
 }
-.videos1 a{
+.fonts-right a{
     font-size: 1.1rem;
     color: black;
     text-decoration: none;
+    font-weight: 600;
 }
-.videos1 a:hover{
+.fonts-right a:hover{
     text-decoration: underline;
 }
 .content .more{
@@ -770,12 +772,22 @@ main{
     background: green;
     border: none;
     cursor: pointer;
+    margin-bottom: 3vh;
 }
 .more button:hover{
     opacity: .7;
 }
 /*featured videos end*/
-
+/* special section */
+.special-section img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.right-text{
+    font-size: .9rem;
+}
 /*main-end*/
 
 /* footer css */
