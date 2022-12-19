@@ -322,7 +322,7 @@ header{
 /* Featured Matches area sliding view */
 .featured-matches{
     height: 25%;
-    width: 1080px;
+    max-width: 1080px;
     margin-left: 15%;
     background-color: white;
     overflow: hidden;
@@ -622,7 +622,6 @@ main{
 .l-content{
     /* width: 90%; */
     margin: 5%;
-   
 }
 .l-content .latest-news{
     color: green;
