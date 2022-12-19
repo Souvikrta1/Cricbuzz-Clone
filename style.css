@@ -17,7 +17,6 @@ body{
 header{
     max-width: 1080px;
     height: 12%;
-    /* margin-left: 15%; */
     margin-bottom: 0.25%;
     margin: 0 auto;
     position: relative;;
@@ -322,8 +321,7 @@ header{
 /* Featured Matches area sliding view */
 .featured-matches{
     height: 25%;
-    width: 1080px;
-    margin-left: 15%;
+    max-width: 1080px;
     background-color: white;
     overflow: hidden;
     margin: 0.25% auto;
@@ -542,7 +540,7 @@ header{
     background-color: white;
     border-right: 1px solid black;
     padding-bottom: 3.5%;
-    
+
 }
 
 .p2-match1-status{
