@@ -778,12 +778,16 @@ main{
     background-color:white;
     /* border: 1px solid black; this border & background color not required ,given to understand the area */
 }
-.left-aside-container button{
+.more-news button{
     color: blue;
     font-size:.95rem;
     border: 1px solid transparent;
     margin-left: 1rem;
     padding:0.50rem
+}
+.left-aside-container button:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 .l-content{
     /* width: 90%; */
@@ -844,21 +848,17 @@ main{
 .content-2 .text:hover{
     text-decoration: underline;
 }
-/* latest photos section ends here */
-
-
-/* my left part and middle part css starts here */
-
-.left-aside-container button:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
 .image2 {
     margin-top: 2%;
 }
-
+.more-photos button{
+    color: blue;
+    font-size:.95rem;
+    border: 1px solid transparent;
+    margin-left: 1rem;
+}
 /* latest photos section ends here */
+
 /* designing left aside content 3 scheduled section */
 .schedule {
     color: #009270;
@@ -867,8 +867,6 @@ main{
     font-size: x-large;
     margin-left: 5%;
 }
-
-
 .scheduled-text {
     color: black;
     font-family: helvetica, "Segoe UI", Arial, sans-serif;
@@ -887,7 +885,13 @@ main{
 .m-content {
     margin: 3%;
 }
-
+.more-matches button{
+    color: blue;
+    font-size:.95rem;
+    border: 1px solid transparent;
+    margin-left: 1rem;
+    margin-top:12%;
+}
 /* ahad design center content starts here */
 
 .score-container {
@@ -907,9 +911,13 @@ main{
 
 .team-name {
     padding: 1%;
-
 }
-
+.team1{
+    margin-top:13%;
+}
+.team2{
+    margin-top:43%;
+}
 .para1 {
     padding-top: 10%;
     padding-left: 3%;
