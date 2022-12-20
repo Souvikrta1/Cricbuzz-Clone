@@ -605,19 +605,37 @@ main{
     margin: 0 auto;
 }
 /* dont update anything above in main */
-
+/* ----------------------------------LEFT SIDE CSS STARTS HERE---------------------------------------------------------------------- */
 /*this left-aside-container is for left part of main content */
 .left-aside-container{
     width: 20%;
     background-color:white;
     /* border: 1px solid black; this border & background color not required ,given to understand the area */
 }
-.left-aside-container button{
+.more-news button{
     color: blue;
     font-size:.95rem;
     border: 1px solid transparent;
     margin-left: 1rem;
-    padding:0.50rem
+    padding:0.50rem;
+}
+.more-photos button{
+    color: blue;
+    font-size:.95rem;
+    border: 1px solid transparent;
+    margin-left: 1rem;
+    padding:0.50rem;
+}
+.more-matches button{
+    color: blue;
+    font-size:.95rem;
+    border: 1px solid transparent;
+    margin-left: 1rem;
+    margin-top:20%;
+}
+.left-aside-container button:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 .l-content{
     /* width: 90%; */
@@ -679,20 +697,10 @@ main{
 .content-2 .text:hover{
     text-decoration: underline;
 }
-/* latest photos section ends here */
-
-
-/* my left part and middle part css starts here */
-
-.left-aside-container button:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
 
 .image2 {
     margin-top: 2%;
 }
-
 /* latest photos section ends here */
 /* designing left aside content 3 scheduled section */
 .schedule {
@@ -719,11 +727,8 @@ main{
     padding-left: 5%;
 }
 
-.m-content {
-    margin: 3%;
-}
-
-/* ahad design center content starts here */
+/* ---------------------------------------LEFT SIDE CSS ENDS HERE----------------------------------------------------------------- */
+/* -----------------------------------------MIDDLE CSS STARTS HERE---------------------------------------------------------------------------- */
 
 .score-container {
     background-color: #eeeeee;
@@ -732,7 +737,6 @@ main{
     margin-left: 1%;
     margin-top: 4%;
     border-left: 2px solid blue;
-
 }
 
 .flex {
@@ -742,9 +746,11 @@ main{
 
 .team-name {
     padding: 1%;
-
+    margin-top:1%;
 }
-
+.team2{
+    margin-top:45%;
+}
 .para1 {
     padding-top: 10%;
     padding-left: 3%;
@@ -773,10 +779,6 @@ main{
     font-size: larger;
     padding: 1%;
 }
-
-/* ahad design center content ends here */
-
-/*  */
 
 .match-heading {
     color: rgb(135, 136, 137);
@@ -832,10 +834,7 @@ main{
 .big-container hr{
     margin-top: 4%;
 }
-/*  */
-
-
-/* left and center part css ends here */
+/* -----------------MIDDLE CSS ENDS HERE------------------------ */
 
 .m-content{
     margin: 3%;
