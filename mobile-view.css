@@ -1,0 +1,294 @@
+@media only screen and (max-width:600px){
+    .line1 img{
+        width: 80px;
+    }
+    .menu-btn{
+        display: none;
+    }
+
+    .plus{
+        display: none;
+    }
+
+    .mobile-preview1{
+        display: flex;
+        margin: 2% 0% 2% 7%;
+        color: rgb(178, 145, 102);
+    }
+
+    .mobile-preview2{
+        display: flex;
+        margin: 2% 0% 2% 2%;
+        color: rgb(178, 145, 102);
+    }
+
+
+
+    #search{
+        display: none;
+    }
+    #mobile-menu{
+        display: flex;
+        margin-left: 5%;
+        margin-right: 10%; 
+        width: max-content;
+        font-weight: bold;
+        border-radius: 5px;
+        text-align: left;
+        padding-right: 12%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 1%;
+    }
+
+    #mobile-menu i{
+        border: 0.5px solid black;
+        border-radius: 50%;
+        background: black;
+        color: white;
+        padding: 3% 8%;
+        margin-left: 3%;
+    }
+
+    #user-login{
+        background-color: transparent;
+    }
+
+    .line1{
+        justify-content: space-between;
+        background-color: rgb(67, 64, 64);
+    }
+    .line2{
+        display: none;
+    }
+    .featured-matches{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .featured-matches h4{
+        background-color: rgb(37, 37, 129);
+        width: 100%;
+        font-weight: bold;
+        color: white;
+        padding-left: 4%;
+    }
+    .match-stats-p1{
+        display: flex;
+        flex-direction: column;
+    }
+    .first-match{
+        width: 100%;
+        border-right: none;
+        border-bottom: 0.5px solid black;
+    }
+
+    .first-match p{
+        font-weight: bold;
+    }
+
+
+    .second-match{
+        width: 100%;
+        border-right: none;
+        border-bottom: 0.5px solid black;
+        padding: 1% 0% 1% 4%;
+    }
+
+    .second-match p{
+        font-weight: bold;
+    }
+
+    .third-match{
+        width: 100%;
+        border-right: none;
+        border-bottom: 0.5px solid black;
+        padding: 1% 0% 1% 4%;
+    }
+
+    .third-match p{
+        font-weight: bold;
+    }
+
+    .fourth-match{
+        width: 100%;
+        border-right: none;
+        border-bottom: 0.5px solid black;
+        padding: 1% 0% 1% 4%;
+    }
+
+    .fourth-match p{
+        font-weight: bold;
+    }
+
+    .slider{
+        display: none;
+    }
+
+
+    .match-stats-p2{
+        display: none;
+    }
+
+    main{
+        flex-direction: column-reverse;
+    }
+    .right-aside-container{
+        width: 100%;
+    }
+    .center-container{
+        width: 100%;
+    }
+    .left-aside-container{
+        display: none;
+    }
+    .special-section{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    .mobile-footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(105, 102, 102);
+    }
+    .mobile-footer-title{
+        display: flex;
+        width: 100%;
+        height: 5%;
+    }
+    .mobile-footer-title h3{
+        width: 50%;
+        margin-top: 2%;
+        color: white;
+        margin-left: 2%;
+    }
+
+    .mobile-footer-title button{
+        margin-top: 1%;
+        border-radius: 5px;
+        border: 0.5px solid white;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .mobile-footer-title button i{
+        border: 0.5px solid white;
+        background-color: black;
+        border-radius: 50%;
+        color: white;
+        font-size: 15px;
+        padding: 1% 4%;
+    }
+
+    .mobile-footer-title button{
+        width: 20%;
+        margin-left: 20%;
+    }
+    .mobile-menu-footer-items{
+        height: 85%;
+        width: 100%;
+        display: flex;
+    }
+    .column1-in-mobile-footer{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .column2-in-mobile-footer{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column1-in-mobile-footer button{
+        text-align: left;
+        border: none;
+        padding: 1%;
+        background-color: transparent;
+        color: white;
+        font-weight: 600;
+        margin-top: 9%;
+        text-indent: 3%;
+    }
+    .column2-in-mobile-footer button{
+        text-align: left;
+        border: none;
+        padding: 1%;
+        background-color: transparent;
+        color: white;
+        font-weight: 600;
+        margin-top: 9%;
+        text-indent: 3%;
+    }
+    .apps-social-channels{
+        display: flex;
+    }
+
+    .apps-social-channels h3{
+        margin-top: 10%;
+        text-indent: 3%;
+        color: white;
+    }
+    .apps-in-mobile-footer{
+        width: 50%;
+        height: 100%;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+    }
+    .social-in-mobile-footer{
+        width: 50%;
+        height: 100%;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .apps-in-mobile-footer button{
+        text-align: left;
+        border: none;
+        padding: 1%;
+        background-color: transparent;
+        color: white;
+        font-weight: 600;
+        margin-top: 10%;
+        text-indent: 3%;
+    }
+    .social-in-mobile-footer button{
+        text-align: left;
+        border: none;
+        padding: 1%;
+        background-color: transparent;
+        color: white;
+        font-weight: 600;
+        margin-top: 10%;
+        text-indent: 3%;
+    }
+    .bottom-line-mobile-footer{
+        display: flex;
+        padding-bottom: 2%;
+    }
+    .bottom-line-mobile-footer button{
+        margin-top: 3%;
+        background-color: transparent;
+        color: white;
+        padding: 1%;
+        border: none;
+        border-right: 0.5px solid white;
+        text-align: center;
+        font-weight: 500;
+        margin-left: 2%; 
+        padding-right: 3%;
+    }
+    .copyright-area-in-mobile{
+        background-color: white;
+        font-size: small;
+    }
+}
+
