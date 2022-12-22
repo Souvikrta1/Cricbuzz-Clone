@@ -67,7 +67,7 @@
     }
 
     .featured-matches h4{
-        background-color: rgb(37, 37, 129);
+        background-color: #335A7B;
         width: 100%;
         font-weight: bold;
         color: white;
@@ -145,6 +145,49 @@
     .special-section{
         display: none;
     }
+
+    .featured{
+        width: 110%;
+        background-color: #335A7B;
+        color: white;
+        padding: 2% 0%;
+        margin-left: -5%;
+        font-weight: bold;
+    }
+
+    .top-stories-mobile{
+        display: flex;
+        background-color: #335A7B;
+        color: white;
+        padding: 2% 2%;
+        width: 100%;
+        font-size: larger;
+    }
+
+    .show-ad2{
+        display: flex;
+        width: 100%;
+        height: 250px;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border: none;
+    }
+
+    .ads2{
+        height: 240px;
+        width: 95%;
+        display: flex;
+        
+    }
+
+    .show-ad{
+        display: none;
+    }
+
+
+
+
     footer{
         display: none;
     }

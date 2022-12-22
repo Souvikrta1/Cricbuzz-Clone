@@ -538,6 +538,9 @@ header{
 .mobile-preview1{
     display: none;
 }
+.mobile-preview2{
+    display: none;
+}
 
 .firstMatch-runs1{
     margin-left: 30%;
@@ -1028,6 +1031,11 @@ main{
     background-color: white;
     /* border: 1px solid black; this border & background color not required  ,given to understand the area */
 }
+
+.top-stories-mobile{
+    display: none;
+}
+
 .small{
     font-size: .7rem;
 }
@@ -1222,5 +1230,9 @@ ul{
 /* footer ends here */
 
 .mobile-footer{
+    display: none;
+}
+
+.show-ad2{
     display: none;
 }
