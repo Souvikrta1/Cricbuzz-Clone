@@ -91,6 +91,10 @@ header{
     align-items: center;
 }
 
+#mobile-menu{
+    display: none;
+}
+
 #search{
     border: none;
     background-color: rgb(63, 146, 63);
@@ -531,12 +535,16 @@ header{
     font-weight: bolder;
 }
 
+.mobile-preview1{
+    display: none;
+}
+
 .firstMatch-runs1{
     margin-left: 30%;
 }
 
 .firstMatch-runs2{
-    margin-left: 29.5%;
+    margin-left: 30%;
 }
 
 .match1-status{
@@ -1212,3 +1220,7 @@ ul{
 }
 
 /* footer ends here */
+
+.mobile-footer{
+    display: none;
+}

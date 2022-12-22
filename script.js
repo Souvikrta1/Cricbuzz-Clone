@@ -361,3 +361,16 @@ function dropBtnHover(ele){
         ele.style.background = "initial";
     })
 }
+
+// Go to menu & go to Top in mobile view
+const mobileMenu = document.getElementById("mobile-menu");
+
+mobileMenu.addEventListener("click",()=>{
+    window.scrollTo(0,document.body.scrollHeight);
+})
+
+const goTop = document.getElementById("top");
+
+goTop.addEventListener("click",()=>{
+    window.scrollTo(document.body.scrollHeight,0)
+})
