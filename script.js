@@ -209,9 +209,12 @@ const videos = document.querySelectorAll('.videos');
 videos.forEach((ele)=>{
     ele.addEventListener('mouseover', function(){
         ele.play();
+        ele.style.scale="1.25";
     })
     ele.addEventListener('mouseout', function(){
         ele.pause();
+        ele.style.scale="1";
+
     })
 })
 // let clip=document.querySelector(".videos")
