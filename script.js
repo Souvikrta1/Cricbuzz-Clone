@@ -380,3 +380,44 @@ const goTop = document.getElementById("top");
 goTop.addEventListener("click",()=>{
     window.scrollTo(document.body.scrollHeight,0)
 })
+
+
+
+
+// testing api fetch below (successful)
+
+// window.onload = async () => {
+//     const res = await fetch("https://api.cricapi.com/v1/currentMatches?apikey=90bb3bdf-b4fb-434d-b701-147392652688&offset=0");
+
+//     const result = await res.json();
+
+//     console.log(result);
+//     let matchName = result["data"]["3"]["name"];
+//     let team1 = result["data"]["3"]["teams"]["0"];
+//     let team2 = result["data"]["3"]["teams"]["1"];
+//     let team1Runs =  result["data"]["3"]["score"]["0"]["r"];
+//     let team2Runs = result["data"]["3"]["score"]["1"]["r"];
+//     let team1Wkt = result["data"]["3"]["score"]["0"]["w"];
+//     let team2wkt = result["data"]["3"]["score"]["1"]["w"];
+//     let team1over = result["data"]["3"]["score"]["0"]["o"];
+//     let team2over = result["data"]["3"]["score"]["1"]["o"];
+
+//     let status = result["data"]["3"]["status"];
+
+
+//     const secondMatchApi = document.querySelector(".second-match");
+
+//     secondMatchApi.innerHTML = "";
+//     secondMatchApi.innerHTML = `<button class="stat-btn2" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022'">
+//     <p class="mobile-preview2">${matchName}</p>
+//     <span>
+//         <p >${team1}</p>
+//         <p class="secondMatch-runs1">${team1Runs}-${team1Wkt} (${team1over})</p>
+//     </span>
+//     <span>
+//         <p>${team2}</p>
+//         <p class="secondMatch-runs2">${team2Runs}-${team2wkt} (${team2over})</p>
+//     </span>
+//     <p class="match2-status">${status}</p>
+// </button>`
+// }

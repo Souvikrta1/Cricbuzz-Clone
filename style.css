@@ -542,12 +542,10 @@ header{
     display: none;
 }
 
-.firstMatch-runs1{
-    margin-left: 30%;
-}
-
-.firstMatch-runs2{
-    margin-left: 30%;
+.stat-btn span p{
+    width: 40%;
+    margin-right: 3%;
+    text-align: left;
 }
 
 .match1-status{
@@ -593,12 +591,10 @@ header{
     font-weight: bolder;
 }
 
-.secondMatch-runs1{
-    margin-left: 30%;
-}
-
-.secondMatch-runs2{
-    margin-left: 28%;
+.stat-btn2 span p{
+    width: 40%;
+    margin-right: 3%;
+    text-align: left;
 }
 
 .match2-status{
@@ -631,12 +627,10 @@ header{
     font-weight: bolder;
 }
 
-.thirdMatch-runs1{
-    margin-left: 30%;
-}
-
-.thirdMatch-runs2{
-    margin-left: 29%;
+.stat-btn3 span p{
+    width: 40%;
+    margin-right: 3%;
+    text-align: left;
 }
 
 .match3-status{
@@ -670,12 +664,10 @@ header{
     font-weight: bolder;
 }
 
-.fourthMatch-runs1{
-    margin-left: 30%;
-}
-
-.fourthMatch-runs2{
-    margin-left: 29%;
+.stat-btn4 span p{
+    width: 40%;
+    margin-right: 3%;
+    text-align: left;
 }
 
 .match4-status{
