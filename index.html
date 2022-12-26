@@ -7,14 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-
+    <link rel="stylesheet" href="mobile-view.css">
     <title>Document</title>
 </head>
-
 <body>
     <header>
         <div class="line1">
-            <img src="https://www.cricbuzz.com/images/cb_logo.svg">
+            <img src="https://www.cricbuzz.com/images/cb_logo.svg" alt="CricBuzz">
             <div id="menu" class="menu-btn">
                 <button class="line1-btn" onclick="window.location.href='https://www.cricbuzz.com/cricket-match/live-scores'"><p>Live Scores</p></button>
                 <button class="line1-btn" onclick="window.location.href='https://www.cricbuzz.com/cricket-schedule/upcoming-series/international'"><p>Schedules</p></button>
@@ -34,6 +33,7 @@
                 <button class="plus" onclick="window.location.href='https://www.cricbuzz.com/cb-plus/premium-content/home'"><p>Cricbuzz Plus</p></button>
                 <button id="search"><i class="fa-solid fa-magnifying-glass"></i></i></button>
                 <button id="user-login" onclick="window.location.href=''"><i class="fa-regular fa-circle-user"></i></button>
+                <button id="mobile-menu">Menu <i class="fa-solid fa-arrow-down"></i></button>
             </div>
         </div>
         <div class="line2">
@@ -272,20 +272,22 @@
         <div id="stat-page1" class="match-stats-p1">
             <div class="first-match">
                 <button class="stat-btn" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/52022/pak-vs-eng-3rd-test-england-tour-of-pakistan-2022'">
+                    <p class="mobile-preview1">2nd Test • India Tour Of Bangladesh, 2022</p>
                     <span>
-                        <p>PAK</p>
-                        <p class="firstMatch-runs1">304 & 21-0</p>
+                        <p>Ban</p>
+                        <p class="firstMatch-runs1">227 (73.5)</p>
                     </span>
                     <span>
-                        <p>ENG</p>
-                        <p class="firstMatch-runs2">354</p>
+                        <p>IND</p>
+                        <p class="firstMatch-runs2">19-0 (8)</p>
                     </span>
-                    <p class="match1-status">Day 2: Stumps - Pakistan trail by 29 runs</p>
+                    <p class="match1-status">Day 1: Stumps - India trail by 208 runs</p>
                 </button>
                 <button class="fantasy"><i class="fa-solid fa-trophy" onclick="window.location.href='https://www.cricbuzz.com/cricket-fantasy-handbook/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022#!/expert-picks'"></i> Fantasy Handbook</button>
             </div>
             <div class="second-match">
                 <button class="stat-btn2" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022'">
+                    <p class="mobile-preview2">1st Test • India Tour Of Bangladesh, 2022</p>
                     <span>
                         <p>IND</p>
                         <p class="secondMatch-runs1">404 & 258-2 d</p>
@@ -299,6 +301,7 @@
             </div>
             <div class="third-match">
                 <button class="stat-btn3" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56901/kdf-vs-dma-18th-match-lanka-premier-league-2022'">
+                    <p class="mobile-preview2">League Match • Lanka Premier League 2022</p>
                     <span>
                         <p>KDF</p>
                         <p class="thirdMatch-runs1">160-7 (20)</p>
@@ -307,11 +310,12 @@
                         <p>DMA</p>
                         <p class="thirdMatch-runs2">121-9 (20)</p>
                     </span>
-                    <p class="match3-status">Match drawn</p>
+                    <p class="match3-status">KDF won by 39 runs</p>
                 </button>
             </div>
             <div class="fourth-match">
                 <button class="stat-btn4" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/50293/syt-vs-mlr-7th-match-big-bash-league-2022-23'">
+                    <p class="mobile-preview2">10th Match • Big Bash League 2022-23</p>
                     <span>
                         <p>SYT</p>
                         <p class="fourthMatch-runs1">174-6 (20)</p>
@@ -320,7 +324,7 @@
                         <p>MLR</p>
                         <p class="fourthMatch-runs2">175-6 (19.5)</p>
                     </span>
-                    <p class="match4-status">Melbourne Renegades won by 4 wktss</p>
+                    <p class="match4-status">Melbourne Renegades won by 4 wkts</p>
                 </button>
                 <button id="slide-right" class="slider"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
@@ -566,14 +570,13 @@
         </div>
 
         <div class="center-container">
+            <h4 class="top-stories-mobile">Top Stories</h4>
             <!-- write HTML for mid Content of MAin section -->
             <!-- ------------------------------------------------------------------------ -->
             <div class="big-container">
                 <div id="heading-content">
-                    <span class="match-heading">INDIA TOUR OF BANGLADESH, 2022
-                    </span>
+                    <span class="match-heading">INDIA TOUR OF BANGLADESH, 2022</span>
                 </div>
-
                 <a href="">
                     <img id="picture" class="australia"
                         src="https://www.cricbuzz.com/a/img/v1/420x235/i1/c251246/injured-rohit-sharma-to-miss-d.jpg"
@@ -600,7 +603,7 @@
                 </div>
                 <div class="match-highlight">
                     <h2>
-                        <a href="">DomingoRahul chuffed with India's intensity in Chattogram victory</a>
+                        <a href="">Domingo Rahul chuffed with India's intensity in Chattogram victory</a>
                     </h2>
                 </div>
                 <hr width="95%">
@@ -817,12 +820,12 @@
             </div>
             <div class="content">
                 <div class="featured">FEATURED VIDEOS</div>
-                <div class="videos1">
+                <div class="videos1 fonts-right">
                     <video src="videos/video1.mp4" class="videos" type="video/mp4" loop controls muted ></video>
                     <a href="https://www.cricbuzz.com/cricket-videos/58666/caught-kuldeep-finally-gets-rid-of-litton">CAUGHT! Kuldeep finally gets rid of Litton</a>
                     <div class="small">34m ago</div>
                 </div>
-                <div class="videos1">
+                <div class="videos1 fonts-right">
                     <video src="videos/video2.mp4" class="videos" type="video/mp4" loop controls muted ></video>
                     <a href="https://www.cricbuzz.com/cricket-videos/58653/kuldeep-yadav-will-be-key-to-indias-test-side-going-forward-dinesh-karthik">Kuldeep Yadav will be key to India's Test side going forward: Dinesh Karthik</a>
                     <div class="small">2h ago</div>
@@ -866,9 +869,6 @@
             </div>
         </div>
     </main>
-
-
-
 
     <footer>
         <div class="flex-container">
@@ -1001,6 +1001,66 @@
             <a href="http://navbharattimes.indiatimes.com/"><span>| Navbharat Times</span></a>
         </div>
     </footer>
+    <div class="show-ad2">
+        <img class="ads2"
+            src="https://previews.123rf.com/images/hstrongart/hstrongart1701/hstrongart170100151/69269523-mouth-rinse-ads-refreshing-mouthwash-products-with-mints-leaves-and-splashing-liquids-in-3d-illustra.jpg">
+    </div>
+    <div class="mobile-footer">
+        <div class="mobile-footer-title">
+            <h3>Menu</h3>
+            <button id="top">Top <i class="fa-solid fa-arrow-up"></i></button>
+        </div>
+        <div class="mobile-menu-footer-items">
+            <div class="column1-in-mobile-footer">
+                <button onclick="window.location.href='index.html'">Home</button>
+                <button>My Account</button>
+                <button onclick="window.location.href='https://www.cricbuzz.com/cricket-schedule/upcoming-series/international'">Schedule</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-news/editorial/editorial-list'">Editorials</button>
+                <button onclick="window.location.href='https://www.cricbuzz.com/cricket-scorecard-archives'">Archives</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-stats/iccrankings/men'">Rankings - Men</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-stats/iccrankings/women'">Rankings - Women</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-pointstable'">Points Table</button>
+                <button onclick="window.location.href=''">Wicket Zone</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-stats/points-table/odi/icc-men-cricket-world-cup-super-league'">World Cup Super League</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/info/contact'">Contact Us</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/careers'">Careers @ Cricbuzz</button>
+            </div>
+            <div class="column2-in-mobile-footer">
+                <button onclick="window.location.href='https://m.cricbuzz.com/cb-plus/premium-content/home'">Cricbuzz Plus</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-match/live-scores'">Live Scores</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-news/latest-news'">News</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-gallery'">Photos</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/profiles'">Players</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-series'">Series</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-videos'">Videos</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-stats/points-table/test/icc-world-test-championship'">World Test Championship</button>
+                <button onclick="window.location.href=''">Boundary Tracker</button>
+                <button onclick="window.location.href=''">Quiz</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/mobileapps'">Mobile Apps</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/product-blog/cricbuzz-mobile-apps-tv-ad-cricket-ka-keeda'">Cricbuzz TV Ads</button>
+            </div>
+        </div>
+        <div class="apps-social-channels">
+            <div class="apps-in-mobile-footer">
+                <h3>Mobile Apps</h3>
+                <button onclick="window.location.href='https://apps.apple.com/app/id360466413'">iPhone</button>
+                <button onclick="window.location.href='https://play.google.com/store/apps/details?id=com.cricbuzz.android&referrer=utm_source%3DCricbuzz%2520Mobile%26utm_campaign%3DMobile%2520App%2520Page&pli=1'">Android</button>
+            </div>
+            <div class="social-in-mobile-footer">
+                <h3>Social Channels</h3>
+                <button onclick="window.location.href='https://m.facebook.com/cricbuzz'">facebook</button>
+                <button onclick="window.location.href='https://twitter.com/cricbuzz'">twitter</button>
+            </div>
+        </div>
+        <div class="bottom-line-mobile-footer">
+            <button onclick="window.location.href='https://m.cricbuzz.com/privacypolicy'">Privacy</button>
+            <button onclick="window.location.href='https://m.cricbuzz.com/termsofuse'">Terms Of Service</button>
+            <button onclick="window.location.href='https://m.cricbuzz.com/info/contact'">Contact Us</button>
+        </div>
+        <p class="copyright-area-in-mobile">
+            © 2022 Cricbuzz.com, Times Internet Limited. All Rights Reserved.
+        </p>
+    </div>
     <script src="script.js"></script>
 </body>
 
