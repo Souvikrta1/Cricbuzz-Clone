@@ -6,6 +6,10 @@
         display: none;
     }
 
+    .user-area{
+        width: 30%;
+    }
+
     .plus{
         display: none;
     }
@@ -22,11 +26,10 @@
         color: rgb(178, 145, 102);
     }
 
-
-
     #search{
         display: none;
     }
+
     #mobile-menu{
         display: flex;
         margin-left: 5%;
@@ -39,6 +42,7 @@
         padding-top: 2%;
         padding-bottom: 2%;
         padding-left: 1%;
+        font-size: medium;
     }
 
     #mobile-menu i{
@@ -47,7 +51,7 @@
         background: black;
         color: white;
         padding: 3% 8%;
-        margin-left: 3%;
+        margin-left: 5%;
     }
 
     #user-login{
@@ -159,9 +163,10 @@
         display: flex;
         background-color: #335A7B;
         color: white;
-        padding: 2% 2%;
-        width: 100%;
+        padding: 2% 0% 2% 1%;
+        width: 99%;
         font-size: larger;
+        
     }
 
     .show-ad2{
@@ -184,9 +189,6 @@
     .show-ad{
         display: none;
     }
-
-
-
 
     footer{
         display: none;
@@ -269,6 +271,15 @@
         margin-top: 9%;
         text-indent: 3%;
     }
+
+    .column1-in-mobile-footer button:hover{
+        text-decoration: underline;
+    }
+    .column2-in-mobile-footer button:hover{
+        text-decoration: underline;
+    }
+
+
     .apps-social-channels{
         display: flex;
     }
@@ -303,6 +314,7 @@
         margin-top: 10%;
         text-indent: 3%;
     }
+
     .social-in-mobile-footer button{
         text-align: left;
         border: none;
@@ -313,10 +325,12 @@
         margin-top: 10%;
         text-indent: 3%;
     }
+
     .bottom-line-mobile-footer{
         display: flex;
         padding-bottom: 2%;
     }
+
     .bottom-line-mobile-footer button{
         margin-top: 3%;
         background-color: transparent;
@@ -329,9 +343,11 @@
         margin-left: 2%; 
         padding-right: 3%;
     }
+
     .copyright-area-in-mobile{
         background-color: white;
         font-size: small;
     }
+
 }
 
