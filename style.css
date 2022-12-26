@@ -1005,6 +1005,9 @@ main{
 .big-container hr{
     margin-top: 4%;
 }
+#picture:hover{
+    transform: scale(1.1);
+}
 /*  */
 
 
