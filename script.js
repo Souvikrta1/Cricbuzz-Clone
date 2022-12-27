@@ -180,12 +180,14 @@ match.forEach((ele)=>{
 const allBtn = document.querySelector(".all-btn");
 const closeBtn = document.querySelector(".close-btn");
 const openCloseContainer = document.querySelector(".open-close-match-container")
-const matchStyle = document.querySelector(".match")
+const matchStyle = document.querySelector(".match");
+const matches = document.querySelector(".matches")
 
 allBtn.addEventListener("click",()=>{
     openCloseContainer.style.display ="flex";
     allBtn.style.display = "none";
     closeBtn.style.display = "flex";
+    matches.style.border = "none";
     openCloseContainer.style.animation ="down 0.5s" //animation open in all match section
     setTimeout(()=>{
         openCloseContainer.style.display ="none";
@@ -200,7 +202,7 @@ closeBtn.addEventListener("click",()=>{
     allBtn.style.display = "flex";
     closeBtn.style.display = "none";
     },370)
-    
+    matches.style.borderBottom = "1px solid #c4c6c4";
 })
 
 // live now btn function inside open-close container
