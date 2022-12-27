@@ -9,7 +9,7 @@ body{
     height: 100%;
     width: 100%;
     font-family: helvetica,"Segoe UI",Arial,sans-serif;
-    background-color: #c4c6c4;
+    background-color: #E3E6E3;
     
 }
 /*don't update anything above */
@@ -28,7 +28,7 @@ header{
     display:flex ;
     width: 100%;
     height: 50%;
-    background-color: rgb(63, 146, 63);
+    background-color: #009270;
     align-items: center;
     overflow: hidden;
 }
@@ -44,6 +44,7 @@ header{
     width: 68%;
     align-items: center;
     height: 8vh;
+    
 }
 
 .menu-btn button p{
@@ -59,13 +60,13 @@ header{
 
 #search-btn{
     width: 10%;
-    background-color: rgb(4, 121, 4);
+    background-color: #009270;
 }
 
 #search-input{
     width: 90%;
     color: white;
-    background-color: rgb(60, 126, 60);
+    background-color: #00785c;
     font-size: medium;
     font-weight: bolder;
 }
@@ -73,7 +74,7 @@ header{
 .line1-btn{
     border : none;
     color: white;
-    background-color:rgb(63, 146, 63);
+    background-color: #009270;
     cursor: pointer;
     height: 100%;
     display: flex;
@@ -97,7 +98,7 @@ header{
 
 #search{
     border: none;
-    background-color: rgb(63, 146, 63);
+    background-color: #009270;
     font-size: larger;
     color: white;
     cursor: pointer;
@@ -106,7 +107,7 @@ header{
 
 #user-login{
     border: none;
-    background-color: rgb(63, 146, 63);
+    background-color: #009270;
     font-size: larger;
     color: white;
     cursor: pointer;
@@ -496,7 +497,7 @@ header{
     margin-left: 15%;
     background-color: white;
     overflow: hidden;
-    margin: 0.25% auto;
+    margin: 0.35% auto;
 }
 
 .featured-matches h4{
@@ -515,7 +516,7 @@ header{
     flex-direction: column;
     width: 24.8%;
     background-color: white;
-    border-right: 1px solid black;
+    border-right: 1px solid rgb(214, 211, 211);
 }
 
 .stat-btn{
@@ -571,7 +572,7 @@ header{
     display: flex;
     flex-direction: column;
     width: 24.8%;
-    border-right: 1px solid black;
+    border-right: 1px solid rgb(214, 211, 211);
 }
 
 .stat-btn2{
@@ -608,7 +609,7 @@ header{
     display: flex;
     flex-direction: column;
     width: 24.8%;
-    border-right: 1px solid black;
+    border-right: 1px solid rgb(214, 211, 211);
 }
 
 .stat-btn3{
@@ -644,7 +645,7 @@ header{
     display: flex;
     flex-direction: column;
     width: 24.8%;
-    border-right: 1px solid black;
+    border-right: 1px solid rgb(214, 211, 211);
     position: relative;
 }
 
@@ -684,7 +685,7 @@ header{
     width: 17%;
     height: 40%;
     border-radius: 50%;
-    background-color: rgb(63, 146, 63);
+    background-color: #009270;
     color: white;
     font-size: large;
     font-weight: bold;
@@ -709,7 +710,7 @@ header{
     flex-direction: column;
     width: 24.8%;
     background-color: white;
-    border-right: 1px solid black;
+    border-right: 1px solid rgb(214, 211, 211);
     padding-bottom: 3.5%;
     
 }
@@ -728,7 +729,7 @@ header{
     height: 40%;
     width: 18%;
     border-radius: 50%;
-    background-color: rgb(63, 146, 63);
+    background-color: #009270;
     color: white;
     font-size: large;
     font-weight: bold;
@@ -778,15 +779,18 @@ main{
 /*this left-aside-container is for left part of main content */
 .left-aside-container{
     width: 20%;
-    background-color:white;
+    
     /* border: 1px solid black; this border & background color not required ,given to understand the area */
 }
 .more-news button{
-    color: blue;
+    color: rgb(103, 103, 244);
     font-size:.95rem;
+    width: 100%;
     border: 1px solid transparent;
-    margin-left: 1rem;
-    padding:0.50rem
+    margin-bottom:2.5% ;
+    background-color: white;
+    text-align: left;
+    text-indent: 5%;
 }
 .left-aside-container button:hover {
     text-decoration: underline;
@@ -794,15 +798,16 @@ main{
 }
 .l-content{
     /* width: 90%; */
-    margin: 5%;
+    padding: 5%;
+    background-color: white;
 }
 .l-content .latest-news{
-    color: green;
+    color: #009270;
     font-weight: bold;
     margin-bottom: 1vh;
 }
 .l-content .text{
-    font-size: .95rem;
+    font-size: 14px;
     text-decoration: none;
     color: black;
 }
@@ -811,11 +816,13 @@ main{
 }
 .l-content .text-time{
     font-size: .7rem;
-    /* margin-bottom: 1.5vh; */
+    padding-bottom: 5%;
+    border-bottom:1px solid #ecebeb;
+    margin-bottom: 5%;
 }
-.l-content hr{
-    margin-top: 1.5vh;
-    margin-bottom: 1.5vh;
+
+.bottom-one{
+    font-size: .7rem;
 }
 /* designing the left side content2 latest photos section */
 .latest-photos{
@@ -830,11 +837,12 @@ main{
 
 }
 .content-2{
-    margin: 5%;
+    padding: 5%;
+    background-color: white;
 }
-.content-2 hr{
+/* .content-2 hr{
     margin-top:0.5rem;
-}
+} */
 .content-2 a{
     text-decoration: none;
 }
@@ -847,6 +855,9 @@ main{
     padding-top: 0.5rem;
     color: #4a4a4a;
     cursor: pointer;
+    border-bottom:1px solid #ecebeb;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
 }
 .content-2 .text:hover{
     text-decoration: underline;
@@ -854,21 +865,36 @@ main{
 .image2 {
     margin-top: 2%;
 }
+
+.bottom-two{
+    padding-top: 0.5rem;
+    color: #4a4a4a;
+    cursor: pointer;
+}
+
 .more-photos button{
-    color: blue;
+    color: rgb(103, 103, 244);
     font-size:.95rem;
     border: 1px solid transparent;
-    margin-left: 1rem;
+    width: 100%;
+    background-color: white;
+    text-align: left;
+    text-indent: 5%;
 }
 /* latest photos section ends here */
 
 /* designing left aside content 3 scheduled section */
+.content-3{
+    background-color: white;
+}
+
 .schedule {
     color: #009270;
     font-weight: bold;
     margin-top: 3%;
-    font-size: x-large;
+    font-size: 16px;
     margin-left: 5%;
+    padding-top: 3%;
 }
 .scheduled-text {
     color: black;
@@ -876,35 +902,51 @@ main{
     padding-top: 5%;
     padding-left: 5%;
     font-weight: 50px;
-    font-size: larger;
+    font-size: 14px;
+    width: 90%;
 }
 
 .schedule-time {
-    padding-top: 0.5rem;
+    padding-top: 0.2rem;
     color: #4a4a4a;
-    padding-left: 5%;
+    margin-left: 5%;
+    font-size: 12px;
+    border-bottom:1px solid #ecebeb;
+    padding-bottom: 5%;
+    width: 90%;
+}
+
+.bottom-three{
+    padding-top: 0.2rem;
+    color: #4a4a4a;
+    margin-left: 5%;
+    font-size: 12px;
 }
 
 .m-content {
     margin: 3%;
 }
 .more-matches button{
-    color: blue;
+    color: rgb(103, 103, 244);
     font-size:.95rem;
     border: 1px solid transparent;
-    margin-left: 1rem;
-    margin-top:12%;
+    width: 100%;
+    background-color: white;
+    text-align: left;
+    text-indent: 5%;
+    padding-top: 5%;
 }
 /* ahad design center content starts here */
 
 .score-container {
     background-color: #eeeeee;
-    max-width: max-content;
+    max-width: 330px;
     padding: 1%;
     margin-left: 1%;
     margin-top: 4%;
     border-left: 2px solid blue;
-
+    font-size: 14px;
+    position: relative;
 }
 
 .flex {
@@ -926,7 +968,7 @@ main{
     padding-left: 3%;
     width: max-content;
     font-weight: 200px;
-
+    
 }
 
 .para2 {
@@ -936,16 +978,20 @@ main{
 }
 
 .icon-content svg {
-    width: 10%;
-    font-size: larger;
+    width: 5%;
+    height: 20%;
     font-weight: bolder;
-    padding-left: 80%;
+    /* padding-left: 80%;
     padding-top: 15%;
-    margin-bottom: 2%;
+    margin-bottom: 2%; */
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    padding-right: 5%;
 }
 
 .match-result {
-    color: blue;
+    color: #d0021b;
     font-size: larger;
     padding: 1%;
 }
@@ -960,9 +1006,17 @@ main{
 }
 
 .big-container {
-    margin-left: 2%;
+    margin-left: 2.5%;
     margin-top: 3%;
+    width: 95%;
+    border-bottom: 1px solid #ecebeb;
+    padding-bottom: 2%;
 }
+
+.big-container img{
+    width: 100%;
+}
+
 
 .australia {
     padding-top: 1%;
@@ -973,7 +1027,7 @@ main{
 .match-result a {
     color: black;
     text-decoration: none;
-    font-size: 35px;
+    font-size: 24px;
 }
 
 .match-result a:hover {
@@ -983,7 +1037,7 @@ main{
 
 .match-summary p {
     color: rgb(135, 136, 137);
-    font-size: 20px;
+    font-size: 14px;
     padding-top: 2%;
     padding-left: 1%;
 }
@@ -994,12 +1048,12 @@ main{
 
 .match-highlight a {
     text-decoration: none;
-    font-size: large;
-    color: blue;
+    font-size: 14px;
+    color: #1866DB;
 }
 
 .report {
-    color: brown;
+    color: #d0021b;
 }
 
 .match-highlight a:hover {
@@ -1051,7 +1105,6 @@ main{
 /*this right-aside-container is for right part of main content */
 .right-aside-container{
     width: 30%;
-    background-color:white;
     /* border: 1px solid black; this border & background color not required, given to understand the area */
 }
 /*ad area starts here*/
@@ -1062,6 +1115,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2%;
 }
 
 .ads{
@@ -1074,12 +1128,16 @@ main{
 /* featured videos start */
 
 .content{
-    margin: 5%;
+    padding: 5%;
+    background-color: white;
 }
+
+
 .featured{
-    font-size: 1.2rem;
-    color: green;
-    margin-bottom: .5em;
+    font-size: 16px;
+    color: #009270;
+    margin-bottom: .2em;
+    font-weight: 700;
 }
 .videos1{
     margin-bottom: 3%;
@@ -1087,7 +1145,6 @@ main{
 .videos1 .videos{
     width: 100%;
     height: 12em;
-    border-radius: 10px;
 }
 .fonts-right a{
     font-size: 1.1rem;
@@ -1106,16 +1163,22 @@ main{
     font-size: 1rem;
     padding: .5rem;
     color: white;
-    background: green;
+    background: #009270;
     border: none;
     cursor: pointer;
-    margin-bottom: 3vh;
+    margin-bottom: 1vh;
 }
 .more button:hover{
     opacity: .7;
 }
 /*featured videos end*/
 /* special section */
+.special-section{
+    background-color: white;
+    padding: 3%;
+    margin-top: 2%;
+}
+
 .special-section img{
     width: 100%;
     border-radius: 5px;
@@ -1123,41 +1186,41 @@ main{
     margin-top:8%;
 }
 .right-text{
-    font-size: .9rem;
+    font-size: 14px;
 }
 /*main-end*/
 
 /* footer css */
-footer{
+/* footer{
     background-color: #4a4a4a;
     margin-top: 4em;
     box-sizing: border-box;
-}
+} */
 
 /* footer flex container design */
-.flex-container{
+/* .flex-container{
     display: flex;
     justify-content:center;
     max-width:55%;
     margin: 0 auto;
-}
+} */
 /* footer logo design */
-.flex-container img{
+/* .flex-container img{
     max-width:12% ; 
     margin-bottom:13em;
     margin-right: 5em;
-}
+} */
 /* footer heading for icons  */
 
-.heading-div h2{
+/* .heading-div h2{
     color: white;
     margin-left:1.5em;
     font-family:Arial, Helvetica, sans-serif;
     margin-top: 1em;
 
-}
+} */
 /* designing the footer icons */
-.icon{
+/* .icon{
     width:5%;
 }
 .anchor-tag{
@@ -1167,16 +1230,15 @@ footer{
     margin-left:2.3rem;
     margin-top:2em;
     color: white;
-}
+} */
 /* designing icon name */
-.icon-name{
+/* .icon-name{
     font-size:18px;
     padding-left:0.5em;
-    
-}
+} */
 
 /* designing company details */
-.company-container{
+/* .company-container{
     width:20vw;
 }
 .company-container li{
@@ -1217,9 +1279,122 @@ ul{
 
 .copyright a:hover{
     text-decoration:underline;
-}
+} */
 
 /* footer ends here */
+
+/* new footer css */
+footer{
+    width: 100%;
+    height: 30%;
+    background-color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    margin-top: 3%;
+    flex-wrap: wrap;
+}
+
+
+footer img{
+    width: 7%;
+    height: 100%;
+    margin-right: 5%;
+}
+
+.footer-inside-container{
+    display: flex;
+    width: 50%;
+}
+
+.line1-footer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+    width: 30%;
+}
+
+.line1-footer p{
+    font-size: 16px;
+    margin-bottom: 10%;
+}
+
+.line1-footer button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-align: left;
+    margin: 5% 0;
+    font-size: 14px;
+    display: flex;
+    cursor: pointer;
+}
+
+.line1-footer button svg{
+    height: 14px;
+    width: 14px;
+    align-self: center;
+    margin-right: 5%;
+}
+
+
+.line2-footer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+    width: 30%;
+    margin: 0% 5%;
+}
+
+.line2-footer p{
+    font-size: 16px;
+    margin-bottom: 10%;
+}
+
+.line2-footer button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-align: left;
+    margin: 5% 0;
+    font-size: 14px;
+    display: flex;
+    cursor: pointer;
+}
+
+.line2-footer button svg{
+    height: 14px;
+    width: 14px;
+    align-self: center;
+    margin-right: 5%;
+}
+
+.copyright {
+    color: #bababa;
+    display:flex;
+    justify-content: center;
+    padding: 1em;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 12px;
+}
+
+.copyright a{
+    color: #bababa;
+    text-decoration: none;
+    text-indent:5px;
+    
+}
+
+.copyright a:hover{
+    text-decoration:underline;
+} 
+
+
+
+
 
 .mobile-footer{
     display: none;
