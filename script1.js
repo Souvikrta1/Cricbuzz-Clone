@@ -15,6 +15,7 @@ function ValidateEmail(input) {
 
         // alert("Valid email address!");
         localStorage.setItem("emailid",input);
+        localStorage.setItem("data","yes");
         window.location.href="index2.html";
         return true;
 
@@ -56,3 +57,14 @@ if(checkbox.checked){
     submitBtn.disabled="true";
     submitBtn.style.backgroundColor="rgba(58, 185, 173, .6)";
 }
+
+let data = localStorage.getItem("data");
+if(data == "yes"){
+    window.location.href="index.html"
+}
+
+
+
+
+
+

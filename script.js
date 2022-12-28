@@ -522,6 +522,20 @@ window.onload = async () => {
 
 }
 
+let data = localStorage.getItem("data");
+const loginPage = document.getElementById("user-login");
+
+loginPage.addEventListener("click",()=>{
+    if(data == "yes"){
+        window.location.href="index2.html";
+    }
+    else{
+        window.location.href="index1.html";
+    }
+})
+
+
+
 
 
 
