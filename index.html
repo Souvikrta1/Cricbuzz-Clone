@@ -7,14 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-
+    <link rel="stylesheet" href="mobile-view.css">
     <title>Document</title>
 </head>
-
 <body>
     <header>
         <div class="line1">
-            <img src="https://www.cricbuzz.com/images/cb_logo.svg">
+            <img src="https://www.cricbuzz.com/images/cb_logo.svg" alt="CricBuzz">
             <div id="menu" class="menu-btn">
                 <button class="line1-btn"
                     onclick="window.location.href='https://www.cricbuzz.com/cricket-match/live-scores'">
@@ -60,30 +59,19 @@
                     <p>Cricbuzz Plus</p>
                 </button>
                 <button id="search"><i class="fa-solid fa-magnifying-glass"></i></i></button>
-                <button id="user-login" onclick="window.location.href=''"><i
-                        class="fa-regular fa-circle-user"></i></button>
+                <button id="user-login" onclick="window.location.href='index1.html'"><i class="fa-regular fa-circle-user"></i></button>
+                <button id="mobile-menu">Menu <i class="fa-solid fa-arrow-down"></i></button>
             </div>
         </div>
         <div class="line2">
-            <button class="matches"
-                onclick="window.location.href='https://www.cricbuzz.com/cricket-match/live-scores'">Matches</button>
-            <button class="match"
-                onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/52022/pak-vs-eng-3rd-test-england-tour-of-pakistan-2022'">PAK
-                vs ENG -Stumps</button>
-            <button class="match"
-                onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022'">IND
-                vs BAN - IND won</button>
-            <button class="match"
-                onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/50293/syt-vs-mlr-7th-match-big-bash-league-2022-23' ">SYT
-                vs MLR - MLR won</button>
-            <button class="match"
-                onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56901/kdf-vs-dma-18th-match-lanka-premier-league-2022'">KDF
-                vs DMA - Complete</button>
-            <button class="match"
-                onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/48128/rsa-vs-aus-1st-test-south-africa-tour-of-australia-2022-23'">AUS
-                vs RSA - AUS won</button>
-            <button class="all-btn" onclick="window.location.href=''">All <i
-                    class="fa-solid fa-caret-down"></i></button>
+            <button class="matches" onclick="window.location.href='https://www.cricbuzz.com/cricket-match/live-scores'">MATCHES</button>
+            <button class="match" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/52022/pak-vs-eng-3rd-test-england-tour-of-pakistan-2022'">PAK vs ENG -Stumps</button>
+            <button class="match" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022'">IND vs BAN - IND won</button>
+            <button class="match" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/50293/syt-vs-mlr-7th-match-big-bash-league-2022-23' ">SYT vs MLR - MLR won</button>
+            <button class="match" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56901/kdf-vs-dma-18th-match-lanka-premier-league-2022'">KDF vs DMA - Complete</button>
+            <button class="match" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/48128/rsa-vs-aus-1st-test-south-africa-tour-of-australia-2022-23'">AUS vs RSA - AUS won</button>
+            <button class="all-btn">All <i class="fa-solid fa-caret-down"></i></button>
+            <button class ="close-btn">Close <i class="fa-solid fa-caret-up"></i></button>
         </div>
         <div class="news-drop">
             <button onclick="window.location.href='https://www.cricbuzz.com/cricket-news'">All</button>
@@ -214,29 +202,177 @@
             <button onclick="window.location.href='https://www.cricbuzz.com/info/contact'">Contact Us</button>
         </div>
     </header>
+    <div class="open-close-match-container">
+        <div class="category-btn-in-open-close-container">
+            <button id="all">All</button>
+            <button id="live-now">Live Now</button>
+            <button id="upcoming">Upcoming</button>
+        </div>
+        <div class="all-matches-data-in-open-close-container">
+            <div class="column1-match-details">
+                <h4>INTERNATIONAL</h4>
+                <div class="Ind-Ban-series">
+                    <h5>Bangladesh Vs India, 2022</h5>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022'">Bangladesh vs India</button>
+                    <p>1st Test</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56976/ban-vs-ind-2nd-test-bangladesh-v-india-2022'">Bangladesh vs India</button>
+                    <p>2nd Test</p>
+                </div>
+                <div class="Ind-Ban-series">
+                    <h5>Pakistan vs England, 2022</h5>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/52022/pak-vs-eng-3rd-test-pakistan-vs-england-2022'">Pakistan vs England</button>
+                    <p>3rd Test</p>
+                </div>
+                <div class="Ind-Ban-series">
+                    <h5>Australia vs England, 2022-23</h5>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/48128/rsa-vs-aus-1st-test-australia-v-south-africa-2022-23'">South Africa vs Australia</button>
+                    <p>1st Test</p>
+                </div>
+                <div class="Ind-Ban-series">
+                    <h5>Malaysia Quadrangular Series</h5>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/60448/mly-vs-sin-6th-match-malaysia-quadrangular-series'">Malaysia vs Singapore</button>
+                    <p class="live">6th Match</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/60450/sin-vs-qat-7th-match-malaysia-quadrangular-series'">Singapore vs Qatar</button>
+                    <p>7th Match</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/60455/bhr-vs-mly-8th-match-malaysia-quadrangular-series'">Bahrain vs Malaysia</button>
+                    <p>8th Match</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/60457/bhr-vs-sin-9th-match-malaysia-quadrangular-series'">Bahrain vs Singapore</button>
+                    <p >9th Match</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/60464/mly-vs-qat-10th-match-malaysia-quadrangular-series'">Malaysia vs Qatar</button>
+                    <p>10th Match</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/60471/mly-vs-sin-11th-match-malaysia-quadrangular-series'">Malaysia vs Singapore</button>
+                    <p>11th Match</p>
+                </div>
+                <div class="Ind-Ban-series">
+                    <h5>East Africa T20I Series</h5>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/60140/uga-vs-tan-9th-match-east-africa-t20i-series'">Uganda vs Tanzania</button>
+                    <p>9th Match</p>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/60147/rwa-vs-tan-10th-match-east-africa-t20i-series'">Rwanda vs Tanzania</button>
+                    <p class="live">10th Match</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/60149/uga-vs-tan-11th-match-east-africa-t20i-series'">Uganda vs Tanzania</button>
+                    <p>11th Match</p>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/60154/rwa-vs-uga-12th-match-east-africa-t20i-series'">Rwanda vs Uganda</button>
+                    <p class="live">12th Match</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/60147/rwa-vs-tan-10th-match-east-africa-t20i-series'">Rwanda vs Tanzania</button>
+                    <p>13th Match</p>
+                </div>
+            </div>
+            <div class="column2-match-details">
+                <div class="Ind-Ban-series">
+                    <h5>LPL 2022</h5>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56894/jks-vs-ggd-17th-match-lpl-2022'">Jaffna Kings vs Galle Gladiators</button>
+                    <p class="live">17th Match</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56901/kdf-vs-dma-18th-match-lpl-2022'">Kandy Falcons vs Dambulla Aura</button>
+                    <p>18th Match</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56908/cls-vs-jks-19th-match-lpl-2022'">Colombo Stars vs Jaffna Kings</button>
+                    <p>19th Match</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56915/ggd-vs-dma-20th-match-lpl-2022'">Galle Gladiators vs Dambulla Aura</button>
+                    <p>20th Match</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56920/kdf-vs-jks-qualifier-1-lpl-2022'">Kandy Falcons vs Jaffna Kings</button>
+                    <p>Qualifier 1</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56922/cls-vs-ggd-eliminator-lpl-2022'">Colombo Stars vs Galle Gladiators</button>
+                    <p>Eliminator</p>
+                </div>
+                <h4>DOMESTIC</h4>
+                <div class="Ind-Ban-series">
+                    <h5>Ranji Trophy</h5>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55590/skm-vs-mgly-plate-ranji-trophy'">Sikkim vs Meghalaya</button>
+                    <p>Plate</p>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55522/del-vs-asm-elite-group-b-ranji-trophy'">Delhi vs Assam</button>
+                    <p class="live">Elite Group B</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55550/raj-vs-ker-elite-group-c-ranji-trophy'">Rajasthan vs Kerala</button>
+                    <p>Elite Group C</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55513/odsa-vs-utk-elite-group-a-ranji-trophy'">Odisha vs Uttarakhand</button>
+                    <p>Elite Group A</p>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55548/pdc-vs-kar-elite-group-c-ranji-trophy'">Puducherry vs Karnataka</button>
+                    <p class="live">Elite Group C</p>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55508/ben-vs-hp-elite-group-a-ranji-trophy'">Bengal vs Himachal Pradesh</button>
+                    <p class="live">Elite Group A</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55501/up-vs-ngl-elite-group-a-ranji-trophy'">Uttar Pradesh vs Nagaland</button>
+                    <p>Elite Group A</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55583/bih-vs-mnp-plate-ranji-trophy'">Bihar vs Manipur</button>
+                    <p>Plate</p>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55557/mp-vs-cdg-elite-group-d-ranji-trophy'">Madhya Pradesh Vs Chandigarh</button>
+                    <p class="live">Elite Group A</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55541/jhkd-vs-goa-elite-group-c-ranji-trophy'">Jharkhand vs Goa</button>
+                    <p>Elite Group C</p>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55536/ser-vs-cg-elite-group-c-ranji-trophy'">Services vs Chattisgarh</button>
+                    <p class="live">Elite Group C</p>
+                </div>
+            </div>
+            <div class="column3-match-details">
+                <div class="Ind-Ban-series">
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55529/mah-vs-saur-elite-group-b-ranji-trophy'">Maharashtra vs Saurashtra</button>
+                    <p>Elite Group B</p>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55576/pun-vs-rlys-elite-group-d-ranji-trophy'">Punjab vs Railways</button>
+                    <p class="live">Elite Group D</p>
+                </div>
+                <div class="Ind-Ban-series">
+                    <h5>CSA One-Day Challenge Div Two</h5>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58903/grb-vs-tusks-18th-match-csa-one-day-challenge-div-two'">Garden Route Badgers vs Tuskers</button>
+                    <p>18th Match</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58896/ncape-vs-estorm-17th-match-csa-one-day-challenge-div-two'">Northern Cape vs Eastern Storm</button>
+                    <p>17th Match</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58915/mpr-vs-estorm-21st-match-csa-one-day-challenge-div-two'">Mpumalanga Rhinos vs Eastern Storm</button>
+                    <p>21st Match</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58910/limpo-vs-ncape-20th-match-csa-one-day-challenge-div-two'">Limpopo vs Northern Cape</button>
+                    <p>20th Match</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58908/grb-vs-ecape-19th-match-csa-one-day-challenge-div-two'">Garden Route Badgers vs Eastern Storm</button>
+                    <p>20th Match</p>
+                </div>
+                <div class="Ind-Ban-series">
+                    <h5>CSA One-Day Challenge Div One</h5>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58754/wpr-vs-lions-20th-match-csa-one-day-challenge-div-one'">Western Province vs Lions</button>
+                    <p>20th Match</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58761/war-vs-rocks-21st-match-csa-one-day-challenge-div-one'">Warriors vs Rocks</button>
+                    <p>21st Match</p>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58763/kng-vs-dol-22nd-match-csa-one-day-challenge-div-one'">Knights vs Dolphins</button>
+                    <p class="live">22nd Match</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58770/tit-vs-nwest-23rd-match-csa-one-day-challenge-div-one'">Titans vs North West</button>
+                    <p>23rd Match</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58775/rocks-vs-nwest-24th-match-csa-one-day-challenge-div-one'">Rocks vs North West</button>
+                    <p>24th Match</p>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58777/war-vs-lions-25th-match-csa-one-day-challenge-div-one'">Warriors vs Lions</button>
+                    <p class="live">25th Match</p>
+                </div>
+                <h4>WOMEN</h4>
+                <div class="Ind-Ban-series">
+                    <h5>India Women v Australia Women</h5>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58945/indw-vs-ausw-5th-t20i-india-women-v-australia-women'">India Women vs Australia Women</button>
+                    <p>5th T20I</p>
+                </div>
+                <div class="Ind-Ban-series">
+                    <h5>West Indies Women v England Women</h5>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/57998/engw-vs-wiw-4th-t20i-west-indies-women-v-england-women'">West Indies Women vs England Women</button>
+                    <p>4th T20I</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
     <div class="featured-matches">
         <h4>FEATURED MATCHES</h4>
         <div id="stat-page1" class="match-stats-p1">
             <div class="first-match">
-                <button class="stat-btn"
-                    onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/52022/pak-vs-eng-3rd-test-england-tour-of-pakistan-2022'">
+                <button class="stat-btn" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/52022/pak-vs-eng-3rd-test-england-tour-of-pakistan-2022'">
+                    <p class="mobile-preview1">2nd Test • India Tour Of Bangladesh, 2022</p>
                     <span>
-                        <p>PAK</p>
-                        <p class="firstMatch-runs1">304 & 21-0</p>
+                        <p>Ban</p>
+                        <p class="firstMatch-runs1">227 (73.5)</p>
                     </span>
                     <span>
-                        <p>ENG</p>
-                        <p class="firstMatch-runs2">354</p>
+                        <p>IND</p>
+                        <p class="firstMatch-runs2">19-0 (8)</p>
                     </span>
-                    <p class="match1-status">Day 2: Stumps - Pakistan trail by 29 runs</p>
+                    <p class="match1-status">Day 1: Stumps - India trail by 208 runs</p>
                 </button>
                 <button class="fantasy"><i class="fa-solid fa-trophy"
                         onclick="window.location.href='https://www.cricbuzz.com/cricket-fantasy-handbook/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022#!/expert-picks'"></i>
                     Fantasy Handbook</button>
             </div>
             <div class="second-match">
-                <button class="stat-btn2"
-                    onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022'">
+                <button class="stat-btn2" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022'">
+                    <p class="mobile-preview2">1st Test • India Tour Of Bangladesh, 2022</p>
                     <span>
                         <p>IND</p>
                         <p class="secondMatch-runs1">404 & 258-2 d</p>
@@ -249,8 +385,8 @@
                 </button>
             </div>
             <div class="third-match">
-                <button class="stat-btn3"
-                    onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56901/kdf-vs-dma-18th-match-lanka-premier-league-2022'">
+                <button class="stat-btn3" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56901/kdf-vs-dma-18th-match-lanka-premier-league-2022'">
+                    <p class="mobile-preview2">League Match • Lanka Premier League 2022</p>
                     <span>
                         <p>KDF</p>
                         <p class="thirdMatch-runs1">160-7 (20)</p>
@@ -259,12 +395,12 @@
                         <p>DMA</p>
                         <p class="thirdMatch-runs2">121-9 (20)</p>
                     </span>
-                    <p class="match3-status">Match drawn</p>
+                    <p class="match3-status">KDF won by 39 runs</p>
                 </button>
             </div>
             <div class="fourth-match">
-                <button class="stat-btn4"
-                    onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/50293/syt-vs-mlr-7th-match-big-bash-league-2022-23'">
+                <button class="stat-btn4" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/50293/syt-vs-mlr-7th-match-big-bash-league-2022-23'">
+                    <p class="mobile-preview2">10th Match • Big Bash League 2022-23</p>
                     <span>
                         <p>SYT</p>
                         <p class="fourthMatch-runs1">174-6 (20)</p>
@@ -273,7 +409,7 @@
                         <p>MLR</p>
                         <p class="fourthMatch-runs2">175-6 (19.5)</p>
                     </span>
-                    <p class="match4-status">Melbourne Renegades won by 4 wktss</p>
+                    <p class="match4-status">Melbourne Renegades won by 4 wkts</p>
                 </button>
                 <button id="slide-right" class="slider"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
@@ -362,7 +498,7 @@
                     class="text">Ish Sodhi returns to New Zealand squad for Pakistan Tests</a>
                 <p class="text-time">1h ago</p>
             </div>
-            <a href="https://www.cricbuzz.com/cricket-news/latest-news">
+            <a class="more-news" href="https://www.cricbuzz.com/cricket-news/latest-news">
                 <button><i>More News..</i></button>
             </a>
 
@@ -431,7 +567,7 @@
                 <p class="date-time">Fri, Dec 16 2022</p>
                 <hr width="100%">
             </div>
-            <a href="https://www.cricbuzz.com/cricket-photo-gallery">
+            <a class="more-photos" href="https://www.cricbuzz.com/cricket-photo-gallery">
                 <button><i>More Photos..</i></button>
             </a>
             <!-- content 3 html starts here -->
@@ -513,20 +649,19 @@
                 <p class="schedule-time">Thur Dec 22 • 1:00 PM GMT</p>
                 <hr width="100%">
             </div>
-            <a href="https://www.cricbuzz.com/cricket-schedule/upcoming-series/international">
-                <button><i>More News..</i></button>
+            <a class="more-matches" href="https://www.cricbuzz.com/cricket-schedule/upcoming-series/international">
+                <button><i>More Matches..</i></button>
             </a>
         </div>
 
         <div class="center-container">
+            <h4 class="top-stories-mobile">Top Stories</h4>
             <!-- write HTML for mid Content of MAin section -->
             <!-- ------------------------------------------------------------------------ -->
             <div class="big-container">
                 <div id="heading-content">
-                    <span class="match-heading">INDIA TOUR OF BANGLADESH, 2022
-                    </span>
+                    <span class="match-heading">INDIA TOUR OF BANGLADESH, 2022</span>
                 </div>
-
                 <a href="">
                     <img class="australia"
                         src="https://www.cricbuzz.com/a/img/v1/420x235/i1/c251246/injured-rohit-sharma-to-miss-d.jpg"
@@ -554,7 +689,7 @@
                 </div>
                 <div class="match-highlight">
                     <h2>
-                        <a href="">DomingoRahul chuffed with India's intensity in Chattogram victory</a>
+                        <a href="">Domingo Rahul chuffed with India's intensity in Chattogram victory</a>
                     </h2>
                 </div>
                 <hr width="95%">
@@ -583,8 +718,8 @@
                 <div class="score-container">
                     <div class="flex">
                         <div class="team-name">
-                            <h1>ENG</h1>
-                            <h1>PAK</h1>
+                            <h3 class="team1">ENG</h3>
+                            <h3 class="team2">PAK</h3>
                         </div>
                         <div class="team-scores">
                             <p class="para1">354, 59-0 (6.2)</p>
@@ -636,8 +771,8 @@
                 <div class="score-container">
                     <div class="flex">
                         <div class="team-name">
-                            <h1>AUS</h1>
-                            <h1>RSA</h1>
+                            <h3 class="team1">AUS</h3>
+                            <h3 class="team2">RSA</h3>
                         </div>
                         <div class="team-scores">
                             <p class="para1">218, 35-4 (7.5)</p>
@@ -651,7 +786,7 @@
                             </svg>
                         </div>
                     </div>
-                    <p class="match-result">India won by 188runs</p>
+                    <p class="match-result">Australia lead by 1-0</p>
                 </div>
 
                 <div class="match-highlight">
@@ -744,6 +879,25 @@
                     <hr width="95%">
                 </div>
                 <!--  -->
+                <div class="big-container">
+                    <div id="heading-content">
+                        <span class="match-heading">DIALOGUE ROOM</span>
+                    </div>
+    
+                    <a href="">
+                        <img class="australia"
+                            src="https://www.cricbuzz.com/a/img/v1/420x235/i1/c250228/how-anrich-nortje-is-releasing.jpg" alt="">
+                    </a>
+    
+                    <h2 class="match-result">
+                        <a href="">How Anrich Nortje is releasing the fear factor</a>
+                    </h2>
+    
+                    <div class="match-summary">
+                        <p>South Africa's fastest bowler is reaching his peak. Anrich Nortje explains how an improved action gives him confidence that he can get even quicker</p>
+                    </div>
+                    <hr width="95%">
+                </div>
         </div>
         <div class="right-aside-container">
             <!-- write HTML for right Content of MAin section -->
@@ -754,20 +908,17 @@
             <div class="content">
                 <div class="featured">FEATURED VIDEOS</div>
                 <div class="videos1 fonts-right">
-                    <video src="videos/video1.mp4" class="videos" type="video/mp4" loop  muted></video>
-                    <a href="https://www.cricbuzz.com/cricket-videos/58666/caught-kuldeep-finally-gets-rid-of-litton">CAUGHT!
-                        Kuldeep finally gets rid of Litton</a>
+                    <video src="videos/video1.mp4" class="videos" type="video/mp4" loop  ></video>
+                    <a href="https://www.cricbuzz.com/cricket-videos/58666/caught-kuldeep-finally-gets-rid-of-litton">CAUGHT! Kuldeep finally gets rid of Litton</a>
                     <div class="small">34m ago</div>
                 </div>
                 <div class="videos1 fonts-right">
-                    <video src="videos/video2.mp4" class="videos" type="video/mp4" loop  muted></video>
-                    <a
-                        href="https://www.cricbuzz.com/cricket-videos/58653/kuldeep-yadav-will-be-key-to-indias-test-side-going-forward-dinesh-karthik">Kuldeep
-                        Yadav will be key to India's Test side going forward: Dinesh Karthik</a>
+                    <video src="videos/video2.mp4" class="videos" type="video/mp4" loop ></video>
+                    <a href="https://www.cricbuzz.com/cricket-videos/58653/kuldeep-yadav-will-be-key-to-indias-test-side-going-forward-dinesh-karthik">Kuldeep Yadav will be key to India's Test side going forward: Dinesh Karthik</a>
                     <div class="small">2h ago</div>
                 </div>
                 <div class="videos1 fonts-right">
-                    <video src="videos/video3.mp4" class="videos" type="video/mp4" loop  muted></video>
+                    <video src="videos/video3.mp4" class="videos" type="video/mp4" loop ></video>
                     <a href="https://www.cricbuzz.com/cricket-videos/58663/bowled-axar-patel-knocks-over-yasir-ali">BOWLED!
                         Axar Patel knocks over Yasir Ali</a>
                     <div class="small">20h ago</div>
@@ -963,6 +1114,66 @@
             <a href="http://navbharattimes.indiatimes.com/"><span>| Navbharat Times</span></a>
         </div>
     </footer>
+    <div class="show-ad2">
+        <img class="ads2"
+            src="https://previews.123rf.com/images/hstrongart/hstrongart1701/hstrongart170100151/69269523-mouth-rinse-ads-refreshing-mouthwash-products-with-mints-leaves-and-splashing-liquids-in-3d-illustra.jpg">
+    </div>
+    <div class="mobile-footer">
+        <div class="mobile-footer-title">
+            <h3>Menu</h3>
+            <button id="top">Top <i class="fa-solid fa-arrow-up"></i></button>
+        </div>
+        <div class="mobile-menu-footer-items">
+            <div class="column1-in-mobile-footer">
+                <button onclick="window.location.href='index.html'">Home</button>
+                <button>My Account</button>
+                <button onclick="window.location.href='https://www.cricbuzz.com/cricket-schedule/upcoming-series/international'">Schedule</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-news/editorial/editorial-list'">Editorials</button>
+                <button onclick="window.location.href='https://www.cricbuzz.com/cricket-scorecard-archives'">Archives</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-stats/iccrankings/men'">Rankings - Men</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-stats/iccrankings/women'">Rankings - Women</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-pointstable'">Points Table</button>
+                <button onclick="window.location.href=''">Wicket Zone</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-stats/points-table/odi/icc-men-cricket-world-cup-super-league'">World Cup Super League</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/info/contact'">Contact Us</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/careers'">Careers @ Cricbuzz</button>
+            </div>
+            <div class="column2-in-mobile-footer">
+                <button onclick="window.location.href='https://m.cricbuzz.com/cb-plus/premium-content/home'">Cricbuzz Plus</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-match/live-scores'">Live Scores</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-news/latest-news'">News</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-gallery'">Photos</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/profiles'">Players</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-series'">Series</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-videos'">Videos</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-stats/points-table/test/icc-world-test-championship'">World Test Championship</button>
+                <button onclick="window.location.href=''">Boundary Tracker</button>
+                <button onclick="window.location.href=''">Quiz</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/mobileapps'">Mobile Apps</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/product-blog/cricbuzz-mobile-apps-tv-ad-cricket-ka-keeda'">Cricbuzz TV Ads</button>
+            </div>
+        </div>
+        <div class="apps-social-channels">
+            <div class="apps-in-mobile-footer">
+                <h3>Mobile Apps</h3>
+                <button onclick="window.location.href='https://apps.apple.com/app/id360466413'">iPhone</button>
+                <button onclick="window.location.href='https://play.google.com/store/apps/details?id=com.cricbuzz.android&referrer=utm_source%3DCricbuzz%2520Mobile%26utm_campaign%3DMobile%2520App%2520Page&pli=1'">Android</button>
+            </div>
+            <div class="social-in-mobile-footer">
+                <h3>Social Channels</h3>
+                <button onclick="window.location.href='https://m.facebook.com/cricbuzz'">facebook</button>
+                <button onclick="window.location.href='https://twitter.com/cricbuzz'">twitter</button>
+            </div>
+        </div>
+        <div class="bottom-line-mobile-footer">
+            <button onclick="window.location.href='https://m.cricbuzz.com/privacypolicy'">Privacy</button>
+            <button onclick="window.location.href='https://m.cricbuzz.com/termsofuse'">Terms Of Service</button>
+            <button onclick="window.location.href='https://m.cricbuzz.com/info/contact'">Contact Us</button>
+        </div>
+        <p class="copyright-area-in-mobile">
+            © 2022 Cricbuzz.com, Times Internet Limited. All Rights Reserved.
+        </p>
+    </div>
     <script src="script.js"></script>
 </body>
 

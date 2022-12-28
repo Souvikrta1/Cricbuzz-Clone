@@ -10,6 +10,7 @@ body{
     width: 100%;
     font-family: helvetica,"Segoe UI",Arial,sans-serif;
     background-color: #c4c6c4;
+    
 }
 /*don't update anything above */
 
@@ -20,7 +21,7 @@ header{
     /* margin-left: 15%; */
     margin-bottom: 0.25%;
     margin: 0 auto;
-    position: relative;;
+    position: relative;
 }
 
 .line1{
@@ -47,6 +48,7 @@ header{
 
 .menu-btn button p{
     margin-right: 5%;
+    font-weight: 500;
 }
 
 .search-area{
@@ -87,6 +89,10 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#mobile-menu{
+    display: none;
 }
 
 #search{
@@ -283,7 +289,6 @@ header{
     height: 50%;
     display: flex;
     align-items: center;
-    position: relative;
 }
 
 .line2 a{
@@ -294,10 +299,12 @@ header{
 .match{
     height: 100%;
     padding: 1%;
+    width: 17.2%;
     background-color: rgb(67, 64, 64);
     color: white;
     border: none;
     cursor: pointer;
+    border-bottom:0.25px solid #c4c6c4 ;
 }
 .matches{
     height: 100%;
@@ -308,16 +315,179 @@ header{
     cursor: pointer;
 }
 .all-btn{
-    position: absolute;
-    right: 0;
+    width: 8%;
     cursor: pointer;
     height: 100%;
-    background-color: rgb(67, 64, 64);
+    background-color: rgb(46, 43, 43);
     padding: 1%;
     color: white;
     border: none;
+    display: flex;
+    justify-content: center;
+}
+
+.all-btn i{
+    margin-left: 10%;
+}
+
+.close-btn{
+    display: none;
+    width: 8%;
+    cursor: pointer;
+    height: 100%;
+    background-color: rgb(46, 43, 43);
+    padding: 1%;
+    color: white;
+    border: none;
+    justify-content: center;
+}
+
+.close-btn i{
+    margin-left: 10%;
+    margin-top: 5%;
 }
 /*Header and menu button section line 2 code is above */
+
+/* open-close-match-container starts here */
+.open-close-match-container{
+    max-width: 1080px;
+    margin: 0 auto;
+    height: 900px;
+    background-color: rgb(67, 64, 64);
+    display: none;
+    flex-direction: column;
+}
+
+.category-btn-in-open-close-container{
+    width: 100%;
+    height: 5%;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.category-btn-in-open-close-container button{
+    height: 60%;
+    width: max-content;
+    padding: 0 2%;
+    border-radius: 20px;
+    margin-left: 2%;
+    border: 0px white;
+    background-color: rgb(46, 43, 43);
+    color: white;
+}
+
+.all-matches-data-in-open-close-container{
+    display: flex;
+    width: 100%;
+    height: 95%;
+}
+
+.column1-match-details{
+    width: 33%;
+    height: 100%;
+    background-color: rgb(67, 64, 64);
+
+}
+
+.column1-match-details h4{
+    color: rgb(6, 226, 6);
+    margin-left: 5%;
+    margin-top: 4%;
+}
+
+.Ind-Ban-series{
+    color: white;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.Ind-Ban-series h5{
+    margin-top: 5%;
+}
+
+.Ind-Ban-series button{
+    background-color: rgb(67, 64, 64);
+    border: none;
+    color: white;
+    margin: 2% 0 1% 0;
+    cursor: pointer;
+}
+
+/* .Ind-Ban-series button:hover{
+    background-color: white;
+    color: black;
+    border-radius: 2px;
+} */
+
+.Ind-Ban-series p{
+    color: silver;
+    font-size: small;
+    margin-bottom: 1%;
+}
+
+
+
+.column2-match-details{
+    width: 34%;
+    background-color:rgb(67, 64, 64) ;
+}
+
+.column2-match-details h4{
+    color: rgb(6, 226, 6);
+    margin-left: 5%;
+    margin-top: 3.5%;
+    margin-bottom: -1.5%;
+}
+
+.column3-match-details{
+    width: 33%;
+    background-color: rgb(67, 64, 64);
+} 
+
+.column3-match-details h4{
+    color: rgb(6, 226, 6);
+    margin-left: 5%;
+    margin-top: 3.5%;
+    margin-bottom: -1.5%;
+}
+#all{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#live-now{
+    cursor: pointer;
+}
+
+#upcoming{
+    cursor: pointer;
+}
+
+@keyframes up{
+    from{
+        height: 900px;
+        opacity: 100%;
+    }
+    to {
+        height: 0px;
+        opacity: 0%;
+    }
+}
+
+@keyframes down{
+    from{
+        height: 0px;
+        opacity: 10%;
+    }
+    to{
+        height: 900px;
+        opacity: 100%;
+    }
+}
+
+
 
 /* Featured Matches area sliding view */
 .featured-matches{
@@ -365,12 +535,19 @@ header{
     font-weight: bolder;
 }
 
+.mobile-preview1{
+    display: none;
+}
+.mobile-preview2{
+    display: none;
+}
+
 .firstMatch-runs1{
     margin-left: 30%;
 }
 
 .firstMatch-runs2{
-    margin-left: 29.5%;
+    margin-left: 30%;
 }
 
 .match1-status{
@@ -612,12 +789,16 @@ main{
     background-color:white;
     /* border: 1px solid black; this border & background color not required ,given to understand the area */
 }
-.left-aside-container button{
+.more-news button{
     color: blue;
     font-size:.95rem;
     border: 1px solid transparent;
     margin-left: 1rem;
     padding:0.50rem
+}
+.left-aside-container button:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 .l-content{
     /* width: 90%; */
@@ -678,21 +859,17 @@ main{
 .content-2 .text:hover{
     text-decoration: underline;
 }
-/* latest photos section ends here */
-
-
-/* my left part and middle part css starts here */
-
-.left-aside-container button:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
 .image2 {
     margin-top: 2%;
 }
-
+.more-photos button{
+    color: blue;
+    font-size:.95rem;
+    border: 1px solid transparent;
+    margin-left: 1rem;
+}
 /* latest photos section ends here */
+
 /* designing left aside content 3 scheduled section */
 .schedule {
     color: #009270;
@@ -701,8 +878,6 @@ main{
     font-size: x-large;
     margin-left: 5%;
 }
-
-
 .scheduled-text {
     color: black;
     font-family: helvetica, "Segoe UI", Arial, sans-serif;
@@ -721,7 +896,13 @@ main{
 .m-content {
     margin: 3%;
 }
-
+.more-matches button{
+    color: blue;
+    font-size:.95rem;
+    border: 1px solid transparent;
+    margin-left: 1rem;
+    margin-top:12%;
+}
 /* ahad design center content starts here */
 
 .score-container {
@@ -741,9 +922,13 @@ main{
 
 .team-name {
     padding: 1%;
-
 }
-
+.team1{
+    margin-top:13%;
+}
+.team2{
+    margin-top:43%;
+}
 .para1 {
     padding-top: 10%;
     padding-left: 3%;
@@ -846,6 +1031,11 @@ main{
     background-color: white;
     /* border: 1px solid black; this border & background color not required  ,given to understand the area */
 }
+
+.top-stories-mobile{
+    display: none;
+}
+
 .small{
     font-size: .7rem;
 }
@@ -1038,3 +1228,11 @@ ul{
 }
 
 /* footer ends here */
+
+.mobile-footer{
+    display: none;
+}
+
+.show-ad2{
+    display: none;
+}
