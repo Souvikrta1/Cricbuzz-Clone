@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main2{
+    height: 80%;
+    max-width: 1080px;
+    margin: 5% auto;
+    border: 2px solid black;
+    
+    /* padding: 20px 50px 75px; */
+}
+.padding{
+    padding: 20px 50px 75px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.left2{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 40px 0px 40px 40px;
+}
+.profile{
+    margin-top: 10%;
+    /* width: 400px; */
+}
+.profile .foundbutton{
+    border: 1px solid black;
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    position: relative;
+}
+.right2{
+    width: 400px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.my-profile2{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.profile div svg {
+    width: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+#email2,#user{
+    width: 100%;
+    height: 25px;
+    margin-top: -20px;
+}
+.form{
+    /* width: 400px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-img{
+    width: 10%;
+}
+.avater-btn {
+    border: none;
+    color: rgba(0, 0, 255, 1);
+    margin-bottom: 10px;
+}
+.avater-btn:hover{
+    text-decoration: underline;
+}
+#submit{
+    font-size: 18px;
+    background: rgb(26, 178, 26);
+    color: white;
+    border: none;
+    height: 30px;
+    width: 70px;
+}
+#submit:hover{
+    background: green;
+}
+.arrow-svg{
+    position: absolute;
+    right: 10px;
+}
+.newclass{
+    background: rgb(41, 193, 124);
+    color: white;
+}
+.newclass svg{
+    fill: white;
+}
+/* .profile-page{
+    display: none;
+} */
+.cricbuzz-plus-div{
+    margin-top: 50px;
+    font-size: .7rem;
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.cricbuzz-black-box{
+    margin-top: 30px;
+    background: black;
+    color: white;
+    padding: 10px;
+    height: 75px;
+    border-radius: 4px;
+}
+.cricbuzz-plus{
+    font-size: 12px;
+}
+.no-ads{
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.cricbuzz-black-box a{
+    background: #009270;
+    text-decoration: none;
+    border-radius: 18px;
+    font-size: 12px;
+    color: white;
+    padding: 8px 25px;
+}
+.manage-subscription{
+    display: none;
+}
+.redeem-coupons{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    display: none;
+}
+.redeem-form{
+    margin-top: 50px;
+    width: 90%;
+    font-size: 13px;
+}
+#coupon-code{
+    width: 100%;
+    border-radius: 4px;
+    height: 35px;
+    border: 1px solid #bababa;
+    padding: 0 10px;
+}
+.logged-in-as{
+    margin-top: 20px;
+    text-align: center;
+}
+#submit{
+    margin-top: 20px;
+    width: 100%;
+}
+.payment-not-found{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #bababa;
+}
+.payment-history{
+    display: none;
+}
+.select-topic-heading{
+    margin-bottom: 40px;
+}
+.select-topic{
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+    border:1px solid #cec3c3;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 4px;
+    position: relative;
+}
+.select-topic svg{
+    width: 1.5rem;
+}
+.select-topic-bar{
+    display: none;
+}
+
+
+@media only screen and (max-width:800px){
+    .main2{
+        border: none;
+    }
+    .left2{
+        width: 100%;
+    }
+    .right2{
+        width: 100%;
+    }
+}

@@ -54,14 +54,12 @@ menuBtn.forEach(ele => {
         })
     }
     ele.addEventListener("mouseover",()=>{
-        ele.style.background = "rgb(2, 119, 2)";
+        ele.style.background = "#00785c";
     })
     ele.addEventListener("mouseout",()=>{
         ele.style.background = "initial";
     })
 })
-
-
 
 // newsDrop event listeners
 newsDrop.addEventListener("mousemove", () => {
@@ -180,12 +178,14 @@ match.forEach((ele)=>{
 const allBtn = document.querySelector(".all-btn");
 const closeBtn = document.querySelector(".close-btn");
 const openCloseContainer = document.querySelector(".open-close-match-container")
-const matchStyle = document.querySelector(".match")
+const matchStyle = document.querySelector(".match");
+const matches = document.querySelector(".matches")
 
 allBtn.addEventListener("click",()=>{
     openCloseContainer.style.display ="flex";
     allBtn.style.display = "none";
     closeBtn.style.display = "flex";
+    matches.style.border = "none";
     openCloseContainer.style.animation ="down 0.5s" //animation open in all match section
     setTimeout(()=>{
         openCloseContainer.style.display ="none";
@@ -200,7 +200,7 @@ closeBtn.addEventListener("click",()=>{
     allBtn.style.display = "flex";
     closeBtn.style.display = "none";
     },370)
-    
+    matches.style.borderBottom = "1px solid #c4c6c4";
 })
 
 // live now btn function inside open-close container
@@ -304,7 +304,7 @@ slideToLeft.addEventListener("click", () => {
 
 
 // showing ad features
-const ads = ["https://www.drivespark.com/img/2018/11/maruti-ertiga-tvc-video-varun-dhawan-advertisement1-1542887535.jpg", "https://i.ytimg.com/vi/qCoJpymgSxc/maxresdefault.jpg", "https://m.media-amazon.com/images/S/aplus-media-library-service-media/c46d0ba1-3fb8-4eb1-8ae7-4a71501b1306.__CR0,0,970,600_PT0_SX970_V1___.jpg", "https://etimg.etb2bimg.com/photo/89201899.cms", "https://www.adweek.com/wp-content/uploads/files/blogs/frooti-hed-2015.jpg", "https://gumlet.assettype.com/afaqs%2F2022-04%2F7600931c-19e1-4ec0-80fc-627ed633b091%2Fdolly1.jpg?rect=0%2C33%2C800%2C450&format=webp&w=400&dpr=2.6", "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/men%60s-footwear-ads-design-template-78776ad26b8e10c9d0bc3346500a0792_screen.jpg?ts=1660293293", "https://stock.intellemo.com/624190a2a4d580fea3b730e2/62418fd438732c17450a8eae-v1/men_s_sport_shoes_l.jpg", "https://en.pimg.jp/062/561/746/1/62561746.jpg", "https://previews.123rf.com/images/hstrongart/hstrongart1701/hstrongart170100151/69269523-mouth-rinse-ads-refreshing-mouthwash-products-with-mints-leaves-and-splashing-liquids-in-3d-illustra.jpg"]
+const ads = ["https://www.drivespark.com/img/2018/11/maruti-ertiga-tvc-video-varun-dhawan-advertisement1-1542887535.jpg", "https://i.ytimg.com/vi/qCoJpymgSxc/maxresdefault.jpg", "https://m.media-amazon.com/images/S/aplus-media-library-service-media/c46d0ba1-3fb8-4eb1-8ae7-4a71501b1306.__CR0,0,970,600_PT0_SX970_V1___.jpg", "https://etimg.etb2bimg.com/photo/89201899.cms", "https://www.adweek.com/wp-content/uploads/files/blogs/frooti-hed-2015.jpg", "https://gumlet.assettype.com/afaqs%2F2022-04%2F7600931c-19e1-4ec0-80fc-627ed633b091%2Fdolly1.jpg?rect=0%2C33%2C800%2C450&format=webp&w=400&dpr=2.6", "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/men%60s-footwear-ads-design-template-78776ad26b8e10c9d0bc3346500a0792_screen.jpg?ts=1660293293", "https://stock.intellemo.com/624190a2a4d580fea3b730e2/62418fd438732c17450a8eae-v1/men_s_sport_shoes_l.jpg", "https://previews.123rf.com/images/hstrongart/hstrongart1701/hstrongart170100151/69269523-mouth-rinse-ads-refreshing-mouthwash-products-with-mints-leaves-and-splashing-liquids-in-3d-illustra.jpg"]
 const show = document.querySelector(".show-ad");
 const show2 = document.querySelector(".show-ad2");
 setInterval(() => {
@@ -322,9 +322,12 @@ const videos = document.querySelectorAll('.videos');
 videos.forEach((ele)=>{
     ele.addEventListener('mouseover', function(){
         ele.play();
+        ele.style.scale="1.25";
     })
     ele.addEventListener('mouseout', function(){
         ele.pause();
+        ele.style.scale="1";
+
     })
 })
 // let clip=document.querySelector(".videos")
@@ -383,41 +386,170 @@ goTop.addEventListener("click",()=>{
 
 
 
+// fetching API for scorecard in featured matches
 
-// testing api fetch below (successful)
+window.onload = async () => {
+    const res = await fetch("https://prakash-dey.github.io/api/crickbuzz.json");
+    
+    const data = await res.json();
 
-// window.onload = async () => {
-//     const res = await fetch("https://api.cricapi.com/v1/currentMatches?apikey=90bb3bdf-b4fb-434d-b701-147392652688&offset=0");
+    // first match data in featured matches
+    const firstMatch = document.querySelector(".first-match");
 
-//     const result = await res.json();
-
-//     console.log(result);
-//     let matchName = result["data"]["3"]["name"];
-//     let team1 = result["data"]["3"]["teams"]["0"];
-//     let team2 = result["data"]["3"]["teams"]["1"];
-//     let team1Runs =  result["data"]["3"]["score"]["0"]["r"];
-//     let team2Runs = result["data"]["3"]["score"]["1"]["r"];
-//     let team1Wkt = result["data"]["3"]["score"]["0"]["w"];
-//     let team2wkt = result["data"]["3"]["score"]["1"]["w"];
-//     let team1over = result["data"]["3"]["score"]["0"]["o"];
-//     let team2over = result["data"]["3"]["score"]["1"]["o"];
-
-//     let status = result["data"]["3"]["status"];
+    function firstMatchRender(data){
+        let matchName = data[0]["name"];
+        let team1Name = data[0]["shortName"][0];
+        let team2Name = data[0]["shortName"][1];
+        let team1Runs = data[0]["score"][0]["r"];
+        let team2Runs = data[0]["score"][1]["r"];
+        let team1Wkt = data[0]["score"][0]["w"];
+        let team2Wkt = data[0]["score"][1]["w"];
+        let team1over = data[0]["score"][0]["o"];
+        let team2over = data[0]["score"][1]["o"];
+        let status = data[0]["status"];
 
 
-//     const secondMatchApi = document.querySelector(".second-match");
+        firstMatch.innerHTML += `<button class="stat-btn" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scorecard/60814/rsawu19-vs-indwu19-1st-t20-india-women-under-19s-tour-of-south-africa-2022-23'">
+        <p class="mobile-preview1">${matchName}</p>
+        <span>
+            <p>${team1Name}</p>
+            <p class="firstMatch-runs1">${team1Runs}-${team1Wkt} (${team1over})</p>
+        </span>
+        <span>
+            <p>${team2Name}</p>
+            <p class="firstMatch-runs2">${team2Runs}-${team2Wkt} (${team2over})</p>
+        </span>
+        <p class="match1-status">${status}</p>
+    </button>
+    <button class="fantasy" onclick="window.location.href='https://www.cricbuzz.com/cricket-fantasy-handbook/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022#!/expert-picks'"><i class="fa-solid fa-trophy" ></i> Fantasy Handbook</button>`
+    }
 
-//     secondMatchApi.innerHTML = "";
-//     secondMatchApi.innerHTML = `<button class="stat-btn2" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022'">
-//     <p class="mobile-preview2">${matchName}</p>
-//     <span>
-//         <p >${team1}</p>
-//         <p class="secondMatch-runs1">${team1Runs}-${team1Wkt} (${team1over})</p>
-//     </span>
-//     <span>
-//         <p>${team2}</p>
-//         <p class="secondMatch-runs2">${team2Runs}-${team2wkt} (${team2over})</p>
-//     </span>
-//     <p class="match2-status">${status}</p>
-// </button>`
-// }
+    firstMatchRender(data);
+
+    // second match data in featured matches
+
+    const secondMatch = document.querySelector(".second-match");
+
+    function secondMatchRender(data){
+        let matchName = data[1]["name"];
+        let team1Name = data[1]["shortName"][0];
+        let team2Name = data[1]["shortName"][1];
+        let team1Runs = data[1]["score"][0]["r"];
+        let team2Runs = data[1]["score"][1]["r"];
+        let team1Wkt = data[1]["score"][0]["w"];
+        let team2Wkt = data[1]["score"][1]["w"];
+        let team1over = data[1]["score"][0]["o"];
+        let team2over = data[1]["score"][1]["o"];
+        let status = data[1]["status"];
+
+
+        secondMatch.innerHTML = `<button class="stat-btn2" onclick="window.location.href='https://www.cricbuzz.com/cricket-scores/57545/nep-vs-nam-2nd-match-icc-cricket-world-cup-league-two-2019-23'">
+        <p class="mobile-preview2">${matchName}</p>
+        <span>
+            <p>${team1Name}</p>
+            <p class="secondMatch-runs1">${team1Runs}-${team1Wkt} (${team1over})</p>
+        </span>
+        <span>
+            <p>${team2Name}</p>
+            <p class="secondMatch-runs2">${team2Runs}-${team2Wkt} (${team2over})</p>
+        </span>
+        <p class="match2-status">${status}</p>
+    </button>`
+    }
+
+    secondMatchRender(data);
+
+    // Third Match data 
+
+    const thirdMatch = document.querySelector(".third-match");
+
+    function thirdMatchRender(data){
+        let matchName = data[2]["name"];
+        let team1Name = data[2]["shortName"][0];
+        let team2Name = data[2]["shortName"][1];
+        let team1Runs = data[2]["score"][0]["r"];
+        let team2Runs = data[2]["score"][1]["r"];
+        let team1Wkt = data[2]["score"][0]["w"];
+        let team2Wkt = data[2]["score"][1]["w"];
+        let team1over = data[2]["score"][0]["o"];
+        let team2over = data[2]["score"][1]["o"];
+        let status = data[2]["status"];
+
+
+        thirdMatch.innerHTML = `<button class="stat-btn3" onclick="window.location.href='https://www.cricbuzz.com/cricket-scores/58651/nga-vs-tan-23rd-match-icc-mens-t20-world-cup-sub-regional-africa-qualifier-b-2022'">
+        <p class="mobile-preview2">${matchName}</p>
+        <span>
+            <p>${team1Name}</p>
+            <p class="thirdMatch-runs1">${team1Runs}-${team1Wkt} (${team1over})</p>
+        </span>
+        <span>
+            <p>${team2Name}</p>
+            <p class="thirdMatch-runs2">${team2Runs}-${team2Wkt} (${team2over})</p>
+        </span>
+        <p class="match3-status">${status}</p>
+    </button>`
+    }
+    thirdMatchRender(data);
+
+    // fourth match data
+
+    const mobilePreview = document.getElementById("fourth-match");
+    const team1Data = document.getElementById("team-1");
+    const team2Data = document.getElementById("team-2");
+    const match4Status = document.querySelector(".match4-status")
+
+    function fourthMatchRender(data){
+        let matchName = data[4]["name"];
+        let team1Name = data[4]["shortName"][0];
+        let team2Name = data[4]["shortName"][1];
+        let team1Runs = data[4]["score"][0]["r"];
+        let team2Runs = data[4]["score"][1]["r"];
+        let team1Wkt = data[4]["score"][0]["w"];
+        let team2Wkt = data[4]["score"][1]["w"];
+        let team1over = data[4]["score"][0]["o"];
+        let team2over = data[4]["score"][1]["o"];
+        let status = data[4]["status"];
+
+        mobilePreview.innerText = matchName;
+        team1Data.innerHTML = `<p>${team1Name}</p>
+        <p class="fourthMatch-runs1">${team1Runs}-${team1Wkt} (${team1over})</p>`
+        team2Data.innerHTML = `<p>${team2Name}</p>
+        <p class="thirdMatch-runs2">${team2Runs}-${team2Wkt} (${team2over})</p>`
+        match4Status.innerText = status;
+    }
+
+    fourthMatchRender(data);
+
+}
+
+let data = localStorage.getItem("data");
+const loginPage = document.getElementById("user-login");
+
+loginPage.addEventListener("click",()=>{
+    if(data == "yes"){
+        window.location.href="index2.html";
+    }
+    else{
+        window.location.href="index1.html";
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

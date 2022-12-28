@@ -17,13 +17,13 @@
     .mobile-preview1{
         display: flex;
         margin: 2% 0% 2% 7%;
-        color: rgb(178, 145, 102);
+        color: black;
     }
 
     .mobile-preview2{
         display: flex;
         margin: 2% 0% 2% 2%;
-        color: rgb(178, 145, 102);
+        color: black;
     }
 
     #search{
