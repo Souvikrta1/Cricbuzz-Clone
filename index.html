@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="mobile-view.css">
-    <title>Document</title>
+    <link rel="icon" href="https://www.bing.com/th?id=ODLS.38ccd61b-25be-499e-9400-6fea78021905&w=32&h=32&o=6&pid=13.1">
+    <title>Live Cricket Score, Schedule , Latest News, Stats & Videos | Cricbuzz.com</title>
 </head>
 <body>
     <header>
@@ -69,6 +69,7 @@
             <button onclick="window.location.href='https://www.cricbuzz.com/cricket-series/4455/lanka-premier-league-2022'">Lanka Premier League 2022</button>
             <button onclick="window.location.href='https://www.cricbuzz.com/cricket-series/4534/ranji-trophy-2022-23'">Ranji Trophy 2022-23</button>
             <button onclick="window.location.href='https://www.cricbuzz.com/cricket-series/5078/australia-women-tour-of-india-2022'">Australia Women tour of India , 2022</button>
+            <button class="all-series">All Series <span>>></span></button>
         </div>
         <div class="teams-drop">
             <div class="test-teams">
@@ -100,7 +101,9 @@
                 <button onclick="window.location.href='https://www.cricbuzz.com/cricket-team/jersey/303'">Jersey</button>
                 <button onclick="window.location.href='https://www.cricbuzz.com/cricket-team/oman/304'">Oman</button>
                 <button onclick="window.location.href='https://www.cricbuzz.com/cricket-team/fiji/343'">Fiji</button>
+                <button id="more-teams" onclick="window.location.href='https://www.cricbuzz.com/cricket-team'">More ...</button>
             </div>
+            
         </div>
         <div class="videos-drop">
             <button onclick="window.location.href='https://www.cricbuzz.com/cricket-videos'">All Videos</button>
@@ -272,7 +275,7 @@
         <h4>FEATURED MATCHES</h4>
         <div id="stat-page1" class="match-stats-p1">
             <div class="first-match">
-                <button class="stat-btn" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/52022/pak-vs-eng-3rd-test-england-tour-of-pakistan-2022'">
+                <!-- <button class="stat-btn" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/52022/pak-vs-eng-3rd-test-england-tour-of-pakistan-2022'">
                     <p class="mobile-preview1">2nd Test • India Tour Of Bangladesh, 2022</p>
                     <span>
                         <p>Ban</p>
@@ -284,10 +287,10 @@
                     </span>
                     <p class="match1-status">Day 1: Stumps - India trail by 208 runs</p>
                 </button>
-                <button class="fantasy"><i class="fa-solid fa-trophy" onclick="window.location.href='https://www.cricbuzz.com/cricket-fantasy-handbook/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022#!/expert-picks'"></i> Fantasy Handbook</button>
+                <button class="fantasy"><i class="fa-solid fa-trophy" onclick="window.location.href='https://www.cricbuzz.com/cricket-fantasy-handbook/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022#!/expert-picks'"></i> Fantasy Handbook</button> -->
             </div>
             <div class="second-match">
-                <button class="stat-btn2" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022'">
+                <!-- <button class="stat-btn2" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022'">
                     <p class="mobile-preview2">1st Test • India Tour Of Bangladesh, 2022</p>
                     <span>
                         <p>IND</p>
@@ -298,10 +301,10 @@
                         <p class="secondMatch-runs2">150 & 324</p>
                     </span>
                     <p class="match2-status">India won by 188 runs </p>
-                </button>
+                </button> -->
             </div>
             <div class="third-match">
-                <button class="stat-btn3" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56901/kdf-vs-dma-18th-match-lanka-premier-league-2022'">
+                <!-- <button class="stat-btn3" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56901/kdf-vs-dma-18th-match-lanka-premier-league-2022'">
                     <p class="mobile-preview2">League Match • Lanka Premier League 2022</p>
                     <span>
                         <p>KDF</p>
@@ -312,20 +315,20 @@
                         <p class="thirdMatch-runs2">121-9 (20)</p>
                     </span>
                     <p class="match3-status">KDF won by 39 runs</p>
-                </button>
+                </button> -->
             </div>
             <div class="fourth-match">
-                <button class="stat-btn4" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/50293/syt-vs-mlr-7th-match-big-bash-league-2022-23'">
-                    <p class="mobile-preview2">10th Match • Big Bash League 2022-23</p>
-                    <span>
-                        <p>SYT</p>
-                        <p class="fourthMatch-runs1">174-6 (20)</p>
+                <button class="stat-btn4" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/53016/cntbry-vs-akl-3rd-match-super-smash-2022-23'">
+                    <p id ="fourth-match" class="mobile-preview2"></p>
+                    <span id="team-1">
+                        <p></p>
+                        <p class="fourthMatch-runs1"></p>
                     </span>
-                    <span>
-                        <p>MLR</p>
-                        <p class="fourthMatch-runs2">175-6 (19.5)</p>
+                    <span id="team-2">
+                        <p></p>
+                        <p class="fourthMatch-runs2"></p>
                     </span>
-                    <p class="match4-status">Melbourne Renegades won by 4 wkts</p>
+                    <p class="match4-status"></p>
                 </button>
                 <button id="slide-right" class="slider"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
