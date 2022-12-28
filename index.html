@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="mobile-view.css">
-    <title>Document</title>
+    <link rel="icon" href="https://www.bing.com/th?id=ODLS.38ccd61b-25be-499e-9400-6fea78021905&w=32&h=32&o=6&pid=13.1">
+    <title>Live Cricket Score, Schedule , Latest News, Stats & Videos | Cricbuzz.com</title>
 </head>
 <body>
     <header>
@@ -49,6 +49,7 @@
                     <p class="more">More</p><i class="fa-solid fa-caret-down more"></i>
                 </button>
             </div>
+            
             <div id="search-area" class="search-area">
                 <input type="text" id="search-input" placeholder="Search for players"></input>
                 <button id="search-btn">Search</button>
@@ -98,30 +99,15 @@
                 Bhogle</button>
         </div>
         <div class="series-drop">
-            <button
-                onclick="window.location.href='https://www.cricbuzz.com/cricket-series/4905/india-tour-of-bangladesh-2022'">India
-                tour of Bangladesh , 2022</button>
-            <button
-                onclick="window.location.href='https://www.cricbuzz.com/cricket-series/4492/england-tour-of-pakistan-2022'">England
-                tour of Pakistan , 2022</button>
-            <button
-                onclick="window.location.href='https://www.cricbuzz.com/cricket-series/4254/south-africa-tour-of-australia-2022-23'">South
-                Africa tour of Australia , 2022-23</button>
-            <button
-                onclick="window.location.href='https://www.cricbuzz.com/cricket-series/4889/new-zealand-tour-of-pakistan-2022-23'">New
-                Zealand tour of Pakistan , 2022-23</button>
-            <button
-                onclick="window.location.href='https://www.cricbuzz.com/cricket-series/4457/big-bash-league-2022-23'">Big
-                Bash Leaugue 2022-23</button>
-            <button
-                onclick="window.location.href='https://www.cricbuzz.com/cricket-series/4455/lanka-premier-league-2022'">Lanka
-                Premier League 2022</button>
-            <button
-                onclick="window.location.href='https://www.cricbuzz.com/cricket-series/4534/ranji-trophy-2022-23'">Ranji
-                Trophy 2022-23</button>
-            <button
-                onclick="window.location.href='https://www.cricbuzz.com/cricket-series/5078/australia-women-tour-of-india-2022'">Australia
-                Women tour of India , 2022</button>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-series/4905/india-tour-of-bangladesh-2022'">India tour of Bangladesh , 2022</button>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-series/4492/england-tour-of-pakistan-2022'">England tour of Pakistan , 2022</button>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-series/4254/south-africa-tour-of-australia-2022-23'">South Africa tour of Australia , 2022-23</button>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-series/4889/new-zealand-tour-of-pakistan-2022-23'">New Zealand tour of Pakistan , 2022-23</button>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-series/4457/big-bash-league-2022-23'">Big Bash Leaugue 2022-23</button>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-series/4455/lanka-premier-league-2022'">Lanka Premier League 2022</button>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-series/4534/ranji-trophy-2022-23'">Ranji Trophy 2022-23</button>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-series/5078/australia-women-tour-of-india-2022'">Australia Women tour of India , 2022</button>
+            <button class="all-series">All Series <span>>></span></button>
         </div>
         <div class="teams-drop">
             <div class="test-teams">
@@ -173,7 +159,9 @@
                     onclick="window.location.href='https://www.cricbuzz.com/cricket-team/jersey/303'">Jersey</button>
                 <button onclick="window.location.href='https://www.cricbuzz.com/cricket-team/oman/304'">Oman</button>
                 <button onclick="window.location.href='https://www.cricbuzz.com/cricket-team/fiji/343'">Fiji</button>
+                <button id="more-teams" onclick="window.location.href='https://www.cricbuzz.com/cricket-team'">More ...</button>
             </div>
+            
         </div>
         <div class="videos-drop">
             <button onclick="window.location.href='https://www.cricbuzz.com/cricket-videos'">All Videos</button>
@@ -354,7 +342,7 @@
         <h4>FEATURED MATCHES</h4>
         <div id="stat-page1" class="match-stats-p1">
             <div class="first-match">
-                <button class="stat-btn" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/52022/pak-vs-eng-3rd-test-england-tour-of-pakistan-2022'">
+                <!-- <button class="stat-btn" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/52022/pak-vs-eng-3rd-test-england-tour-of-pakistan-2022'">
                     <p class="mobile-preview1">2nd Test • India Tour Of Bangladesh, 2022</p>
                     <span>
                         <p>Ban</p>
@@ -366,12 +354,10 @@
                     </span>
                     <p class="match1-status">Day 1: Stumps - India trail by 208 runs</p>
                 </button>
-                <button class="fantasy"><i class="fa-solid fa-trophy"
-                        onclick="window.location.href='https://www.cricbuzz.com/cricket-fantasy-handbook/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022#!/expert-picks'"></i>
-                    Fantasy Handbook</button>
+                <button class="fantasy"><i class="fa-solid fa-trophy" onclick="window.location.href='https://www.cricbuzz.com/cricket-fantasy-handbook/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022#!/expert-picks'"></i> Fantasy Handbook</button> -->
             </div>
             <div class="second-match">
-                <button class="stat-btn2" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022'">
+                <!-- <button class="stat-btn2" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022'">
                     <p class="mobile-preview2">1st Test • India Tour Of Bangladesh, 2022</p>
                     <span>
                         <p>IND</p>
@@ -382,10 +368,10 @@
                         <p class="secondMatch-runs2">150 & 324</p>
                     </span>
                     <p class="match2-status">India won by 188 runs </p>
-                </button>
+                </button> -->
             </div>
             <div class="third-match">
-                <button class="stat-btn3" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56901/kdf-vs-dma-18th-match-lanka-premier-league-2022'">
+                <!-- <button class="stat-btn3" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56901/kdf-vs-dma-18th-match-lanka-premier-league-2022'">
                     <p class="mobile-preview2">League Match • Lanka Premier League 2022</p>
                     <span>
                         <p>KDF</p>
@@ -396,20 +382,20 @@
                         <p class="thirdMatch-runs2">121-9 (20)</p>
                     </span>
                     <p class="match3-status">KDF won by 39 runs</p>
-                </button>
+                </button> -->
             </div>
             <div class="fourth-match">
-                <button class="stat-btn4" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/50293/syt-vs-mlr-7th-match-big-bash-league-2022-23'">
-                    <p class="mobile-preview2">10th Match • Big Bash League 2022-23</p>
-                    <span>
-                        <p>SYT</p>
-                        <p class="fourthMatch-runs1">174-6 (20)</p>
+                <button class="stat-btn4" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/53016/cntbry-vs-akl-3rd-match-super-smash-2022-23'">
+                    <p id ="fourth-match" class="mobile-preview2"></p>
+                    <span id="team-1">
+                        <p></p>
+                        <p class="fourthMatch-runs1"></p>
                     </span>
-                    <span>
-                        <p>MLR</p>
-                        <p class="fourthMatch-runs2">175-6 (19.5)</p>
+                    <span id="team-2">
+                        <p></p>
+                        <p class="fourthMatch-runs2"></p>
                     </span>
-                    <p class="match4-status">Melbourne Renegades won by 4 wkts</p>
+                    <p class="match4-status"></p>
                 </button>
                 <button id="slide-right" class="slider"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
@@ -452,51 +438,42 @@
                 <a href="https://www.cricbuzz.com/cricket-news/124871/focus-was-on-being-patient-mhambrey-on-indias-bowling"
                     class="text">'Focus was on being patient' - Mhambrey on India's bowling</a>
                 <p class="text-time">1h ago</p>
-                <hr width="100%">
 
                 <a href="https://www.cricbuzz.com/cricket-news/124871/focus-was-on-being-patient-mhambrey-on-indias-bowling"
                     class="text">"All I wanted was to bat long" - Zakir Hasan on debut ton</a>
                 <p class="text-time">1h ago</p>
-                <hr width="100%">
 
                 <a href="https://www.cricbuzz.com/cricket-news/124871/focus-was-on-being-patient-mhambrey-on-indias-bowling"
                     class="text">Zimbabwe boys in Mumbai with an eye on Sri Lanka</a>
                 <p class="text-time">1h ago</p>
-                <hr width="100%">
 
                 <a href="https://www.cricbuzz.com/cricket-news/124871/focus-was-on-being-patient-mhambrey-on-indias-bowling"
                     class="text">Didn't feel much pressure as I have been with the team regularly: Kuldeep</a>
                 <p class="text-time">1h ago</p>
-                <hr width="100%">
 
                 <a href="https://www.cricbuzz.com/cricket-news/124871/focus-was-on-being-patient-mhambrey-on-indias-bowling"
                     class="text">Injuries add to Bangladesh's woes in first Test against India</a>
                 <p class="text-time">1h ago</p>
-                <hr width="100%">
 
                 <a href="https://www.cricbuzz.com/cricket-news/124871/focus-was-on-being-patient-mhambrey-on-indias-bowling"
                     class="text">Azhar Ali to retire from Tests after England series</a>
                 <p class="text-time">1h ago</p>
-                <hr width="100%">
 
                 <a href="https://www.cricbuzz.com/cricket-news/124871/focus-was-on-being-patient-mhambrey-on-indias-bowling"
                     class="text">Hasaranga, Miller, Hales and Rajapaksa among star players picked in PSL draft</a>
                 <p class="text-time">1h ago</p>
-                <hr width="100%">
 
                 <a href="https://www.cricbuzz.com/cricket-news/124871/focus-was-on-being-patient-mhambrey-on-indias-bowling"
                     class="text">Not about technique but decision making - Herath on Bangladesh's Test woes</a>
                 <p class="text-time">1h ago</p>
-                <hr width="100%">
 
                 <a href="https://www.cricbuzz.com/cricket-news/124871/focus-was-on-being-patient-mhambrey-on-indias-bowling"
                     class="text">I trust wobble seam because I get success from it - Siraj</a>
                 <p class="text-time">1h ago</p>
-                <hr width="100%">
 
                 <a href="https://www.cricbuzz.com/cricket-news/124871/focus-was-on-being-patient-mhambrey-on-indias-bowling"
                     class="text">Ish Sodhi returns to New Zealand squad for Pakistan Tests</a>
-                <p class="text-time">1h ago</p>
+                <p class="bottom-one">1h ago</p>
             </div>
             <a class="more-news" href="https://www.cricbuzz.com/cricket-news/latest-news">
                 <button><i>More News..</i></button>
@@ -511,7 +488,6 @@
                     <p class="text">Pakistan vs England, 3rd Test, Day 2, Karachi</p>
                 </a>
                 <p class="date-time">Sun, Dec 18 2022</p>
-                <hr width="100%">
 
                 <a href="https://www.cricbuzz.com/cricket-gallery/5560/pakistan-vs-england-3rd-test-day-2-karachi">
                     <img class="image2"
@@ -520,7 +496,6 @@
                     <p class="text">Australia vs South Africa, 1st Test, Day 2, Brisbane</p>
                 </a>
                 <p class="date-time">Sun, Dec 18 2022</p>
-                <hr width="100%">
 
                 <a href="https://www.cricbuzz.com/cricket-gallery/5560/pakistan-vs-england-3rd-test-day-2-karachi">
                     <img class="image2"
@@ -529,7 +504,6 @@
                     <p class="text">Bangladesh vs India, 1st Test, Day 4, Chattogram</p>
                 </a>
                 <p class="date-time">Sun, Dec 18 2022</p>
-                <hr width="100%">
 
                 <a href="https://www.cricbuzz.com/cricket-gallery/5560/pakistan-vs-england-3rd-test-day-2-karachi">
                     <img class="image2"
@@ -538,7 +512,6 @@
                     <p class="text">Pakistan vs England, 3rd Test, Day 2, Karachi</p>
                 </a>
                 <p class="date-time">Sat, Dec 17 2022</p>
-                <hr width="100%">
 
                 <a href="https://www.cricbuzz.com/cricket-gallery/5560/pakistan-vs-england-3rd-test-day-2-karachi">
                     <img class="image2"
@@ -547,7 +520,6 @@
                     <p class="text">Pakistan vs England, 3rd Test, Day 2, Karachi</p>
                 </a>
                 <p class="date-time">Sat, Dec 17 2022</p>
-                <hr width="100%">
 
                 <a href="https://www.cricbuzz.com/cricket-gallery/5560/pakistan-vs-england-3rd-test-day-2-karachi">
                     <img class="image2"
@@ -556,7 +528,6 @@
                     <p class="text">Australia vs South Africa, 1st Test, Day 1, Brisbane</p>
                 </a>
                 <p class="date-time">Sat, Dec 17 2022</p>
-                <hr width="100%">
 
                 <a href="https://www.cricbuzz.com/cricket-gallery/5560/pakistan-vs-england-3rd-test-day-2-karachi">
                     <img class="image2"
@@ -564,8 +535,7 @@
                         alt="bangladesh-vs-india-1st-test">
                     <p class="text">Bangladesh vs India, 1st Test, Day 3, Chattogram</p>
                 </a>
-                <p class="date-time">Fri, Dec 16 2022</p>
-                <hr width="100%">
+                <p class="bottom-two">Fri, Dec 16 2022</p>
             </div>
             <a class="more-photos" href="https://www.cricbuzz.com/cricket-photo-gallery">
                 <button><i>More Photos..</i></button>
@@ -575,80 +545,62 @@
                 <div class="schedule">SCHEDULE</div>
                 <p class="scheduled-text">Malaysia vs Singapore, 6th Match</p>
                 <p class="schedule-time">Sun Dec 18 • 11:30 AM GMT</p>
-                <hr width="100%">
 
                 <p class="scheduled-text">Pakistan vs England, 3rd Test, Day 2</p>
                 <p class="schedule-time">Sun Dec 18 • 10:30 AM GMT</p>
-                <hr width="100%">
 
                 <p class="scheduled-text">Tanzania vs Uganda, 9th Match</p>
                 <p class="schedule-time">Sun Dec 18 • 1:00 PM GMT</p>
-                <hr width="100%">
 
                 <p class="scheduled-text">Rwanda vs Tanzania, 10th Match</p>
                 <p class="schedule-time">Sun Dec 18 • 5:15 PM GMT</p>
-                <hr width="100%">
 
                 <p class="scheduled-text">Qatar vs Singapore, 7th Match</p>
                 <p class="schedule-time">Mon Dec 19 • 7:00 AM GMT</p>
-                <hr width="100%">
 
                 <p class="scheduled-text">Malaysia vs Bahrain, 8th Match</p>
                 <p class="schedule-time">Mon Dec 19 • 11:30 AM GMT</p>
-                <hr width="100%">
 
                 <p class="scheduled-text">Pakistan vs England, 3rd Test, Day 3</p>
                 <p class="schedule-time">Mon Dec 19 • 10:30 AM GMT</p>
-                <hr width="100%">
 
                 <p class="scheduled-text">Tanzania vs Uganda, 11th Match</p>
                 <p class="schedule-time">Mon Dec 19 • 1:00 PM GMT</p>
-                <hr width="100%">
-
+                
                 <p class="scheduled-text">Rwanda vs Tanzania, 12th Match</p>
                 <p class="schedule-time">Mon Dec 19 • 5:15 PM GMT</p>
-                <hr width="100%">
 
                 <p class="scheduled-text">Pakistan vs England, 3rd Test, Day 4</p>
                 <p class="schedule-time">Tue Dec 20 • 10:30 AM GMT</p>
-                <hr width="100%">
 
                 <p class="scheduled-text">Rwanda vs Tanzania, 13th Match</p>
                 <p class="schedule-time">Tue Dec 20 • 1:00 PM GMT</p>
-                <hr width="100%">
 
                 <p class="scheduled-text">Rwanda vs Uganda, 14th Match</p>
                 <p class="schedule-time">Tue Dec 20 • 5:15 PM GMT</p>
-                <hr width="100%">
 
                 <p class="scheduled-text">Bahrain vs Singapore, 9th Match</p>
                 <p class="schedule-time">Wed Dec 21 • 7:00 PM GMT</p>
-                <hr width="100%">
 
                 <p class="scheduled-text">Malaysia vs Qatar, 10th Match</p>
                 <p class="schedule-time">Wed Dec 21 • 11:30 AM GMT</p>
-                <hr width="100%">
 
                 <p class="scheduled-text">Pakistan vs England, 3rd Test, Day 5</p>
                 <p class="schedule-time">Wed Dec 21 • 10:30 AM GMT</p>
-                <hr width="100%">
 
                 <p class="scheduled-text">Bangladesh vs India, 2nd Test, Day 1</p>
                 <p class="schedule-time">Thur Dec 22 • 9:00 AM GMT</p>
-                <hr width="100%">
 
                 <p class="scheduled-text">Malaysia vs Singapore, 11th Match</p>
                 <p class="schedule-time">Thur Dec 22 • 7:00 AM GMT</p>
-                <hr width="100%">
 
                 <p class="scheduled-text">Bahrain vs Qatar, 12th Match</p>
                 <p class="schedule-time">Thur Dec 22 • 11:30 AM GMT</p>
-                <hr width="100%">
 
                 <p class="scheduled-text">Rwanda vs Tanzania, 15th Match</p>
-                <p class="schedule-time">Thur Dec 22 • 1:00 PM GMT</p>
-                <hr width="100%">
+                <p class="bottom-three">Thur Dec 22 • 1:00 PM GMT</p>
             </div>
+
             <a class="more-matches" href="https://www.cricbuzz.com/cricket-schedule/upcoming-series/international">
                 <button><i>More Matches..</i></button>
             </a>
@@ -692,7 +644,6 @@
                         <a href="">Domingo Rahul chuffed with India's intensity in Chattogram victory</a>
                     </h2>
                 </div>
-                <hr width="95%">
             </div>
 
             <!-- --------------------------------------------------------------------------- -->
@@ -733,7 +684,7 @@
                             </svg>
                         </div>
                     </div>
-                    <p style="color: brown;" class="match-result">Day 3: 3rd Session - England need 108 runs</p>
+                    <p class="match-result">Day 3: 3rd Session - England need 108 runs</p>
                 </div>
 
                 <div class="match-highlight">
@@ -747,7 +698,6 @@
                         <a href="">The enduring connection between Pakistan and England</a>
                     </h2>
                 </div>
-                <hr width="95%">
             </div>
             <div class="big-container">
                 <div id="heading-content">
@@ -805,7 +755,6 @@
                         <a href=""><span class="report">AUSvSA /</span> Day 2: In pictures</a>
                     </h2>
                 </div>
-                <hr width="95%">
             </div>
                 <div class="big-container">
                     <div id="heading-content">
@@ -832,10 +781,7 @@
                             <a href="">Mark Chapman earns first NZC central contract</a>
                         </h2>
                     </div>
-                    <hr width="95%">
                 </div>
-                <!--  -->
-                <!--  -->
                 <div class="big-container">
                     <div id="heading-content">
                         <span class="match-heading">AUSTRALIA WOMEN TOUR OF INDIA</span>
@@ -854,10 +800,7 @@
                     <div class="match-summary">
                         <p>Richa Ghosh's thrilling cameo went in vain as India fell short again to lose the fourth T20I</p>
                     </div>
-                    <hr width="95%">
                 </div>
-                <!--  -->
-                <!--  -->
                 <div class="big-container">
                     <div id="heading-content">
                         <span class="match-heading">DIALOGUE ROOM</span>
@@ -876,7 +819,6 @@
                     <div class="match-summary">
                         <p>A guarded extrovert. An old school modern thinker. A sensitive, tough, straight-shooter who is alive to cultural nuance. South Africa's captain opens up in an unguarded interview</p>
                     </div>
-                    <hr width="95%">
                 </div>
                 <!--  -->
                 <div class="big-container">
@@ -896,7 +838,6 @@
                     <div class="match-summary">
                         <p>South Africa's fastest bowler is reaching his peak. Anrich Nortje explains how an improved action gives him confidence that he can get even quicker</p>
                     </div>
-                    <hr width="95%">
                 </div>
         </div>
         <div class="right-aside-container">
@@ -926,8 +867,9 @@
                 <div class="more">
                     <a href="https://www.cricbuzz.com/cricket-videos"><button class="btn">MORE VIDEOS</button></a>
                 </div>
+            </div>
                 <div class="special-section fonts-right">
-                    <div class="featured">Special</div>
+                    <div class="featured">SPECIALS</div>
                     <img src="https://www.cricbuzz.com/a/img/v1/300x170/i1/c251249/fans-will-also-be-encouraged-t.jpg">
                     <a href="https://www.cricbuzz.com/cricket-news/124663/december-2022-news-digest">December 2022-News
                         Digest</a>
@@ -976,14 +918,11 @@
                     <div class="right-text">The charismatic all-rounder waded through tricky phases and took England to
                         World Cup glory with a gritty fifty</div>
                 </div>
-            </div>
+            
         </div>
     </main>
 
-
-
-
-    <footer>
+    <!-- <footer>
         <div class="flex-container">
             <img src="https://www.cricbuzz.com/images/cb_logo.svg" alt="cricbuzz">
             <div class="heading-div">
@@ -992,7 +931,7 @@
                     <li>
                         <a class="anchor-tag" href="https://m.cricbuzz.com/">
                             <svg fill="#D3D3D3" class="icon" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                viewBox="0 0 512 512">
                                 <path
                                     d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 21 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z" />
                             </svg>
@@ -1003,7 +942,7 @@
                     <li>
                         <a class="anchor-tag" href="https://play.google.com/store/apps/details?id=com.cricbuzz.android">
                             <svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                viewBox="0 0 576 512">
                                 <path
                                     d="M420.55,301.93a24,24,0,1,1,24-24,24,24,0,0,1-24,24m-265.1,0a24,24,0,1,1,24-24,24,24,0,0,1-24,24m273.7-144.48,47.94-83a10,10,0,1,0-17.27-10h0l-48.54,84.07a301.25,301.25,0,0,0-246.56,0L116.18,64.45a10,10,0,1,0-17.27,10h0l47.94,83C64.53,202.22,8.24,285.55,0,384H576c-8.24-98.45-64.54-181.78-146.85-226.55" />
                             </svg>
@@ -1014,7 +953,7 @@
                     <li>
                         <a class="anchor-tag" href="https://apps.apple.com/app/id360466413">
                             <svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                viewBox="0 0 384 512">
                                 <path
                                     d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
                             </svg>
@@ -1029,7 +968,7 @@
                     <li>
                         <a class="anchor-tag" href="https://www.facebook.com/cricbuzz">
                             <svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                viewBox="0 0 512 512">
                                 <path
                                     d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
                             </svg>
@@ -1040,7 +979,7 @@
                     <li>
                         <a class="anchor-tag" href="https://twitter.com/cricbuzz">
                             <svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                viewBox="0 0 512 512">
                                 <path
                                     d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
                             </svg>
@@ -1051,7 +990,7 @@
                     <li>
                         <a class="anchor-tag" href="https://www.youtube.com/channel/UCSRQXk5yErn4e14vN76upOw">
                             <svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                viewBox="0 0 576 512">
                                 <path
                                     d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
                             </svg>
@@ -1062,7 +1001,7 @@
                     <li>
                         <a class="anchor-tag" href="https://in.pinterest.com/cricbuzz/">
                             <svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 496 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                viewBox="0 0 496 512">
                                 <path
                                     d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z" />
                             </svg>
@@ -1113,7 +1052,68 @@
             <a href="http://timesofindia.indiatimes.com/"><span>| The Times of India</span></a>
             <a href="http://navbharattimes.indiatimes.com/"><span>| Navbharat Times</span></a>
         </div>
+    </footer> -->
+
+    <footer>
+        <img src="https://www.cricbuzz.com/images/cb_logo.svg" alt="CricBuzz">
+        <div class="footer-inside-container">
+            <div class="line1-footer">
+                <p>MOBILE SITE & APPS</p>
+                <button onclick="window.location.href='https://m.cricbuzz.com/'"><svg fill="#D3D3D3" class="icon" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512">
+                    <path
+                        d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 21 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z" />
+                </svg> m.cricbuzz.com</button>
+                <button onclick="window.location.href='https://play.google.com/store/apps/details?id=com.cricbuzz.android'"><svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 576 512">
+                    <path
+                        d="M420.55,301.93a24,24,0,1,1,24-24,24,24,0,0,1-24,24m-265.1,0a24,24,0,1,1,24-24,24,24,0,0,1-24,24m273.7-144.48,47.94-83a10,10,0,1,0-17.27-10h0l-48.54,84.07a301.25,301.25,0,0,0-246.56,0L116.18,64.45a10,10,0,1,0-17.27,10h0l47.94,83C64.53,202.22,8.24,285.55,0,384H576c-8.24-98.45-64.54-181.78-146.85-226.55" />
+                </svg>Android</button>
+                <button onclick="window.location.href='https://apps.apple.com/app/id360466413'"><svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512">
+                    <path
+                        d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
+                </svg>IOS</button>
+            </div>
+            <div class="line2-footer">
+                <p>FOLLOW US ON</p>
+                <button onclick="window.location.href='https://www.facebook.com/cricbuzz'"><svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512">
+                    <path
+                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                </svg>facebook</button>
+                <button onclick="window.location.href='https://twitter.com/cricbuzz'"><svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512">
+                    <path
+                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                </svg>twitter</button>
+                <button onclick="window.location.href='https://www.youtube.com/channel/UCSRQXk5yErn4e14vN76upOw'"> <svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 576 512">
+                    <path
+                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                </svg>youtube</button>
+                <button onclick="window.location.href='https://in.pinterest.com/cricbuzz/'"><svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 496 512">
+                    <path
+                        d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z" />
+                </svg>Pinterest</button>
+            </div>
+            <div class="line1-footer">
+                <p>COMPANY</p>
+                <button onclick="window.location.href='https://www.cricbuzz.com/careers'">Careers</button>
+                <button onclick="window.location.href='https://www.cricbuzz.com/info/advertise'">Advertise</button>
+                <button onclick="window.location.href='https://www.cricbuzz.com/info/privacy'">Privacy Policy</button>
+                <button onclick="window.location.href='https://www.cricbuzz.com/info/termsofuse'">Terms Of Use</button>
+                <button onclick="window.location.href='https://www.cricbuzz.com/product-blog/cricbuzz-mobile-apps-tv-ad-cricket-ka-keeda'">Cricbuzz TV Ads</button>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>© 2022 Cricbuzz.com, Times Internet Limited. All rights reserved</span>
+            <a href="http://timesofindia.indiatimes.com/">| The Times of India</a>
+            <a href="http://navbharattimes.indiatimes.com/">| Navbharat Times</a>
+        </div>
     </footer>
+
     <div class="show-ad2">
         <img class="ads2"
             src="https://previews.123rf.com/images/hstrongart/hstrongart1701/hstrongart170100151/69269523-mouth-rinse-ads-refreshing-mouthwash-products-with-mints-leaves-and-splashing-liquids-in-3d-illustra.jpg">
