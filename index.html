@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="sub-nav.css">
     <link rel="stylesheet" href="featured-matches.css">
@@ -16,42 +17,42 @@
 </head>
 <body>
     <header>
-        <nav>
+        <div class="line1">
             <img src="https://www.cricbuzz.com/images/cb_logo.svg" alt="CricBuzz">
             <div id="menu" class="menu-btn">
-                <a class="nav-btn"
-                    href='https://www.cricbuzz.com/cricket-match/live-scores'>
+                <button class="line1-btn"
+                    onclick="window.location.href='https://www.cricbuzz.com/cricket-match/live-scores'">
                     <p>Live Scores</p>
-                </a>
-                <a class="nav-btn"
-                    href='https://www.cricbuzz.com/cricket-schedule/upcoming-series/international'>
+                </button>
+                <button class="line1-btn"
+                    onclick="window.location.href='https://www.cricbuzz.com/cricket-schedule/upcoming-series/international'">
                     <p>Schedules</p>
-                </a>
-                <a class="nav-btn"
-                    href='https://www.cricbuzz.com/cricket-scorecard-archives'>
+                </button>
+                <button class="line1-btn"
+                    onclick="window.location.href='https://www.cricbuzz.com/cricket-scorecard-archives'">
                     <p>Archives</p>
-                </a>
-                <a class="nav-btn news" href='https://www.cricbuzz.com/cricket-news'>
+                </button>
+                <button class="line1-btn news" onclick="window.location.href='https://www.cricbuzz.com/cricket-news'">
                     <p class="news">News</p><i class="fa-solid fa-caret-down news"></i>
-                </a>
-                <a class="nav-btn series"
-                    href='https://www.cricbuzz.com/cricket-schedule/series'>
+                </button>
+                <button class="line1-btn series"
+                    onclick="window.location.href='https://www.cricbuzz.com/cricket-schedule/series'">
                     <p class="series">Series</p><i class="fa-solid fa-caret-down series"></i>
-                </a>
-                <a class="nav-btn teams" href='https://www.cricbuzz.com/cricket-team'>
+                </button>
+                <button class="line1-btn teams" onclick="window.location.href='https://www.cricbuzz.com/cricket-team'">
                     <p class="teams">Teams</p><i class="fa-solid fa-caret-down teams"></i>
-                </a>
-                <a class="nav-btn videos"
-                    href='https://www.cricbuzz.com/cricket-videos'>
+                </button>
+                <button class="line1-btn videos"
+                    onclick="window.location.href='https://www.cricbuzz.com/cricket-videos'">
                     <p class="videos">Videos</p><i class="fa-solid fa-caret-down videos"></i>
-                </a>
-                <a class="nav-btn rankings"
-                    href='https://www.cricbuzz.com/cricket-stats/icc-rankings/men/batting'>
+                </button>
+                <button class="line1-btn rankings"
+                    onclick="window.location.href='https://www.cricbuzz.com/cricket-stats/icc-rankings/men/batting'">
                     <p class="rankings">Rankings</p><i class="fa-solid fa-caret-down rankings"></i>
-                </a>
-                <a class="nav-btn more">
+                </button>
+                <button class="line1-btn more">
                     <p class="more">More</p><i class="fa-solid fa-caret-down more"></i>
-                </a>
+                </button>
             </div>
             
             <div id="search-area" class="search-area">
@@ -67,102 +68,131 @@
                 <button id="user-login"><i class="fa-regular fa-circle-user"></i></button>
                 <button id="mobile-menu">Menu <i class="fa-solid fa-arrow-down"></i></button>
             </div>
-        </nav>
-        <div class="sub-nav">
-            <a class="matches" href='https://www.cricbuzz.com/cricket-match/live-scores'>MATCHES</a>
-            <a class="match" href='https://www.cricbuzz.com/live-cricket-scores/52022/pak-vs-eng-3rd-test-england-tour-of-pakistan-2022'>PAK vs ENG -Stumps</a>
-            <a class="match" href='https://www.cricbuzz.com/live-cricket-scores/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022'>IND vs BAN - IND won</a>
-            <a class="match" href='https://www.cricbuzz.com/live-cricket-scores/50293/syt-vs-mlr-7th-match-big-bash-league-2022-23'>SYT vs MLR - MLR won</a>
-            <a class="match" href='https://www.cricbuzz.com/live-cricket-scores/56901/kdf-vs-dma-18th-match-lanka-premier-league-2022'>KDF vs DMA - Complete</a>
-            <a class="match" href='https://www.cricbuzz.com/live-cricket-scores/48128/rsa-vs-aus-1st-test-south-africa-tour-of-australia-2022-23'>AUS vs RSA - AUS won</a>
+        </div>
+        <div class="line2">
+            <button class="matches" onclick="window.location.href='https://www.cricbuzz.com/cricket-match/live-scores'">MATCHES</button>
+            <button class="match" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/52022/pak-vs-eng-3rd-test-england-tour-of-pakistan-2022'">PAK vs ENG -Stumps</button>
+            <button class="match" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022'">IND vs BAN - IND won</button>
+            <button class="match" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/50293/syt-vs-mlr-7th-match-big-bash-league-2022-23' ">SYT vs MLR - MLR won</button>
+            <button class="match" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56901/kdf-vs-dma-18th-match-lanka-premier-league-2022'">KDF vs DMA - Complete</button>
+            <button class="match" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/48128/rsa-vs-aus-1st-test-south-africa-tour-of-australia-2022-23'">AUS vs RSA - AUS won</button>
             <button class="all-btn">All <i class="fa-solid fa-caret-down"></i></button>
             <button class ="close-btn">Close <i class="fa-solid fa-caret-up"></i></button>
         </div>
         <div class="news-drop">
-            <a href='https://www.cricbuzz.com/cricket-news'>All</a>
-            <a href='https://www.cricbuzz.com/cricket-news/editorial/cb-plus'>Cricbuzz
-                Plus</a>
-            <a href='https://www.cricbuzz.com/cricket-news/latest-news'>Latest
-                News</a>
-            <a href='https://www.cricbuzz.com/cricket-news/info/'>Topics</a>
-            <a
-                href='https://www.cricbuzz.com/cricket-news/editorial/spotlight'>Spotlight</a>
-            <a
-                href='https://www.cricbuzz.com/cricket-news/editorial/editorial-list'>Opinions</a>
-            <a
-                href='https://www.cricbuzz.com/cricket-news/editorial/specials'>Specials</a>
-            <a
-                href='https://www.cricbuzz.com/cricket-news/editorial/stats-analysis'>Stats &
-                Analysis</a>
-            <a
-                href='https://www.cricbuzz.com/cricket-news/editorial/interviews'>Interviews</a>
-            <a href='https://www.cricbuzz.com/cricket-news/editorial/live-blogs'>Live
-                Blogs</a>
-            <a
-                href='https://www.cricbuzz.com/cricket-news/experts/harsha-bhogle/170'>Harsha
-                Bhogle</a>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-news'">All</button>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-news/editorial/cb-plus'">Cricbuzz
+                Plus</button>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-news/latest-news'">Latest
+                News</button>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-news/info/'">Topics</button>
+            <button
+                onclick="window.location.href='https://www.cricbuzz.com/cricket-news/editorial/spotlight'">Spotlight</button>
+            <button
+                onclick="window.location.href='https://www.cricbuzz.com/cricket-news/editorial/editorial-list'">Opinions</button>
+            <button
+                onclick="window.location.href='https://www.cricbuzz.com/cricket-news/editorial/specials'">Specials</button>
+            <button
+                onclick="window.location.href='https://www.cricbuzz.com/cricket-news/editorial/stats-analysis'">Stats &
+                Analysis</button>
+            <button
+                onclick="window.location.href='https://www.cricbuzz.com/cricket-news/editorial/interviews'">Interviews</button>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-news/editorial/live-blogs'">Live
+                Blogs</button>
+            <button
+                onclick="window.location.href='https://www.cricbuzz.com/cricket-news/experts/harsha-bhogle/170'">Harsha
+                Bhogle</button>
         </div>
         <div class="series-drop">
-            <a href='https://www.cricbuzz.com/cricket-series/4905/india-tour-of-bangladesh-2022'>India tour of Bangladesh , 2022</a>
-            <a href='https://www.cricbuzz.com/cricket-series/4492/england-tour-of-pakistan-2022'>England tour of Pakistan , 2022</a>
-            <a href='https://www.cricbuzz.com/cricket-series/4254/south-africa-tour-of-australia-2022-23'>South Africa tour of Australia , 2022-23</a>
-            <a href='https://www.cricbuzz.com/cricket-series/4889/new-zealand-tour-of-pakistan-2022-23'>New Zealand tour of Pakistan , 2022-23</a>
-            <a href='https://www.cricbuzz.com/cricket-series/4457/big-bash-league-2022-23'>Big Bash Leaugue 2022-23</a>
-            <a href='https://www.cricbuzz.com/cricket-series/4455/lanka-premier-league-2022'>Lanka Premier League 2022</a>
-            <a href='https://www.cricbuzz.com/cricket-series/4534/ranji-trophy-2022-23'>Ranji Trophy 2022-23</a>
-            <a href='https://www.cricbuzz.com/cricket-series/5078/australia-women-tour-of-india-2022'>Australia Women tour of India , 2022</a>
-            <a href='https://www.cricbuzz.com/cricket-series' id ="all-series">All Series <span>>></span></a>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-series/4905/india-tour-of-bangladesh-2022'">India tour of Bangladesh , 2022</button>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-series/4492/england-tour-of-pakistan-2022'">England tour of Pakistan , 2022</button>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-series/4254/south-africa-tour-of-australia-2022-23'">South Africa tour of Australia , 2022-23</button>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-series/4889/new-zealand-tour-of-pakistan-2022-23'">New Zealand tour of Pakistan , 2022-23</button>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-series/4457/big-bash-league-2022-23'">Big Bash Leaugue 2022-23</button>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-series/4455/lanka-premier-league-2022'">Lanka Premier League 2022</button>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-series/4534/ranji-trophy-2022-23'">Ranji Trophy 2022-23</button>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-series/5078/australia-women-tour-of-india-2022'">Australia Women tour of India , 2022</button>
+            <button class="all-series">All Series <span>>></span></button>
         </div>
         <div class="teams-drop">
             <div class="test-teams">
                 <h4>TEST TEAMS</h4>
-                <a href='https://www.cricbuzz.com/cricket-team/india/2'>India</a>
-                <a href='https://www.cricbuzz.com/cricket-team/afghanistan/96'>Afghanistan</a>
-                <a href='https://www.cricbuzz.com/cricket-team/ireland/27'>Ireland</a>
-                <a href='https://www.cricbuzz.com/cricket-team/pakistan/3'>Pakistan</a>
-                <a href='https://www.cricbuzz.com/cricket-team/australia/4'>Australia</a>
-                <a href='https://www.cricbuzz.com/cricket-team/sri-lanka/5'>Sri Lanka</a>
-                <a href='https://www.cricbuzz.com/cricket-team/bangladesh/6'>Bangladesh</a>
-                <a href='https://www.cricbuzz.com/cricket-team/england/9'>England</a>
-                <a href='https://www.cricbuzz.com/cricket-team/west-indies/10'>West Indies</a>
-                <a href='https://www.cricbuzz.com/cricket-team/south-africa/11'>South Africa</a>
-                <a href='https://www.cricbuzz.com/cricket-team/zimbabwe/12'>Zimbabwe</a>
-                <a href='https://www.cricbuzz.com/cricket-team/new-zealand/13'>New Zealand</a>
+                <button onclick="window.location.href='https://www.cricbuzz.com/cricket-team/india/2'">India</button>
+                <button
+                    onclick="window.location.href='https://www.cricbuzz.com/cricket-team/afghanistan/96'">Afghanistan</button>
+                <button
+                    onclick="window.location.href='https://www.cricbuzz.com/cricket-team/ireland/27'">Ireland</button>
+                <button
+                    onclick="window.location.href='https://www.cricbuzz.com/cricket-team/pakistan/3'">Pakistan</button>
+                <button
+                    onclick="window.location.href='https://www.cricbuzz.com/cricket-team/australia/4'">Australia</button>
+                <button onclick="window.location.href='https://www.cricbuzz.com/cricket-team/sri-lanka/5'">Sri
+                    Lanka</button>
+                <button
+                    onclick="window.location.href='https://www.cricbuzz.com/cricket-team/bangladesh/6'">Bangladesh</button>
+                <button
+                    onclick="window.location.href='https://www.cricbuzz.com/cricket-team/england/9'">England</button>
+                <button onclick="window.location.href='https://www.cricbuzz.com/cricket-team/west-indies/10'">West
+                    Indies</button>
+                <button onclick="window.location.href='https://www.cricbuzz.com/cricket-team/south-africa/11'">South
+                    Africa</button>
+                <button
+                    onclick="window.location.href='https://www.cricbuzz.com/cricket-team/zimbabwe/12'">Zimbabwe</button>
+                <button onclick="window.location.href='https://www.cricbuzz.com/cricket-team/new-zealand/13'">New
+                    Zealand</button>
             </div>
             <div class="associate-teams">
                 <h4>ASSOCIATE</h4>
-                <a href='https://www.cricbuzz.com/cricket-team/malaysia/71'>Malaysia</a>
-                <a href='https://www.cricbuzz.com/cricket-team/nepal/72'>Nepal</a>
-                <a href='https://www.cricbuzz.com/cricket-team/germany/77'>Germany</a>
-                <a href='https://www.cricbuzz.com/cricket-team/namibia/161'>Namibia</a>
-                <a href='https://www.cricbuzz.com/cricket-team/denmark/185'>Denmark</a>
-                <a href='https://www.cricbuzz.com/cricket-team/singapore/190'>Singapore</a>
-                <a href='https://www.cricbuzz.com/cricket-team/papua-new-guinea/287'>Guinea</a>
-                <a href='https://www.cricbuzz.com/cricket-team/kuwait/298'>Kuwait</a>
-                <a href='https://www.cricbuzz.com/cricket-team/vanuatu/300'>Vanuatu</a>
-                <a href='https://www.cricbuzz.com/cricket-team/jersey/303'>Jersey</a>
-                <a href='https://www.cricbuzz.com/cricket-team/oman/304'>Oman</a>
-                <a href='https://www.cricbuzz.com/cricket-team/fiji/343'>Fiji</a>
-                <a id="more-teams" href='https://www.cricbuzz.com/cricket-team'>More ...</a>
+                <button
+                    onclick="window.location.href='https://www.cricbuzz.com/cricket-team/malaysia/71'">Malaysia</button>
+                <button onclick="window.location.href='https://www.cricbuzz.com/cricket-team/nepal/72'">Nepal</button>
+                <button
+                    onclick="window.location.href='https://www.cricbuzz.com/cricket-team/germany/77'">Germany</button>
+                <button
+                    onclick="window.location.href='https://www.cricbuzz.com/cricket-team/namibia/161'">Namibia</button>
+                <button
+                    onclick="window.location.href='https://www.cricbuzz.com/cricket-team/denmark/185'">Denmark</button>
+                <button
+                    onclick="window.location.href='https://www.cricbuzz.com/cricket-team/singapore/190'">Singapore</button>
+                <button
+                    onclick="window.location.href='https://www.cricbuzz.com/cricket-team/papua-new-guinea/287'">Guinea</button>
+                <button
+                    onclick="window.location.href='https://www.cricbuzz.com/cricket-team/kuwait/298'">Kuwait</button>
+                <button
+                    onclick="window.location.href='https://www.cricbuzz.com/cricket-team/vanuatu/300'">Vanuatu</button>
+                <button
+                    onclick="window.location.href='https://www.cricbuzz.com/cricket-team/jersey/303'">Jersey</button>
+                <button onclick="window.location.href='https://www.cricbuzz.com/cricket-team/oman/304'">Oman</button>
+                <button onclick="window.location.href='https://www.cricbuzz.com/cricket-team/fiji/343'">Fiji</button>
+                <button id="more-teams" onclick="window.location.href='https://www.cricbuzz.com/cricket-team'">More ...</button>
             </div>
             
         </div>
         <div class="videos-drop">
-            <a href='https://www.cricbuzz.com/cricket-videos'>All Videos</a>
-            <a href='https://www.cricbuzz.com/cricket-videos/categories'>Categories</a>
-            <a href='https://www.cricbuzz.com/cricket-videos/playlists'>Playlists</a>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-videos'">All Videos</button>
+            <button
+                onclick="window.location.href='https://www.cricbuzz.com/cricket-videos/categories'">Categories</button>
+            <button
+                onclick="window.location.href='https://www.cricbuzz.com/cricket-videos/playlists'">Playlists</button>
         </div>
         <div class="rankings-drop">
-            <a href='https://www.cricbuzz.com/cricket-stats/icc-rankings/men/batting'>ICC Rankings - Men</a>
-            <a href='https://www.cricbuzz.com/cricket-stats/icc-rankings/women/batting'>ICC Rankings - Women</a>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-stats/icc-rankings/men/batting'">ICC
+                Rankings - Men</button>
+            <button
+                onclick="window.location.href='https://www.cricbuzz.com/cricket-stats/icc-rankings/women/batting'">ICC
+                Rankings - Women</button>
         </div>
         <div class="more-drop">
-            <a href='https://www.cricbuzz.com/cricket-stats/points-table/test/icc-world-test-championship'>World Test Championship</a>
-            <a href='https://www.cricbuzz.com/cricket-stats/points-table/odi/icc-men-cricket-world-cup-super-league'>World Cup Super Leaugue</button>
-            <a href='https://www.cricbuzz.com/cricket-photo-gallery'>Photos</a>
-            <a href='https://www.cricbuzz.com/mobileapps'>Mobile Apps</a>
-            <a href='https://www.cricbuzz.com/careers'>Careers</a>
-            <a href='https://www.cricbuzz.com/info/contact'>Contact Us</a>
+            <button
+                onclick="window.location.href='https://www.cricbuzz.com/cricket-stats/points-table/test/icc-world-test-championship'">World
+                Test Championship</button>
+            <button
+                onclick="window.location.href='https://www.cricbuzz.com/cricket-stats/points-table/odi/icc-men-cricket-world-cup-super-league'">World
+                Cup Super Leaugue</button>
+            <button onclick="window.location.href='https://www.cricbuzz.com/cricket-photo-gallery'">Photos</button>
+            <button onclick="window.location.href='https://www.cricbuzz.com/mobileapps'">Mobile Apps</button>
+            <button onclick="window.location.href='https://www.cricbuzz.com/careers'">Careers</button>
+            <button onclick="window.location.href='https://www.cricbuzz.com/info/contact'">Contact Us</button>
         </div>
     </header>
     <div class="open-close-match-container">
@@ -172,150 +202,151 @@
             <button id="upcoming">Upcoming</button>
         </div>
         <div class="all-matches-data-in-open-close-container">
-            <ul class="column1-match-details">
+            <div class="column1-match-details">
                 <h4>INTERNATIONAL</h4>
-                <li class="Ind-Ban-series">
+                <div class="Ind-Ban-series">
                     <h5>Bangladesh Vs India, 2022</h5>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022'>Bangladesh vs India</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022'">Bangladesh vs India</button>
                     <p>1st Test</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/56976/ban-vs-ind-2nd-test-bangladesh-v-india-2022'>Bangladesh vs India</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56976/ban-vs-ind-2nd-test-bangladesh-v-india-2022'">Bangladesh vs India</button>
                     <p>2nd Test</p>
-                </li>
-                <li class="Ind-Ban-series">
+                </div>
+                <div class="Ind-Ban-series">
                     <h5>Pakistan vs England, 2022</h5>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/52022/pak-vs-eng-3rd-test-pakistan-vs-england-2022'>Pakistan vs England</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/52022/pak-vs-eng-3rd-test-pakistan-vs-england-2022'">Pakistan vs England</button>
                     <p>3rd Test</p>
-                </li>
-                <li class="Ind-Ban-series">
+                </div>
+                <div class="Ind-Ban-series">
                     <h5>Australia vs England, 2022-23</h5>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/48128/rsa-vs-aus-1st-test-australia-v-south-africa-2022-23'>South Africa vs Australia</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/48128/rsa-vs-aus-1st-test-australia-v-south-africa-2022-23'">South Africa vs Australia</button>
                     <p>1st Test</p>
-                </li>
-                <li class="Ind-Ban-series">
+                </div>
+                <div class="Ind-Ban-series">
                     <h5>Malaysia Quadrangular Series</h5>
-                    <a class="live" href='https://www.cricbuzz.com/live-cricket-scores/60448/mly-vs-sin-6th-match-malaysia-quadrangular-series'>Malaysia vs Singapore</a>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/60448/mly-vs-sin-6th-match-malaysia-quadrangular-series'">Malaysia vs Singapore</button>
                     <p class="live">6th Match</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/60450/sin-vs-qat-7th-match-malaysia-quadrangular-series'>Singapore vs Qatar</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/60450/sin-vs-qat-7th-match-malaysia-quadrangular-series'">Singapore vs Qatar</button>
                     <p>7th Match</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/60455/bhr-vs-mly-8th-match-malaysia-quadrangular-series'>Bahrain vs Malaysia</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/60455/bhr-vs-mly-8th-match-malaysia-quadrangular-series'">Bahrain vs Malaysia</button>
                     <p>8th Match</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/60457/bhr-vs-sin-9th-match-malaysia-quadrangular-series'>Bahrain vs Singapore</a>
-                    <p>9th Match</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/60464/mly-vs-qat-10th-match-malaysia-quadrangular-series'>Malaysia vs Qatar</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/60457/bhr-vs-sin-9th-match-malaysia-quadrangular-series'">Bahrain vs Singapore</button>
+                    <p >9th Match</p>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/60464/mly-vs-qat-10th-match-malaysia-quadrangular-series'">Malaysia vs Qatar</button>
                     <p>10th Match</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/60471/mly-vs-sin-11th-match-malaysia-quadrangular-series'>Malaysia vs Singapore</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/60471/mly-vs-sin-11th-match-malaysia-quadrangular-series'">Malaysia vs Singapore</button>
                     <p>11th Match</p>
-                </li>
-                <li class="Ind-Ban-series">
+                </div>
+                <div class="Ind-Ban-series">
                     <h5>East Africa T20I Series</h5>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/60140/uga-vs-tan-9th-match-east-africa-t20i-series'>Uganda vs Tanzania</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/60140/uga-vs-tan-9th-match-east-africa-t20i-series'">Uganda vs Tanzania</button>
                     <p>9th Match</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/60147/rwa-vs-tan-10th-match-east-africa-t20i-series'>Rwanda vs Tanzania</a>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/60147/rwa-vs-tan-10th-match-east-africa-t20i-series'">Rwanda vs Tanzania</button>
                     <p class="live">10th Match</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/60149/uga-vs-tan-11th-match-east-africa-t20i-series'>Uganda vs Tanzania</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/60149/uga-vs-tan-11th-match-east-africa-t20i-series'">Uganda vs Tanzania</button>
                     <p>11th Match</p>
-                    <a class="live" href='https://www.cricbuzz.com/live-cricket-scores/60154/rwa-vs-uga-12th-match-east-africa-t20i-series'>Rwanda vs Uganda</a>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/60154/rwa-vs-uga-12th-match-east-africa-t20i-series'">Rwanda vs Uganda</button>
                     <p class="live">12th Match</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/60147/rwa-vs-tan-10th-match-east-africa-t20i-series'>Rwanda vs Tanzania</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/60147/rwa-vs-tan-10th-match-east-africa-t20i-series'">Rwanda vs Tanzania</button>
                     <p>13th Match</p>
-                </li>
-            </ul>
-            <ul class="column2-match-details">
-                <li class="Ind-Ban-series">
+                </div>
+            </div>
+            <div class="column2-match-details">
+                <div class="Ind-Ban-series">
                     <h5>LPL 2022</h5>
-                    <a class="live" href='https://www.cricbuzz.com/live-cricket-scores/56894/jks-vs-ggd-17th-match-lpl-2022'>Jaffna Kings vs Galle Gladiators</a>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56894/jks-vs-ggd-17th-match-lpl-2022'">Jaffna Kings vs Galle Gladiators</button>
                     <p class="live">17th Match</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/56901/kdf-vs-dma-18th-match-lpl-2022'>Kandy Falcons vs Dambulla Aura</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56901/kdf-vs-dma-18th-match-lpl-2022'">Kandy Falcons vs Dambulla Aura</button>
                     <p>18th Match</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/56908/cls-vs-jks-19th-match-lpl-2022'>Colombo Stars vs Jaffna Kings</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56908/cls-vs-jks-19th-match-lpl-2022'">Colombo Stars vs Jaffna Kings</button>
                     <p>19th Match</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/56915/ggd-vs-dma-20th-match-lpl-2022'>Galle Gladiators vs Dambulla Aura</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56915/ggd-vs-dma-20th-match-lpl-2022'">Galle Gladiators vs Dambulla Aura</button>
                     <p>20th Match</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/56920/kdf-vs-jks-qualifier-1-lpl-2022'>Kandy Falcons vs Jaffna Kings</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56920/kdf-vs-jks-qualifier-1-lpl-2022'">Kandy Falcons vs Jaffna Kings</button>
                     <p>Qualifier 1</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/56922/cls-vs-ggd-eliminator-lpl-2022'>Colombo Stars vs Galle Gladiators</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56922/cls-vs-ggd-eliminator-lpl-2022'">Colombo Stars vs Galle Gladiators</button>
                     <p>Eliminator</p>
-                </li>
+                </div>
                 <h4>DOMESTIC</h4>
-                <li class="Ind-Ban-series">
+                <div class="Ind-Ban-series">
                     <h5>Ranji Trophy</h5>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/55590/skm-vs-mgly-plate-ranji-trophy'>Sikkim vs Meghalaya</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55590/skm-vs-mgly-plate-ranji-trophy'">Sikkim vs Meghalaya</button>
                     <p>Plate</p>
-                    <a class="live" href='https://www.cricbuzz.com/live-cricket-scores/55522/del-vs-asm-elite-group-b-ranji-trophy'>Delhi vs Assam</a>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55522/del-vs-asm-elite-group-b-ranji-trophy'">Delhi vs Assam</button>
                     <p class="live">Elite Group B</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/55550/raj-vs-ker-elite-group-c-ranji-trophy'>Rajasthan vs Kerala</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55550/raj-vs-ker-elite-group-c-ranji-trophy'">Rajasthan vs Kerala</button>
                     <p>Elite Group C</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/55513/odsa-vs-utk-elite-group-a-ranji-trophy'>Odisha vs Uttarakhand</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55513/odsa-vs-utk-elite-group-a-ranji-trophy'">Odisha vs Uttarakhand</button>
                     <p>Elite Group A</p>
-                    <a class="live" href='https://www.cricbuzz.com/live-cricket-scores/55548/pdc-vs-kar-elite-group-c-ranji-trophy'>Puducherry vs Karnataka</a>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55548/pdc-vs-kar-elite-group-c-ranji-trophy'">Puducherry vs Karnataka</button>
                     <p class="live">Elite Group C</p>
-                    <a class="live" href='https://www.cricbuzz.com/live-cricket-scores/55508/ben-vs-hp-elite-group-a-ranji-trophy'>Bengal vs Himachal Pradesh</a>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55508/ben-vs-hp-elite-group-a-ranji-trophy'">Bengal vs Himachal Pradesh</button>
                     <p class="live">Elite Group A</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/55501/up-vs-ngl-elite-group-a-ranji-trophy'>Uttar Pradesh vs Nagaland</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55501/up-vs-ngl-elite-group-a-ranji-trophy'">Uttar Pradesh vs Nagaland</button>
                     <p>Elite Group A</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/55583/bih-vs-mnp-plate-ranji-trophy'>Bihar vs Manipur</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55583/bih-vs-mnp-plate-ranji-trophy'">Bihar vs Manipur</button>
                     <p>Plate</p>
-                    <a class="live" href='https://www.cricbuzz.com/live-cricket-scores/55557/mp-vs-cdg-elite-group-d-ranji-trophy'>Madhya Pradesh Vs Chandigarh</a>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55557/mp-vs-cdg-elite-group-d-ranji-trophy'">Madhya Pradesh Vs Chandigarh</button>
                     <p class="live">Elite Group A</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/55541/jhkd-vs-goa-elite-group-c-ranji-trophy'>Jharkhand vs Goa</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55541/jhkd-vs-goa-elite-group-c-ranji-trophy'">Jharkhand vs Goa</button>
                     <p>Elite Group C</p>
-                    <a class="live" href='https://www.cricbuzz.com/live-cricket-scores/55536/ser-vs-cg-elite-group-c-ranji-trophy'>Services vs Chattisgarh</a>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55536/ser-vs-cg-elite-group-c-ranji-trophy'">Services vs Chattisgarh</button>
                     <p class="live">Elite Group C</p>
-                </li>
-            </ul>
-            <ul class="column3-match-details">
-                <li class="Ind-Ban-series">
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/55529/mah-vs-saur-elite-group-b-ranji-trophy'">Maharashtra vs Saurashtra</button>
+                </div>
+            </div>
+            <div class="column3-match-details">
+                <div class="Ind-Ban-series">
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55529/mah-vs-saur-elite-group-b-ranji-trophy'">Maharashtra vs Saurashtra</button>
                     <p>Elite Group B</p>
-                    <a class="live" href='https://www.cricbuzz.com/live-cricket-scores/55576/pun-vs-rlys-elite-group-d-ranji-trophy'">Punjab vs Railways</button>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/55576/pun-vs-rlys-elite-group-d-ranji-trophy'">Punjab vs Railways</button>
                     <p class="live">Elite Group D</p>
-                </li>
-                <li class="Ind-Ban-series">
+                </div>
+                <div class="Ind-Ban-series">
                     <h5>CSA One-Day Challenge Div Two</h5>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/58903/grb-vs-tusks-18th-match-csa-one-day-challenge-div-two'">Garden Route Badgers vs Tuskers</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58903/grb-vs-tusks-18th-match-csa-one-day-challenge-div-two'">Garden Route Badgers vs Tuskers</button>
                     <p>18th Match</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/58896/ncape-vs-estorm-17th-match-csa-one-day-challenge-div-two'">Northern Cape vs Eastern Storm</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58896/ncape-vs-estorm-17th-match-csa-one-day-challenge-div-two'">Northern Cape vs Eastern Storm</button>
                     <p>17th Match</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/58915/mpr-vs-estorm-21st-match-csa-one-day-challenge-div-two'">Mpumalanga Rhinos vs Eastern Storm</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58915/mpr-vs-estorm-21st-match-csa-one-day-challenge-div-two'">Mpumalanga Rhinos vs Eastern Storm</button>
                     <p>21st Match</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/58910/limpo-vs-ncape-20th-match-csa-one-day-challenge-div-two'">Limpopo vs Northern Cape</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58910/limpo-vs-ncape-20th-match-csa-one-day-challenge-div-two'">Limpopo vs Northern Cape</button>
                     <p>20th Match</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/58908/grb-vs-ecape-19th-match-csa-one-day-challenge-div-two'">Garden Route Badgers vs Eastern Storm</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58908/grb-vs-ecape-19th-match-csa-one-day-challenge-div-two'">Garden Route Badgers vs Eastern Storm</button>
                     <p>20th Match</p>
-                </li>
-                <li class="Ind-Ban-series">
+                </div>
+                <div class="Ind-Ban-series">
                     <h5>CSA One-Day Challenge Div One</h5>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/58754/wpr-vs-lions-20th-match-csa-one-day-challenge-div-one'">Western Province vs Lions</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58754/wpr-vs-lions-20th-match-csa-one-day-challenge-div-one'">Western Province vs Lions</button>
                     <p>20th Match</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/58761/war-vs-rocks-21st-match-csa-one-day-challenge-div-one'">Warriors vs Rocks</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58761/war-vs-rocks-21st-match-csa-one-day-challenge-div-one'">Warriors vs Rocks</button>
                     <p>21st Match</p>
-                    <a class="live" href='https://www.cricbuzz.com/live-cricket-scores/58763/kng-vs-dol-22nd-match-csa-one-day-challenge-div-one'">Knights vs Dolphins</a>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58763/kng-vs-dol-22nd-match-csa-one-day-challenge-div-one'">Knights vs Dolphins</button>
                     <p class="live">22nd Match</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/58770/tit-vs-nwest-23rd-match-csa-one-day-challenge-div-one'">Titans vs North West</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58770/tit-vs-nwest-23rd-match-csa-one-day-challenge-div-one'">Titans vs North West</button>
                     <p>23rd Match</p>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/58775/rocks-vs-nwest-24th-match-csa-one-day-challenge-div-one'">Rocks vs North West</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58775/rocks-vs-nwest-24th-match-csa-one-day-challenge-div-one'">Rocks vs North West</button>
                     <p>24th Match</p>
-                    <a class="live" href='https://www.cricbuzz.com/live-cricket-scores/58777/war-vs-lions-25th-match-csa-one-day-challenge-div-one'">Warriors vs Lions</a>
+                    <button class="live" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58777/war-vs-lions-25th-match-csa-one-day-challenge-div-one'">Warriors vs Lions</button>
                     <p class="live">25th Match</p>
-                </li>
+                </div>
                 <h4>WOMEN</h4>
-                <li class="Ind-Ban-series">
+                <div class="Ind-Ban-series">
                     <h5>India Women v Australia Women</h5>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/58945/indw-vs-ausw-5th-t20i-india-women-v-australia-women'>India Women vs Australia Women</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/58945/indw-vs-ausw-5th-t20i-india-women-v-australia-women'">India Women vs Australia Women</button>
                     <p>5th T20I</p>
-                </li>
-                <li class="Ind-Ban-series">
+                </div>
+                <div class="Ind-Ban-series">
                     <h5>West Indies Women v England Women</h5>
-                    <a href='https://www.cricbuzz.com/live-cricket-scores/57998/engw-vs-wiw-4th-t20i-west-indies-women-v-england-women'>West Indies Women vs England Women</a>
+                    <button onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/57998/engw-vs-wiw-4th-t20i-west-indies-women-v-england-women'">West Indies Women vs England Women</button>
                     <p>4th T20I</p>
-                </li>
-            </ul>
+                </div>
+                
+            </div>
         </div>
     </div>
     <div class="featured-matches">
         <h4>FEATURED MATCHES</h4>
         <div id="stat-page1" class="match-stats-p1">
-            <div class="first-match first">
+            <div class="first-match">
                 <!-- <button class="stat-btn" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/52022/pak-vs-eng-3rd-test-england-tour-of-pakistan-2022'">
                     <p class="mobile-preview1">2nd Test • India Tour Of Bangladesh, 2022</p>
                     <span>
@@ -331,7 +362,7 @@
                 <button class="fantasy"><i class="fa-solid fa-trophy" onclick="window.location.href='https://www.cricbuzz.com/cricket-fantasy-handbook/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022#!/expert-picks'"></i> Fantasy Handbook</button> -->
 
             </div>
-            <div class="first-match second">
+            <div class="second-match">
                 <!-- <button class="stat-btn2" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022'">
                     <p class="mobile-preview2">1st Test • India Tour Of Bangladesh, 2022</p>
                     <span>
@@ -345,7 +376,7 @@
                     <p class="match2-status">India won by 188 runs</p>
                 </button> -->
             </div>
-            <div class="first-match third">
+            <div class="third-match">
                 <!-- <button class="stat-btn3" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56901/kdf-vs-dma-18th-match-lanka-premier-league-2022'">
                     <p class="mobile-preview2">League Match • Lanka Premier League 2022</p>
                     <span>
@@ -359,8 +390,8 @@
                     <p class="match3-status">KDF won by 39 runs</p>
                 </button> -->
             </div>
-            <div class="first-match fourth">
-                <a class="stat-btn4" href='https://www.cricbuzz.com/live-cricket-scores/53016/cntbry-vs-akl-3rd-match-super-smash-2022-23'>
+            <div class="fourth-match">
+                <button class="stat-btn4" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/53016/cntbry-vs-akl-3rd-match-super-smash-2022-23'">
                     <p id ="fourth-match" class="mobile-preview2"></p>
                     <span id="team-1">
                         <p></p>
@@ -371,13 +402,13 @@
                         <p class="fourthMatch-runs2"></p>
                     </span>
                     <p class="match4-status"></p>
-                </a>
+                </button>
+                <button id="slide-right" class="slider"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
         </div>
-        <button id="slide-right" class="slider"><i class="fa-solid fa-arrow-right"></i></button>
         <div id="stat-page2" class="match-stats-p2">
             <div class="p2-first-match">
-                <a class="stat-btn" href=''>
+                <button class="stat-btn" onclick="window.location.href=''">
                     <span>
                         <p>Australia</p>
                         <p class="p2-firstMatch-runs1"></p>
@@ -387,11 +418,11 @@
                         <p class="p2-firstMatch-runs2"></p>
                     </span>
                     <p class="p2-match1-status">Monday, 26 Dec, 05:00 IST</p>
-                </a>
+                </button>
                 <button id="slide-left" class="slider-left"><i class="fa-solid fa-arrow-left"></i></button>
             </div>
             <div class="p2-first-match">
-                <a class="stat-btn" href=''>
+                <button class="stat-btn" onclick="window.location.href=''">
                     <span>
                         <p>Bangladesh</p>
                         <p class="p2-firstMatch-runs1"></p>
@@ -401,7 +432,7 @@
                         <p class="p2-firstMatch-runs2"></p>
                     </span>
                     <p class="p2-match1-status">Thursday, 22 Dec, 09:00 IST</p>
-                </a>
+                </button>
             </div>
         </div>
     </div>
@@ -581,122 +612,260 @@
             </a>
         </div>
 
-        <ul class="center-container">
+        <div class="center-container">
             <h4 class="top-stories-mobile">Top Stories</h4>
             <!-- write HTML for mid Content of MAin section -->
-            <!-- <li class="stories-container">
-                <h3>INDIA TOUR OF BANGLADESH, 2022</h3>
+            <!-- ------------------------------------------------------------------------ -->
+            <div class="big-container">
+                <div id="heading-content">
+                    <span class="match-heading">INDIA TOUR OF BANGLADESH, 2022</span>
+                </div>
+                <a href="">
                     <img class="australia"
                         src="https://www.cricbuzz.com/a/img/v1/420x235/i1/c251246/injured-rohit-sharma-to-miss-d.jpg"
                         alt="">
-                <a class="stories-headline" href="">Injured Rohit Sharma to miss Dhaka Test</a>
-                <p class="stories-para">The regular Indian captain's finger injury hasn't healed completely; KL Rahul will continue to
-                    lead the visitors</p>
-                <a class="stories-extra" href="">Bangladesh include Nasum Ahmed for Dhaka Test</a>
-                <a class="stories-extra" href="">One bad session with the bat destroyed our chances: Domingo</a>
-                <a class="stories-extra" href="">Domingo Rahul chuffed with India's intensity in Chattogram victory</a>
-            </li>
+                </a>
 
-            <li class="stories-container">
-                <h3>PAK VS ENG, 3RD TEST</h3>
+                <h2 class="match-result">
+                    <a href="">Injured Rohit Sharma to miss Dhaka Test</a>
+                </h2>
+
+                <div class="match-summary">
+                    <p>The regular Indian captain's finger injury hasn't healed completely; KL Rahul will continue to
+                        lead the visitors</p>
+                </div>
+
+                <div class="match-highlight">
+                    <h2>
+                        <a href="">Bangladesh include Nasum Ahmed for Dhaka Test</a>
+                    </h2>
+                </div>
+                <div class="match-highlight">
+                    <h2>
+                        <a href="">One bad session with the bat destroyed our chances: Domingo</a>
+                    </h2>
+                </div>
+                <div class="match-highlight">
+                    <h2>
+                        <a href="">Domingo Rahul chuffed with India's intensity in Chattogram victory</a>
+                    </h2>
+                </div>
+            </div>
+
+            <!-- --------------------------------------------------------------------------- -->
+            <div class="big-container">
+                <div id="heading-content">
+                    <span class="match-heading">PAK VS ENG, 3RD TEST</span>
+                </div>
+
+                <a href="">
                     <img class="australia"
                         src="https://www.cricbuzz.com/a/img/v1/420x235/i1/c251248/rehan-fifer-bundles-out-pak.jpg"
                         alt="">
-                <a class="stories-headline" href="">Rehan fifer bundles out PAK</a>
-                <p class="stories-para">Earlier, Babar and Shakeel stroked fifties</p>
-                <div class="score-container">
-                    <p class="team1">ENG</p> <p class="team1-runs">354 , 59-0 (6.2)</p>
-                    <p class="team2">PAK</p> <p class="team2-runs">304 , 216</p>
-                    <p class="score-para">Day 3: 3rd Session - England need 108 runs</p>
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 384 512">
-                        <path d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                    </svg>
-                </div>
-                <a class="stories-extra" href=""><span>Tea Report : </span>Rehan Ahmed dents Pakistan further with
-                    triple strike</a>
-                <a class="stories-extra" href="">The enduring connection between Pakistan and England</a>
-            </li>
+                </a>
 
-            <li class="stories-container">
-                <h3>AUS VS RSA, 1ST TEST</h3>
+                <h2 class="match-result">
+                    <a href="">Rehan fifer bundles out PAK</a>
+                </h2>
+
+                <div class="match-summary">
+                    <p>Earlier, Babar and Shakeel stroked fifties</p>
+                </div>
+                    <!--  -->
+                <div class="score-container">
+                    <div class="flex">
+                        <div class="team-name">
+                            <h3 class="team1">ENG</h3>
+                            <h3 class="team2">PAK</h3>
+                        </div>
+                        <div class="team-scores">
+                            <p class="para1">354, 59-0 (6.2)</p>
+                            <p class="para2">304, 216</p>
+                        </div>
+                        <div class="icon-content">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="match-result">Day 3: 3rd Session - England need 108 runs</p>
+                </div>
+
+                <div class="match-highlight">
+                    <h2>
+                        <a href=""><span class="report">Tea Report /</span>Rehan Ahmed dents Pakistan further with
+                            triple strike</a>
+                    </h2>
+                </div>
+                <div class="match-highlight">
+                    <h2>
+                        <a href="">The enduring connection between Pakistan and England</a>
+                    </h2>
+                </div>
+            </div>
+            <div class="big-container">
+                <div id="heading-content">
+                    <span class="match-heading">AUS VS RSA, 1ST TEST</span>
+                </div>
+
+                <a href="">
                     <img class="australia"
                         src="https://www.cricbuzz.com/a/img/v1/420x235/i1/c251205/pacers-propel-australia-to-1-0.jpg"
                         alt="">
-                <a class="stories-headline" href="">Pacers propel Australia to 1-0 lead inside two days</a>
-                <div class="score-container">
-                    <p class="team1">AUS</p> <p class="team1-runs">218 , 35-4 (7.5)</p>
-                    <p class="team2">RSA</p> <p class="team2-runs">152 , 99</p>
-                    <p class="score-para">Australia lead by 1 - 0</p>
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 384 512">
-                        <path d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                    </svg>
-                </div>
-                <a class="stories-extra" href=""><span>AUS vs RSA / </span>Day 2: In pictures</a>
-                <a class="stories-extra" href="">Australia wrap up Brisbane Test in less than two
-                    days</a>
-                <a class="stories-extra" href="">Umpires ignored questions about Gabba pitch - Dean Elgar</a>
-            </li>
+                </a>
 
-                <li class="stories-container">
-                    <h3>NEW ZEALAND TOUR OF PAKISTAN AND INDIA</h3>
+                <h2 class="match-result">
+                    <a href="">Pacers propel Australia to 1-0 lead inside two days</a>
+                </h2>
+
+                <div class="match-summary">
+                    <p>Cummins fifer kept South Africa to 99 in their second innings but Australia were troubled by
+                        Rabada's four-fer in a modest chase of 34</p>
+                </div>
+                <div class="score-container">
+                    <div class="flex">
+                        <div class="team-name">
+                            <h3 class="team1">AUS</h3>
+                            <h3 class="team2">RSA</h3>
+                        </div>
+                        <div class="team-scores">
+                            <p class="para1">218, 35-4 (7.5)</p>
+                            <p class="para2">152, 99</p>
+                        </div>
+                        <div class="icon-content">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="match-result">Australia lead by 1-0</p>
+                </div>
+
+                <div class="match-highlight">
+                    <h2>
+                        <a href=""><span class="report">Report /</span>Australia wrap up Brisbane Test in less than two
+                            days</a>
+                    </h2>
+                </div>
+                <div class="match-highlight">
+                    <h2>
+                        <a href="">Umpires ignored questions about Gabba pitch - Dean Elgar</a>
+                    </h2>
+                </div>
+                <div class="match-highlight">
+                    <h2>
+                        <a href=""><span class="report">AUSvSA /</span> Day 2: In pictures</a>
+                    </h2>
+                </div>
+            </div>
+                <div class="big-container">
+                    <div id="heading-content">
+                        <span class="match-heading">NEW ZEALAND TOUR OF PAKISTAN AND INDIA</span>
+                    </div>
+    
+                    <a href="">
                         <img class="australia"
                             src="https://www.cricbuzz.com/a/img/v1/420x235/i1/c251243/kane-williamson-gary-stead-to.jpg"
                             alt="">
-                    <a class="stories-headline" href="">Kane Williamson, Gary Stead to skip India tour</a>
-                    <p class="stories-para">Uncapped allrounder Henry Shipley has earned a maiden call-up to the ODI squad for both the Pakistan and India series after impressing in the domestic circuit</p>
-                    <a class="stories-extra" href="">Mark Chapman earns first NZC central contract</a>
-                </li>
-
-                <li class="stories-container">
-                    <h3>AUSTRALIA WOMEN TOUR OF INDIA</h3>
+                    </a>
+    
+                    <h2 class="match-result">
+                        <a href="">Kane Williamson, Gary Stead to skip India tour</a>
+                    </h2>
+    
+                    <div class="match-summary">
+                        <p>Uncapped allrounder Henry Shipley has earned a maiden call-up to the ODI squad for both the Pakistan and India series after impressing in the domestic circuit</p>
+                    </div>
+                    
+    
+                    <div class="match-highlight">
+                        <h2>
+                            <a href="">Mark Chapman earns first NZC central contract</a>
+                        </h2>
+                    </div>
+                </div>
+                <div class="big-container">
+                    <div id="heading-content">
+                        <span class="match-heading">AUSTRALIA WOMEN TOUR OF INDIA</span>
+                    </div>
+    
+                    <a href="">
                         <img class="australia"
                             src="https://www.cricbuzz.com/a/img/v1/420x235/i1/c251068/richa-ghosh-cameo-in-vain-as-a.jpg"
                             alt="">
-                    <a class="stories-headline" href="">Richa Ghosh cameo in vain as Australia clinch series</a>
-                    <p class="stories-para">Richa Ghosh's thrilling cameo went in vain as India fell short again to lose the fourth T20I</p>
-                    <a class="stories-extra" href="">Australia Won the 4th Match & The Series</a>
-                </li>
-
-                <li class="stories-container">
-                    <h3>DIALOGUE ROOM</h3>
+                    </a>
+    
+                    <h2 class="match-result">
+                        <a href="">Richa Ghosh cameo in vain as Australia clinch series</a>
+                    </h2>
+    
+                    <div class="match-summary">
+                        <p>Richa Ghosh's thrilling cameo went in vain as India fell short again to lose the fourth T20I</p>
+                    </div>
+                </div>
+                <div class="big-container">
+                    <div id="heading-content">
+                        <span class="match-heading">DIALOGUE ROOM</span>
+                    </div>
+    
+                    <a href="">
                         <img class="australia"
                             src="https://www.cricbuzz.com/a/img/v1/420x235/i1/c250653/the-dean-elgar-enigma.jpg"
                             alt="">
-                    <a class="stories-headline" href="">The Dean Elgar enigma</a>
-                    <p class="stories-para">A guarded extrovert. An old school modern thinker. A sensitive, tough, straight-shooter who is alive to cultural nuance. South Africa's captain opens up in an unguarded interview</p>
-                </li>
-
-                <li class="stories-container">
-                    <h3>DIALOGUE ROOM</h3>
+                    </a>
+    
+                    <h2 class="match-result">
+                        <a href="">The Dean Elgar enigma</a>
+                    </h2>
+    
+                    <div class="match-summary">
+                        <p>A guarded extrovert. An old school modern thinker. A sensitive, tough, straight-shooter who is alive to cultural nuance. South Africa's captain opens up in an unguarded interview</p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="big-container">
+                    <div id="heading-content">
+                        <span class="match-heading">DIALOGUE ROOM</span>
+                    </div>
+    
+                    <a href="">
                         <img class="australia"
-                            src="https://www.cricbuzz.com/a/img/v1/420x235/i1/c250228/how-anrich-nortje-is-releasing.jpg"
-                            alt="">
-                    <a class="stories-headline" href="">How Anrich Nortje is releasing the fear factor</a>
-                    <p class="stories-para">South Africa's fastest bowler is reaching his peak. Anrich Nortje explains how an improved action gives him confidence that he can get even quicker</p>
-                </li> -->
-            </ul>
-        <ul class="right-aside-container">
+                            src="https://www.cricbuzz.com/a/img/v1/420x235/i1/c250228/how-anrich-nortje-is-releasing.jpg" alt="">
+                    </a>
+    
+                    <h2 class="match-result">
+                        <a href="">How Anrich Nortje is releasing the fear factor</a>
+                    </h2>
+    
+                    <div class="match-summary">
+                        <p>South Africa's fastest bowler is reaching his peak. Anrich Nortje explains how an improved action gives him confidence that he can get even quicker</p>
+                    </div>
+                </div>
+        </div>
+        <div class="right-aside-container">
             <!-- write HTML for right Content of MAin section -->
-            <li class="show-ad">
+            <div class="show-ad">
                 <img class="ads"
                     src="https://previews.123rf.com/images/hstrongart/hstrongart1701/hstrongart170100151/69269523-mouth-rinse-ads-refreshing-mouthwash-products-with-mints-leaves-and-splashing-liquids-in-3d-illustra.jpg">
-            </li>
-            <li class="content">
-                <p class="featured">FEATURED VIDEOS</p>
+            </div>
+            <div class="content">
+                <div class="featured">FEATURED VIDEOS</div>
                 <div class="videos1 fonts-right">
-                    <video src="videos/video1.mp4" class="videos" type="video/mp4" controls muted></video>
+                    <video src="videos/video1.mp4" class="videos" type="video/mp4" loop  ></video>
                     <a href="https://www.cricbuzz.com/cricket-videos/58666/caught-kuldeep-finally-gets-rid-of-litton">CAUGHT! Kuldeep finally gets rid of Litton</a>
                     <div class="small">34m ago</div>
                 </div>
                 <div class="videos1 fonts-right">
-                    <video src="videos/video2.mp4" class="videos" type="video/mp4" controls muted></video>
+                    <video src="videos/video2.mp4" class="videos" type="video/mp4" loop ></video>
                     <a href="https://www.cricbuzz.com/cricket-videos/58653/kuldeep-yadav-will-be-key-to-indias-test-side-going-forward-dinesh-karthik">Kuldeep Yadav will be key to India's Test side going forward: Dinesh Karthik</a>
                     <div class="small">2h ago</div>
                 </div>
                 <div class="videos1 fonts-right">
-                    <video src="videos/video3.mp4" class="videos" type="video/mp4" controls muted></video>
+                    <video src="videos/video3.mp4" class="videos" type="video/mp4" loop ></video>
                     <a href="https://www.cricbuzz.com/cricket-videos/58663/bowled-axar-patel-knocks-over-yasir-ali">BOWLED!
                         Axar Patel knocks over Yasir Ali</a>
                     <div class="small">20h ago</div>
@@ -704,170 +873,309 @@
                 <div class="more">
                     <a href="https://www.cricbuzz.com/cricket-videos"><button class="btn">MORE VIDEOS</button></a>
                 </div>
-            </li>
-            <li class="special-section fonts-right">
-                <p class="featured">SPECIALS</p>
-                <img src="https://www.cricbuzz.com/a/img/v1/300x170/i1/c251249/fans-will-also-be-encouraged-t.jpg">
-                <a href="https://www.cricbuzz.com/cricket-news/124663/december-2022-news-digest">December 2022-News
-                    Digest</a>
-                <p class="right-text">News byte that you may have otherwise missed</p>
-                <img src="https://www.cricbuzz.com/a/img/v1/300x170/i1/c249830/david-warner-withdrew-his-appe.jpg">
-                <a href="https://www.cricbuzz.com/cricket-news/124760/cricket-australia-lose-sight-of-what-warner-has-become">Cricket
+            </div>
+                <div class="special-section fonts-right">
+                    <div class="featured">SPECIALS</div>
+                    <img src="https://www.cricbuzz.com/a/img/v1/300x170/i1/c251249/fans-will-also-be-encouraged-t.jpg">
+                    <a href="https://www.cricbuzz.com/cricket-news/124663/december-2022-news-digest">December 2022-News
+                        Digest</a>
+                    <div class="right-text">News byte that you may have otherwise missed</div>
+                    <img src="https://www.cricbuzz.com/a/img/v1/300x170/i1/c249830/david-warner-withdrew-his-appe.jpg">
+                    <a
+                        href="https://www.cricbuzz.com/cricket-news/124760/cricket-australia-lose-sight-of-what-warner-has-become">Cricket
                         Australia lose sight of what Warner has become</a>
-                <p class="right-text">By dragging this captaincy ban issue out much longer than was required, CA
+                    <div class="right-text">By dragging this captaincy ban issue out much longer than was required, CA
                         have once again highlighted the prevalent archaic master-slave relationship between
-                        administrators and players in sport</p>
-                <img src="https://www.cricbuzz.com/a/img/v1/300x170/i1/c249221/gill-has-emerged-as-the-leadin.jpg">
-                <a  href="https://www.cricbuzz.com/cricket-news/124695/how-are-indias-odi-stocks-as-they-build-up-for-the-2023-world-cup">How
+                        administrators and players in sport</div>
+                    <img src="https://www.cricbuzz.com/a/img/v1/300x170/i1/c249221/gill-has-emerged-as-the-leadin.jpg">
+                    <a
+                        href="https://www.cricbuzz.com/cricket-news/124695/how-are-indias-odi-stocks-as-they-build-up-for-the-2023-world-cup">How
                         are india's ODI stocks as they build up for the 2023 worls cup?</a>
-                <p class="right-text">The series against Bangladesh will see a near full strength India side
-                        kick-starting the journey to the 2023 World Cup</p>
-                <img src="https://www.cricbuzz.com/a/img/v1/300x170/i1/c248642/even-before-being-formally-con.jpg">
-                <a  href="https://www.cricbuzz.com/cricket-news/124559/cricket-in-transition-the-shifting-tides-of-womens-game">Cricket
+                    <div class="right-text">The series against Bangladesh will see a near full strength India side
+                        kick-starting the journey to the 2023 World Cup</div>
+                    <img src="https://www.cricbuzz.com/a/img/v1/300x170/i1/c248642/even-before-being-formally-con.jpg">
+                    <a
+                        href="https://www.cricbuzz.com/cricket-news/124559/cricket-in-transition-the-shifting-tides-of-womens-game">Cricket
                         in Transition : The shifting tides of women's game</a>
-                <p class="right-text">Free agency in women's cricket is far less common than in the men's game,
-                        but change is coming - particularly with a women's IPL looming into view</p>
-                <img src="https://www.cricbuzz.com/a/img/v1/300x170/i1/c248316/curran-has-been-very-clever.jpg">
-                <a  href="https://www.cricbuzz.com/cricket-news/124503/when-england-cricket-team-had-a-ball-t20-world-cup-final">When
+                    <div class="right-text">Free agency in women's cricket is far less common than in the men's game,
+                        but change is coming - particularly with a women's IPL looming into view</div>
+                    <img src="https://www.cricbuzz.com/a/img/v1/300x170/i1/c248316/curran-has-been-very-clever.jpg">
+                    <a
+                        href="https://www.cricbuzz.com/cricket-news/124503/when-england-cricket-team-had-a-ball-t20-world-cup-final">When
                         England had a ball</a>
-                <p class="right-text">Much like the rest of their campaign, England's title-clinching act came on
-                        the back of a stupendous performance with the ball</p>
-                <img src="https://www.cricbuzz.com/a/img/v1/300x170/i1/c248317/haris-rauf-and-co-made-life-d.jpg">
-                <a  href="https://www.cricbuzz.com/cricket-news/124504/pakistan-go-down-swinging-and-singing-england-vs-pakistan-t20-world-cup-final-2022-haris-rauf">Pakisthan
+                    <div class="right-text">Much like the rest of their campaign, England's title-clinching act came on
+                        the back of a stupendous performance with the ball</div>
+                    <img src="https://www.cricbuzz.com/a/img/v1/300x170/i1/c248317/haris-rauf-and-co-made-life-d.jpg">
+                    <a
+                        href="https://www.cricbuzz.com/cricket-news/124504/pakistan-go-down-swinging-and-singing-england-vs-pakistan-t20-world-cup-final-2022-haris-rauf">Pakisthan
                         go down swinging ang singing</a>
-                <p class="right-text">If there was one bowling attack that could defend 137, it was Pakistan.
-                        Azam's band of fighters tried, but could not beat fate and England</p>
-                <img src="https://www.cricbuzz.com/a/img/v1/300x170/i1/c248593/ireland-qualified-for-the-supe.jpg">
-                <a  href="https://www.cricbuzz.com/cricket-news/124550/fearless-adaptable-and-clear-thinking-malans-philosophy-for-irelands-t20-success">Fearless,
+                    <div class="right-text">If there was one bowling attack that could defend 137, it was Pakistan.
+                        Azam's band of fighters tried, but could not beat fate and England</div>
+                    <img src="https://www.cricbuzz.com/a/img/v1/300x170/i1/c248593/ireland-qualified-for-the-supe.jpg">
+                    <a
+                        href="https://www.cricbuzz.com/cricket-news/124550/fearless-adaptable-and-clear-thinking-malans-philosophy-for-irelands-t20-success">Fearless,
                         adaptable and clear thinking Malan's philosopy for Ireland's T20 success </a>
-                <p class="right-text">For three consecutive T20 World Cups, before the 2022 edition, Ireland had
+                    <div class="right-text">For three consecutive T20 World Cups, before the 2022 edition, Ireland had
                         failed to qualify for the main round of the ICC event. But a lot has changed since the
-                        appointment of Heinrich Malan as the coach</p>
-                <img src="https://www.cricbuzz.com/a/img/v1/300x170/i1/c248320/it-was-as-close-to-a-gritty-in.jpg">
-                <a href="https://www.cricbuzz.com/cricket-news/124505/ben-stokes-so-human-so-very-good">Ben Stokes -
+                        appointment of Heinrich Malan as the coach</div>
+                    <img src="https://www.cricbuzz.com/a/img/v1/300x170/i1/c248320/it-was-as-close-to-a-gritty-in.jpg">
+                    <a href="https://www.cricbuzz.com/cricket-news/124505/ben-stokes-so-human-so-very-good">Ben Stokes -
                         So human, so very good</a>
-                <p class="right-text">The charismatic all-rounder waded through tricky phases and took England to
-                        World Cup glory with a gritty fifty</p>
-            </li>
-        </ul>
+                    <div class="right-text">The charismatic all-rounder waded through tricky phases and took England to
+                        World Cup glory with a gritty fifty</div>
+                </div>
+            
+        </div>
     </main>
+
+    <!-- <footer>
+        <div class="flex-container">
+            <img src="https://www.cricbuzz.com/images/cb_logo.svg" alt="cricbuzz">
+            <div class="heading-div">
+                <h2>MOBILE SITE & APPS</h2>
+                <ul>
+                    <li>
+                        <a class="anchor-tag" href="https://m.cricbuzz.com/">
+                            <svg fill="#D3D3D3" class="icon" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512">
+                                <path
+                                    d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 21 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z" />
+                            </svg>
+                            <h4 class="icon-name">m.cricbuzz.com</h4>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="anchor-tag" href="https://play.google.com/store/apps/details?id=com.cricbuzz.android">
+                            <svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M420.55,301.93a24,24,0,1,1,24-24,24,24,0,0,1-24,24m-265.1,0a24,24,0,1,1,24-24,24,24,0,0,1-24,24m273.7-144.48,47.94-83a10,10,0,1,0-17.27-10h0l-48.54,84.07a301.25,301.25,0,0,0-246.56,0L116.18,64.45a10,10,0,1,0-17.27,10h0l47.94,83C64.53,202.22,8.24,285.55,0,384H576c-8.24-98.45-64.54-181.78-146.85-226.55" />
+                            </svg>
+                            <h4 class="icon-name">Android</h4>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="anchor-tag" href="https://apps.apple.com/app/id360466413">
+                            <svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512">
+                                <path
+                                    d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
+                            </svg>
+                            <h4 class="icon-name">iOS</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="heading-div">
+                <h2>FOLLOW US ON</h2>
+                <ul>
+                    <li>
+                        <a class="anchor-tag" href="https://www.facebook.com/cricbuzz">
+                            <svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512">
+                                <path
+                                    d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                            </svg>
+                            <h4 class="icon-name">facebook</h4>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="anchor-tag" href="https://twitter.com/cricbuzz">
+                            <svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512">
+                                <path
+                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                            </svg>
+                            <h4 class="icon-name">twitter</h4>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="anchor-tag" href="https://www.youtube.com/channel/UCSRQXk5yErn4e14vN76upOw">
+                            <svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                            </svg>
+                            <h4 class="icon-name">youtube</h4>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="anchor-tag" href="https://in.pinterest.com/cricbuzz/">
+                            <svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 496 512">
+                                <path
+                                    d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z" />
+                            </svg>
+                            <h4 class="icon-name">Pinterest</h4>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="company-container">
+                <h2>COMPANY</h2>
+                <ul>
+                    <li>
+                        <a class="company-list" href="https://www.cricbuzz.com/careers">
+                            <p>Careers</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="company-list" href="https://www.cricbuzz.com/info/advertise">
+                            <p>Advertise</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="company-list" href="https://www.cricbuzz.com/info/privacy">
+                            <p>Privacy Policy</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="company-list" href="https://www.cricbuzz.com/info/termsofuse">
+                            <p>Terms of Use</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="company-list"
+                            href="https://www.cricbuzz.com/product-blog/cricbuzz-mobile-apps-tv-ad-cricket-ka-keeda">
+                            <p> Cricbuzz TV Ads</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>© 2022 Cricbuzz.com, Times Internet Limited. All rights reserved</span>
+            <a href="http://timesofindia.indiatimes.com/"><span>| The Times of India</span></a>
+            <a href="http://navbharattimes.indiatimes.com/"><span>| Navbharat Times</span></a>
+        </div>
+    </footer> -->
 
     <footer>
         <img src="https://www.cricbuzz.com/images/cb_logo.svg" alt="CricBuzz">
-        <ul class="footer-inside-container">
-            <li class="line1-footer">
+        <div class="footer-inside-container">
+            <div class="line1-footer">
                 <p>MOBILE SITE & APPS</p>
-                <a href='https://m.cricbuzz.com/'><svg fill="#D3D3D3" class="icon" xmlns="http://www.w3.org/2000/svg"
+                <button onclick="window.location.href='https://m.cricbuzz.com/'"><svg fill="#D3D3D3" class="icon" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512">
                     <path
                         d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 21 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z" />
-                </svg> m.cricbuzz.com</a>
-                <a href='https://play.google.com/store/apps/details?id=com.cricbuzz.android'><svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
+                </svg> m.cricbuzz.com</button>
+                <button onclick="window.location.href='https://play.google.com/store/apps/details?id=com.cricbuzz.android'"><svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 576 512">
                     <path
                         d="M420.55,301.93a24,24,0,1,1,24-24,24,24,0,0,1-24,24m-265.1,0a24,24,0,1,1,24-24,24,24,0,0,1-24,24m273.7-144.48,47.94-83a10,10,0,1,0-17.27-10h0l-48.54,84.07a301.25,301.25,0,0,0-246.56,0L116.18,64.45a10,10,0,1,0-17.27,10h0l47.94,83C64.53,202.22,8.24,285.55,0,384H576c-8.24-98.45-64.54-181.78-146.85-226.55" />
-                </svg>Android</a>
-                <a href='https://apps.apple.com/app/id360466413'><svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
+                </svg>Android</button>
+                <button onclick="window.location.href='https://apps.apple.com/app/id360466413'"><svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 384 512">
                     <path
                         d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
-                </svg>IOS</a>
-            </li>
-            <li class="line2-footer">
+                </svg>IOS</button>
+            </div>
+            <div class="line2-footer">
                 <p>FOLLOW US ON</p>
-                <a href='https://www.facebook.com/cricbuzz'><svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
+                <button onclick="window.location.href='https://www.facebook.com/cricbuzz'"><svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512">
                     <path
                         d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
-                </svg>facebook</a>
-                <a href='https://twitter.com/cricbuzz'><svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
+                </svg>facebook</button>
+                <button onclick="window.location.href='https://twitter.com/cricbuzz'"><svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512">
                     <path
                         d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
-                </svg>twitter</a>
-                <a href='https://www.youtube.com/channel/UCSRQXk5yErn4e14vN76upOw'> <svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
+                </svg>twitter</button>
+                <button onclick="window.location.href='https://www.youtube.com/channel/UCSRQXk5yErn4e14vN76upOw'"> <svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 576 512">
                     <path
                         d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
-                </svg>youtube</a>
-                <a href='https://in.pinterest.com/cricbuzz/'><svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
+                </svg>youtube</button>
+                <button onclick="window.location.href='https://in.pinterest.com/cricbuzz/'"><svg fill="#FFFFFF" class="icon" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 496 512">
                     <path
                         d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z" />
-                </svg>Pinterest</a>
-            </li>
-            <li class="line1-footer">
+                </svg>Pinterest</button>
+            </div>
+            <div class="line1-footer">
                 <p>COMPANY</p>
-                <a href='https://www.cricbuzz.com/careers'>Careers</a>
-                <a href='https://www.cricbuzz.com/info/advertise'>Advertise</a>
-                <a href='https://www.cricbuzz.com/info/privacy'>Privacy Policy</a>
-                <a href='https://www.cricbuzz.com/info/termsofuse'>Terms Of Use</a>
-                <a href='https://www.cricbuzz.com/product-blog/cricbuzz-mobile-apps-tv-ad-cricket-ka-keeda'>Cricbuzz TV Ads</a>
-            </li>
-        </ul>
-        <p class="copyright">
+                <button onclick="window.location.href='https://www.cricbuzz.com/careers'">Careers</button>
+                <button onclick="window.location.href='https://www.cricbuzz.com/info/advertise'">Advertise</button>
+                <button onclick="window.location.href='https://www.cricbuzz.com/info/privacy'">Privacy Policy</button>
+                <button onclick="window.location.href='https://www.cricbuzz.com/info/termsofuse'">Terms Of Use</button>
+                <button onclick="window.location.href='https://www.cricbuzz.com/product-blog/cricbuzz-mobile-apps-tv-ad-cricket-ka-keeda'">Cricbuzz TV Ads</button>
+            </div>
+        </div>
+        <div class="copyright">
             <span>© 2022 Cricbuzz.com, Times Internet Limited. All rights reserved</span>
             <a href="http://timesofindia.indiatimes.com/">| The Times of India</a>
             <a href="http://navbharattimes.indiatimes.com/">| Navbharat Times</a>
-        </p>
+        </div>
     </footer>
 
     <div class="show-ad2">
         <img class="ads2"
             src="https://previews.123rf.com/images/hstrongart/hstrongart1701/hstrongart170100151/69269523-mouth-rinse-ads-refreshing-mouthwash-products-with-mints-leaves-and-splashing-liquids-in-3d-illustra.jpg">
     </div>
-    <ul class="mobile-footer">
-        <li class="mobile-footer-title">
+    <div class="mobile-footer">
+        <div class="mobile-footer-title">
             <h3>Menu</h3>
             <button id="top">Top <i class="fa-solid fa-arrow-up"></i></button>
-        </li>
-        <li class="mobile-menu-footer-items">
-            <div class="column-in-mobile-footer">
-                <a href='index.html'>Home</a>
-                <a>My Account</a>
-                <a href='https://www.cricbuzz.com/cricket-schedule/upcoming-series/international'>Schedule</a>
-                <a href='https://m.cricbuzz.com/cricket-news/editorial/editorial-list'>Editorials</a>
-                <a href='https://www.cricbuzz.com/cricket-scorecard-archives'>Archives</a>
-                <a href='https://m.cricbuzz.com/cricket-stats/iccrankings/men'>Rankings - Men</a>
-                <a href='https://m.cricbuzz.com/cricket-stats/iccrankings/women'>Rankings - Women</a>
-                <a href='https://m.cricbuzz.com/cricket-pointstable'>Points Table</a>
-                <a href=''>Wicket Zone</a>
-                <a href='https://m.cricbuzz.com/cricket-stats/points-table/odi/icc-men-cricket-world-cup-super-league'>World Cup Super League</a>
-                <a href='https://m.cricbuzz.com/info/contact'>Contact Us</a>
-                <a href='https://m.cricbuzz.com/careers'>Careers @ Cricbuzz</a>
+        </div>
+        <div class="mobile-menu-footer-items">
+            <div class="column1-in-mobile-footer">
+                <button onclick="window.location.href='index.html'">Home</button>
+                <button>My Account</button>
+                <button onclick="window.location.href='https://www.cricbuzz.com/cricket-schedule/upcoming-series/international'">Schedule</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-news/editorial/editorial-list'">Editorials</button>
+                <button onclick="window.location.href='https://www.cricbuzz.com/cricket-scorecard-archives'">Archives</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-stats/iccrankings/men'">Rankings - Men</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-stats/iccrankings/women'">Rankings - Women</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-pointstable'">Points Table</button>
+                <button onclick="window.location.href=''">Wicket Zone</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-stats/points-table/odi/icc-men-cricket-world-cup-super-league'">World Cup Super League</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/info/contact'">Contact Us</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/careers'">Careers @ Cricbuzz</button>
             </div>
-            <div class="column-in-mobile-footer">
-                <a href='https://m.cricbuzz.com/cb-plus/premium-content/home'>Cricbuzz Plus</a>
-                <a href='https://m.cricbuzz.com/cricket-match/live-scores'>Live Scores</a>
-                <a href='https://m.cricbuzz.com/cricket-news/latest-news'>News</a>
-                <a href='https://m.cricbuzz.com/cricket-gallery'>Photos</a>
-                <a href='https://m.cricbuzz.com/profiles'>Players</a>
-                <a href='https://m.cricbuzz.com/cricket-series'>Series</a>
-                <a href='https://m.cricbuzz.com/cricket-videos'>Videos</a>
-                <a href='https://m.cricbuzz.com/cricket-stats/points-table/test/icc-world-test-championship'>World Test Championship</a>
-                <a href=''>Boundary Tracker</a>
-                <a href=''>Quiz</a>
-                <a href='https://m.cricbuzz.com/mobileapps'>Mobile Apps</a>
-                <a href='https://m.cricbuzz.com/product-blog/cricbuzz-mobile-apps-tv-ad-cricket-ka-keeda'>Cricbuzz TV Ads</a>
+            <div class="column2-in-mobile-footer">
+                <button onclick="window.location.href='https://m.cricbuzz.com/cb-plus/premium-content/home'">Cricbuzz Plus</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-match/live-scores'">Live Scores</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-news/latest-news'">News</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-gallery'">Photos</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/profiles'">Players</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-series'">Series</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-videos'">Videos</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/cricket-stats/points-table/test/icc-world-test-championship'">World Test Championship</button>
+                <button onclick="window.location.href=''">Boundary Tracker</button>
+                <button onclick="window.location.href=''">Quiz</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/mobileapps'">Mobile Apps</button>
+                <button onclick="window.location.href='https://m.cricbuzz.com/product-blog/cricbuzz-mobile-apps-tv-ad-cricket-ka-keeda'">Cricbuzz TV Ads</button>
             </div>
-        </li>
-        <li class="apps-social-channels">
+        </div>
+        <div class="apps-social-channels">
             <div class="apps-in-mobile-footer">
                 <h3>Mobile Apps</h3>
-                <a href='https://apps.apple.com/app/id360466413'>iPhone</a>
-                <a href='https://play.google.com/store/apps/details?id=com.cricbuzz.android&referrer=utm_source%3DCricbuzz%2520Mobile%26utm_campaign%3DMobile%2520App%2520Page&pli=1'>Android</a>
+                <button onclick="window.location.href='https://apps.apple.com/app/id360466413'">iPhone</button>
+                <button onclick="window.location.href='https://play.google.com/store/apps/details?id=com.cricbuzz.android&referrer=utm_source%3DCricbuzz%2520Mobile%26utm_campaign%3DMobile%2520App%2520Page&pli=1'">Android</button>
             </div>
-            <div class="apps-in-mobile-footer">
+            <div class="social-in-mobile-footer">
                 <h3>Social Channels</h3>
-                <a href='https://m.facebook.com/cricbuzz'>facebook</a>
-                <a href='https://twitter.com/cricbuzz'>twitter</a>
+                <button onclick="window.location.href='https://m.facebook.com/cricbuzz'">facebook</button>
+                <button onclick="window.location.href='https://twitter.com/cricbuzz'">twitter</button>
             </div>
-        </li>
-        <li class="bottom-line-mobile-footer">
-            <a href='https://m.cricbuzz.com/privacypolicy'>Privacy |</a>
-            <a href='https://m.cricbuzz.com/termsofuse'>Terms Of Service |</a>
-            <a href='https://m.cricbuzz.com/info/contact'>Contact Us</a>
-        </li>
+        </div>
+        <div class="bottom-line-mobile-footer">
+            <button onclick="window.location.href='https://m.cricbuzz.com/privacypolicy'">Privacy</button>
+            <button onclick="window.location.href='https://m.cricbuzz.com/termsofuse'">Terms Of Service</button>
+            <button onclick="window.location.href='https://m.cricbuzz.com/info/contact'">Contact Us</button>
+        </div>
         <p class="copyright-area-in-mobile">
             © 2022 Cricbuzz.com, Times Internet Limited. All Rights Reserved.
         </p>

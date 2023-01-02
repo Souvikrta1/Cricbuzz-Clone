@@ -1,0 +1,1444 @@
+@import url("");
+/* Don't update anything here */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family: helvetica,"Segoe UI",Arial,sans-serif;
+    background-color: #E3E6E3;
+    
+}
+/*don't update anything above */
+
+/*Header and menu button section */
+header{
+    max-width: 1080px;
+    height: 12%;
+    /* margin-left: 15%; */
+    margin-bottom: 0.25%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.line1{
+    display:flex ;
+    width: 100%;
+    background-color: #009270;
+    align-items: center;
+    overflow: hidden;
+    height: 48px;
+}
+
+.line1 img{
+    height: 80%;
+    width: 10%;
+    padding: 1%;
+}
+
+.menu-btn{
+    display: flex;
+    width: 68%;
+    align-items: center;
+}
+
+.menu-btn button p{
+    margin-right: 5%;
+    font-weight: 500;
+}
+
+.search-area{
+    width: 150%;
+    height: 40px;
+    display: none;
+}
+
+#search-btn{
+    width: 10%;
+    background-color: #009270;
+}
+
+#search-input{
+    width: 90%;
+    color: white;
+    background-color: #00785c;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.line1-btn{
+    border : none;
+    color: white;
+    background-color: #009270;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    display: flex;
+    width: 15%;
+    justify-content: center;
+    padding: 2.2% 0;
+}
+
+
+.user-area{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mobile-menu{
+    display: none;
+}
+
+#search{
+    border: none;
+    background-color: #009270;
+    font-size: larger;
+    color: white;
+    cursor: pointer;
+    margin-right: 5%;
+}
+
+#user-login{
+    border: none;
+    background-color: #009270;
+    font-size: larger;
+    color: white;
+    cursor: pointer;
+    margin-right: 5%;
+}
+
+.plus{
+    width: 50%;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    font-size: larger;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    margin-right: 5%;
+    padding-top:1%;
+    padding-bottom: 1%;
+}
+
+.plus p{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.news-drop{
+    position:absolute;
+    display: none;
+    flex-direction: column;
+    width: max-content;
+    background-color: whitesmoke;
+    width: 12%;
+    top: 54.7%;
+    left: 34.5%;
+    
+}
+
+.news-drop button{
+    width: max-content;
+    text-align: left;
+    border: none;
+    padding: 2%;
+    font-size: medium;
+    line-height: 180%;
+    width: 100%;
+    padding-left: 10%;
+}
+
+.series-drop{
+    position:absolute;
+    display: none;
+    flex-direction: column;
+    width: 28%;
+    background-color: whitesmoke;
+    top: 54.7%;
+    left: 42%;
+}
+
+.series-drop button{
+    width: max-content;
+    text-align: left;
+    border: none;
+    width: 100%;
+    padding: 1%;
+    font-size: medium;
+    line-height: 180%;
+    background-color: whitesmoke;
+    padding-left: 5%;
+}
+
+.all-series{
+    color: blue;
+    font-size: 12px;
+    
+}
+
+.all-series span{
+    font-size: 10px;
+}
+
+.all-series:hover{
+    text-decoration: underline;
+}
+
+.teams-drop{
+    position:absolute;
+    display: none;
+    background-color: whitesmoke;
+    top: 54.7%;
+    left: 49.5%;
+    width: 22%;
+    padding-left: 1%;
+    z-index: 5;
+    padding: 0% 10% 1% 5%;
+}
+
+.test-teams{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: whitesmoke;
+    padding: 2%;
+    padding-right: 4%;
+    padding-right: 40%;
+}
+
+.test-teams h4{
+    width: max-content;
+}
+
+.associate-teams{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: whitesmoke;
+    padding: 2%;
+    padding-right: 20%;
+    position: relative;
+}
+
+.teams-drop button{
+    width: 100%;
+    text-align: left;
+    border: none;
+    line-height: 180%;
+    font-size: medium;
+    background-color: whitesmoke;
+}
+
+#more-teams{
+    position: absolute;
+    width: max-content;
+    right: 5%;
+    bottom: 0;
+    color: #1866DB;
+    font-size: 12px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+
+
+.videos-drop{
+    position:absolute;
+    display: none;
+    flex-direction: column;
+    width: 10%;
+    background-color: whitesmoke;
+    top: 54.7%;
+    left: 57.2%;
+}
+
+.videos-drop button{
+    width: 100%;
+    padding-left: 5%;
+    text-align: left;
+    border: none;
+    line-height: 180%;
+    font-size: medium;
+    background-color: whitesmoke;
+    padding-left: 10%;
+}
+
+.rankings-drop{
+    position:absolute;
+    display: none;
+    flex-direction: column;
+    width: 20%;
+    background-color: whitesmoke;
+    top: 54.7%;
+    left: 65%;
+}
+
+.rankings-drop button{
+    width: 100%;
+    text-align: left;
+    border: none;
+    padding-left: 5%;
+    line-height: 180%;
+    font-size: medium;
+    background-color: white;
+}
+
+.more-drop{
+    position:absolute;
+    display: none;
+    flex-direction: column;
+    width: 20%;
+    background-color: whitesmoke;
+    top: 54.7%;
+    left: 60%;
+    z-index: 5;
+}
+
+.more-drop button{
+    width: 100%;
+    text-align: left;
+    padding-left: 5%;
+    border: none;
+    line-height: 180%;
+    font-size: medium;
+    background-color: whitesmoke;
+}
+
+/*Header and menu button section line 1 code is above */
+
+/*Header and menu button section line 2 code is below */
+.line2{
+    background-color: rgb(67, 64, 64);
+    color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.line2 a{
+    width: 15%;
+    text-align: center;
+}
+
+.match{
+    height: 100%;
+    padding: 1%;
+    width: 17.2%;
+    background-color: rgb(67, 64, 64);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-bottom:0.25px solid #c4c6c4 ;
+}
+.matches{
+    height: 99%;
+    background-color:rgb(46, 43, 43) ;
+    border: none;
+    color: white;
+    padding: 1%;
+    cursor: pointer;
+    border-bottom: 1px solid #c4c6c4;
+}
+.all-btn{
+    width: 8%;
+    cursor: pointer;
+    height: 99%;
+    background-color: rgb(46, 43, 43);
+    padding: 1%;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #c4c6c4;
+}
+
+.all-btn i{
+    margin-left: 10%;
+}
+
+.close-btn{
+    display: none;
+    width: 8%;
+    cursor: pointer;
+    height: 100%;
+    background-color: rgb(46, 43, 43);
+    padding: 1%;
+    color: white;
+    border: none;
+    justify-content: center;
+}
+
+.close-btn i{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+/*Header and menu button section line 2 code is above */
+
+/* open-close-match-container starts here */
+.open-close-match-container{
+    max-width: 1080px;
+    margin: 0 auto;
+    height: 900px;
+    background-color: rgb(67, 64, 64);
+    display: none;
+    flex-direction: column;
+}
+
+.category-btn-in-open-close-container{
+    width: 100%;
+    height: 5%;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.category-btn-in-open-close-container button{
+    height: 60%;
+    width: max-content;
+    padding: 0 2%;
+    border-radius: 20px;
+    margin-left: 2%;
+    border: 0px white;
+    background-color: rgb(46, 43, 43);
+    color: white;
+}
+
+.all-matches-data-in-open-close-container{
+    display: flex;
+    width: 100%;
+    height: 95%;
+}
+
+.column1-match-details{
+    width: 33%;
+    height: 100%;
+    background-color: rgb(67, 64, 64);
+
+}
+
+.column1-match-details h4{
+    color: rgb(6, 226, 6);
+    margin-left: 5%;
+    margin-top: 4%;
+}
+
+.Ind-Ban-series{
+    color: white;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.Ind-Ban-series h5{
+    margin-top: 5%;
+}
+
+.Ind-Ban-series button{
+    background-color: rgb(67, 64, 64);
+    border: none;
+    color: white;
+    margin: 2% 0 1% 0;
+    cursor: pointer;
+}
+
+/* .Ind-Ban-series button:hover{
+    background-color: white;
+    color: black;
+    border-radius: 2px;
+} */
+
+.Ind-Ban-series p{
+    color: silver;
+    font-size: small;
+    margin-bottom: 1%;
+}
+
+
+
+.column2-match-details{
+    width: 34%;
+    background-color:rgb(67, 64, 64) ;
+}
+
+.column2-match-details h4{
+    color: rgb(6, 226, 6);
+    margin-left: 5%;
+    margin-top: 3.5%;
+    margin-bottom: -1.5%;
+}
+
+.column3-match-details{
+    width: 33%;
+    background-color: rgb(67, 64, 64);
+} 
+
+.column3-match-details h4{
+    color: rgb(6, 226, 6);
+    margin-left: 5%;
+    margin-top: 3.5%;
+    margin-bottom: -1.5%;
+}
+#all{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#live-now{
+    cursor: pointer;
+}
+
+#upcoming{
+    cursor: pointer;
+}
+
+@keyframes up{
+    from{
+        height: 900px;
+        opacity: 100%;
+    }
+    to {
+        height: 0px;
+        opacity: 0%;
+    }
+}
+
+@keyframes down{
+    from{
+        height: 0px;
+        opacity: 10%;
+    }
+    to{
+        height: 900px;
+        opacity: 100%;
+    }
+}
+
+
+
+/* Featured Matches area sliding view */
+.featured-matches{
+    height: 25%;
+    max-width: 1080px;
+    margin-left: 15%;
+    background-color: white;
+    overflow: hidden;
+    margin: 0.35% auto;
+}
+
+.featured-matches h4{
+    padding: 1%;
+}
+/* page 1 of sliding featured matches */
+.match-stats-p1{
+    display: flex;
+    height: 90%;
+    flex-direction: row;
+}
+
+.first-match{
+    display: flex;
+    flex-direction: column;
+    width: 24.8%;
+    background-color: white;
+    border-right: 1px solid rgb(214, 211, 211);
+}
+
+.stat-btn{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: none;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+
+.stat-btn span{
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    padding-left: 7%;
+    font-weight: bolder;
+}
+
+.mobile-preview1{
+    display: none;
+}
+.mobile-preview2{
+    display: none;
+}
+
+.stat-btn span p{
+    width: 40%;
+    margin-right: 3%;
+    text-align: left;
+    font-size: 14px;
+}
+
+.match1-status{
+    color: rgb(58, 58, 250);
+    font-size: 14px;
+    padding-left: 7%;
+    margin-top: 1%;
+}
+
+.fantasy{
+    text-align: left;
+    font-size: medium;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    width: max-content;
+    padding-left: 7%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.second-match{
+    display: flex;
+    flex-direction: column;
+    width: 24.8%;
+    border-right: 1px solid rgb(214, 211, 211);
+}
+
+.stat-btn2{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    padding-left: 1%;
+}
+
+.stat-btn2 span{
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    font-weight: bolder;
+}
+
+.stat-btn2 span p{
+    width: 40%;
+    margin-right: 3%;
+    text-align: left;
+    font-size: 14px;
+}
+
+.match2-status{
+    color: rgb(58, 58, 250);
+    font-size: 14px;
+    padding-left: 1.5%;
+    margin-top: 1%;
+}
+
+.third-match{
+    display: flex;
+    flex-direction: column;
+    width: 24.8%;
+    border-right: 1px solid rgb(214, 211, 211);
+}
+
+.stat-btn3{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 1%;
+}
+
+.stat-btn3 span{
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    font-weight: bolder;
+}
+
+.stat-btn3 span p{
+    width: 40%;
+    margin-right: 3%;
+    text-align: left;
+    font-size: 14px;
+}
+
+.match3-status{
+    color: rgb(58, 58, 250);
+    font-size: 14px;
+    padding-left: 2.5%;
+    margin-top: 1%;
+}
+
+.fourth-match{
+    display: flex;
+    flex-direction: column;
+    width: 24.8%;
+    border-right: 1px solid rgb(214, 211, 211);
+    position: relative;
+}
+
+.stat-btn4{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 1%;
+}
+
+.stat-btn4 span{
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    font-weight: bolder; 
+}
+
+.stat-btn4 span p{
+    width: 40%;
+    margin-right: 3%;
+    text-align: left;
+    font-size: 14px;
+}
+
+.match4-status{
+    color: rgb(58, 58, 250);
+    font-size: 14px;
+    padding-left: 2%;
+    margin-top: 1%;
+}
+
+.slider{
+    position: absolute;
+    right: 0;
+    top: 15%;
+    width: 17%;
+    height: 40%;
+    border-radius: 50%;
+    background-color: #009270;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    opacity: 65%;
+    cursor: pointer;
+}
+
+/* page 1 of sliding featured matches is above */ 
+
+/* page 2 of sliding featured matches */
+.match-stats-p2{
+    display: none;
+    height: 90%;
+    flex-direction: row;
+    font-size: 14px;
+}
+
+.p2-first-match{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 24.8%;
+    background-color: white;
+    border-right: 1px solid rgb(214, 211, 211);
+    padding-bottom: 3.5%;
+    
+}
+
+.p2-match1-status{
+    color: rgb(218, 170, 108);
+    font-size: small;
+    padding-left: 7%;
+    margin-top: 1%;
+}
+
+.slider-left{
+    position: absolute;
+    left: 0;
+    top: 15%;
+    height: 40%;
+    width: 18%;
+    border-radius: 50%;
+    background-color: #009270;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    opacity: 65%;
+    cursor: pointer;
+    
+}
+/* page 2 of sliding featured matches is above */
+/* Featured Matches area sliding view is above */
+
+/* animation for sliding view in featured matches */
+@keyframes going{
+    from{
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+    to {
+        transform: translateX(-800px);
+        opacity: 0%;
+    }
+}
+
+@keyframes coming{
+    from{
+        transform: translateX(-800px);
+        opacity: 0%;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
+/* animation for sliding view in featured matches is above */
+
+/* Dont update anything below in main */
+/* main start*/
+main{
+    max-width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin: 0 auto;
+}
+/* dont update anything above in main */
+
+/*this left-aside-container is for left part of main content */
+.left-aside-container{
+    width: 20%;
+    
+    /* border: 1px solid black; this border & background color not required ,given to understand the area */
+}
+.more-news button{
+    color: rgb(103, 103, 244);
+    font-size:.95rem;
+    width: 100%;
+    border: 1px solid transparent;
+    margin-bottom:2.5% ;
+    background-color: white;
+    text-align: left;
+    text-indent: 5%;
+}
+.left-aside-container button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.l-content{
+    /* width: 90%; */
+    padding: 5%;
+    background-color: white;
+}
+.l-content .latest-news{
+    color: #009270;
+    font-weight: bold;
+    margin-bottom: 1vh;
+}
+.l-content .text{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+.l-content .text:hover{
+    text-decoration: underline;
+}
+.l-content .text-time{
+    font-size: .7rem;
+    padding-bottom: 5%;
+    border-bottom:1px solid #ecebeb;
+    margin-bottom: 5%;
+}
+
+.bottom-one{
+    font-size: .7rem;
+}
+/* designing the left side content2 latest photos section */
+.latest-photos{
+    color: #009270;
+    font-weight: bold;
+    margin-bottom: 1vh;
+}
+.content-2 img{
+    width:100%;
+    border: 1px solid transparent;
+    border-radius:3%;
+
+}
+.content-2{
+    padding: 5%;
+    background-color: white;
+}
+/* .content-2 hr{
+    margin-top:0.5rem;
+} */
+.content-2 a{
+    text-decoration: none;
+}
+.content-2 .text{
+    /* font-size: 1rem; */
+    color: black;
+    padding-top:0.5rem;
+}
+.date-time{
+    padding-top: 0.5rem;
+    color: #4a4a4a;
+    cursor: pointer;
+    border-bottom:1px solid #ecebeb;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+}
+.content-2 .text:hover{
+    text-decoration: underline;
+}
+.image2 {
+    margin-top: 2%;
+}
+
+.bottom-two{
+    padding-top: 0.5rem;
+    color: #4a4a4a;
+    cursor: pointer;
+}
+
+.more-photos button{
+    color: rgb(103, 103, 244);
+    font-size:.95rem;
+    border: 1px solid transparent;
+    width: 100%;
+    background-color: white;
+    text-align: left;
+    text-indent: 5%;
+}
+/* latest photos section ends here */
+
+/* designing left aside content 3 scheduled section */
+.content-3{
+    background-color: white;
+}
+
+.schedule {
+    color: #009270;
+    font-weight: bold;
+    margin-top: 3%;
+    font-size: 16px;
+    margin-left: 5%;
+    padding-top: 3%;
+}
+.scheduled-text {
+    color: black;
+    font-family: helvetica, "Segoe UI", Arial, sans-serif;
+    padding-top: 5%;
+    padding-left: 5%;
+    font-weight: 50px;
+    font-size: 14px;
+    width: 90%;
+}
+
+.schedule-time {
+    padding-top: 0.2rem;
+    color: #4a4a4a;
+    margin-left: 5%;
+    font-size: 12px;
+    border-bottom:1px solid #ecebeb;
+    padding-bottom: 5%;
+    width: 90%;
+}
+
+.bottom-three{
+    padding-top: 0.2rem;
+    color: #4a4a4a;
+    margin-left: 5%;
+    font-size: 12px;
+}
+
+.m-content {
+    margin: 3%;
+}
+.more-matches button{
+    color: rgb(103, 103, 244);
+    font-size:.95rem;
+    border: 1px solid transparent;
+    width: 100%;
+    background-color: white;
+    text-align: left;
+    text-indent: 5%;
+    padding-top: 5%;
+}
+/* ahad design center content starts here */
+
+.score-container {
+    background-color: #eeeeee;
+    max-width: 330px;
+    padding: 1%;
+    margin-left: 1%;
+    margin-top: 4%;
+    border-left: 2px solid blue;
+    font-size: 14px;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+
+}
+
+.team-name {
+    padding: 1%;
+}
+.team1{
+    margin-top:13%;
+}
+.team2{
+    margin-top:43%;
+}
+.para1 {
+    padding-top: 10%;
+    padding-left: 3%;
+    width: max-content;
+    font-weight: 200px;
+    
+}
+
+.para2 {
+    padding-top: 20%;
+    padding-left: 1%;
+    width: max-content;
+}
+
+.icon-content svg {
+    width: 5%;
+    height: 20%;
+    font-weight: bolder;
+    /* padding-left: 80%;
+    padding-top: 15%;
+    margin-bottom: 2%; */
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    padding-right: 5%;
+}
+
+.match-result {
+    color: #d0021b;
+    font-size: larger;
+    padding: 1%;
+}
+
+/* ahad design center content ends here */
+
+/*  */
+
+.match-heading {
+    color: rgb(135, 136, 137);
+    padding: 1%;
+}
+
+.big-container {
+    margin-left: 2.5%;
+    margin-top: 3%;
+    width: 95%;
+    border-bottom: 1px solid #ecebeb;
+    padding-bottom: 2%;
+}
+
+.big-container img{
+    width: 100%;
+}
+
+
+.australia {
+    padding-top: 1%;
+    width: 95%;
+    border-radius: 10px;
+}
+
+.match-result a {
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.match-result a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.match-summary p {
+    color: rgb(135, 136, 137);
+    font-size: 14px;
+    padding-top: 2%;
+    padding-left: 1%;
+}
+
+.match-highlight {
+    margin-top: 3%;
+}
+
+.match-highlight a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #1866DB;
+}
+
+.report {
+    color: #d0021b;
+}
+
+.match-highlight a:hover {
+    text-decoration: underline;
+}
+.big-container hr{
+    margin-top: 4%;
+}
+/*  */
+
+
+/* left and center part css ends here */
+
+.m-content{
+    margin: 3%;
+}
+
+/*this center-container is for left part of main content */
+.center-container{
+    width: 49%;
+    background-color: white;
+    /* border: 1px solid black; this border & background color not required  ,given to understand the area */
+}
+
+.top-stories-mobile{
+    display: none;
+}
+
+.small{
+    font-size: .7rem;
+}
+.m-content img{
+    width: 100%;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+}
+
+.m-content .bold-text{
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.m-content .bold-text:hover{
+    text-decoration: underline;
+}
+
+
+/*this right-aside-container is for right part of main content */
+.right-aside-container{
+    width: 30%;
+    /* border: 1px solid black; this border & background color not required, given to understand the area */
+}
+/*ad area starts here*/
+.show-ad{
+    width: 100%;
+    height: 15em;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.ads{
+    height: 95%;
+    width: 95%;
+    /* border: 0.25px solid black; */
+}
+/* ad area ends here */
+
+/* featured videos start */
+
+.content{
+    padding: 5%;
+    background-color: white;
+}
+
+
+.featured{
+    font-size: 16px;
+    color: #009270;
+    margin-bottom: .2em;
+    font-weight: 700;
+}
+.videos1{
+    margin-bottom: 3%;
+}
+.videos1 .videos{
+    width: 100%;
+    height: 12em;
+}
+.fonts-right a{
+    font-size: 1.1rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+.fonts-right a:hover{
+    text-decoration: underline;
+}
+.content .more{
+    display: flex;
+    justify-content: center;
+}
+.more button{
+    font-size: 1rem;
+    padding: .5rem;
+    color: white;
+    background: #009270;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1vh;
+}
+.more button:hover{
+    opacity: .7;
+}
+/*featured videos end*/
+/* special section */
+.special-section{
+    background-color: white;
+    padding: 3%;
+    margin-top: 2%;
+}
+
+.special-section img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom:4%;
+    margin-top:8%;
+}
+.right-text{
+    font-size: 14px;
+}
+/*main-end*/
+
+/* footer css */
+/* footer{
+    background-color: #4a4a4a;
+    margin-top: 4em;
+    box-sizing: border-box;
+} */
+
+/* footer flex container design */
+/* .flex-container{
+    display: flex;
+    justify-content:center;
+    max-width:55%;
+    margin: 0 auto;
+} */
+/* footer logo design */
+/* .flex-container img{
+    max-width:12% ; 
+    margin-bottom:13em;
+    margin-right: 5em;
+} */
+/* footer heading for icons  */
+
+/* .heading-div h2{
+    color: white;
+    margin-left:1.5em;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 1em;
+
+} */
+/* designing the footer icons */
+/* .icon{
+    width:5%;
+}
+.anchor-tag{
+    display: flex;
+    width:auto;
+    text-decoration: none;
+    margin-left:2.3rem;
+    margin-top:2em;
+    color: white;
+} */
+/* designing icon name */
+/* .icon-name{
+    font-size:18px;
+    padding-left:0.5em;
+} */
+
+/* designing company details */
+/* .company-container{
+    width:20vw;
+}
+.company-container li{
+    margin-top:10%;
+    margin-left:20%;
+}
+.company-container h2{
+    color: white;
+    margin-left:1.5em;
+    margin-top:1em;
+}
+.company-list{
+    text-decoration: none;
+    color: white;
+    margin-left:2.3rem;
+    font-size: 18px;
+}
+
+
+ul{
+    list-style: none;
+}
+
+
+.copyright {
+    color: #bababa;
+    display:flex;
+    justify-content: center;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.copyright a{
+    color: #bababa;
+    text-decoration: none;
+    text-indent:5px;
+}
+
+.copyright a:hover{
+    text-decoration:underline;
+} */
+
+/* footer ends here */
+
+/* new footer css */
+footer{
+    width: 100%;
+    height: 30%;
+    background-color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    margin-top: 3%;
+    flex-wrap: wrap;
+}
+
+
+footer img{
+    width: 7%;
+    height: 100%;
+    margin-right: 5%;
+}
+
+.footer-inside-container{
+    display: flex;
+    width: 50%;
+}
+
+.line1-footer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+    width: 30%;
+}
+
+.line1-footer p{
+    font-size: 16px;
+    margin-bottom: 10%;
+}
+
+.line1-footer button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-align: left;
+    margin: 5% 0;
+    font-size: 14px;
+    display: flex;
+    cursor: pointer;
+}
+
+.line1-footer button svg{
+    height: 14px;
+    width: 14px;
+    align-self: center;
+    margin-right: 5%;
+}
+
+
+.line2-footer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+    width: 30%;
+    margin: 0% 5%;
+}
+
+.line2-footer p{
+    font-size: 16px;
+    margin-bottom: 10%;
+}
+
+.line2-footer button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-align: left;
+    margin: 5% 0;
+    font-size: 14px;
+    display: flex;
+    cursor: pointer;
+}
+
+.line2-footer button svg{
+    height: 14px;
+    width: 14px;
+    align-self: center;
+    margin-right: 5%;
+}
+
+.copyright {
+    color: #bababa;
+    display:flex;
+    justify-content: center;
+    padding: 1em;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 12px;
+}
+
+.copyright a{
+    color: #bababa;
+    text-decoration: none;
+    text-indent:5px;
+    
+}
+
+.copyright a:hover{
+    text-decoration:underline;
+} 
+
+
+
+
+
+.mobile-footer{
+    display: none;
+}
+
+.show-ad2{
+    display: none;
+}

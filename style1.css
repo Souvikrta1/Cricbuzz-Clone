@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: #c4c6c4; */
+}
+body{
+    background-color: #c4c6c4;
+}
+.main-heading{
+    max-width: 1080px;
+    height: 50px;
+    margin: 0 auto;
+    background: rgb(58, 185, 121);
+    display: flex;
+    align-items: center;
+}
+.main-heading img{
+    width: 100px;
+    padding-left: 10px;
+}
+
+.main-page{
+    max-width: 1080px;
+    height: 80vh;
+    margin: 0 auto;
+    background: white;
+    /* background: white; */
+}
+.login-page{
+    max-width: 360px;
+    height: 300px;
+    margin: 0 auto;
+    /* display: flex;
+    flex-direction: column; */
+}
+.login-page .heading{
+    padding-top: 50px;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.login-page .text{
+    text-align: center;
+}
+.login-page #email{
+    margin-top: 50px;
+    width: 90%;
+    border: none; 
+    outline: none;
+    text-indent: 5px;   
+}
+.input-mail{
+    border-bottom: 1px solid black;
+}
+.smalltext{
+    font-size: .8rem;
+    margin-bottom: 20px;
+}
+.login-page .submit-btn button{
+    font-size: 1.1rem;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: none;
+    background-color: rgba(58, 185, 173, .7);
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+.url{
+    text-decoration: none;
+    color: rgb(48, 48, 240);
+}
+#checkbox{
+    margin-top: 50px;
+}
+#error-msg{
+    color: red;
+    font-size: .8rem;
+    text-align: center;
+    display: none;
+}

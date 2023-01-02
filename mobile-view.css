@@ -1,4 +1,5 @@
 @media only screen and (max-width:600px){
+
     nav img{
         width: 80px;
     }
@@ -92,7 +93,7 @@
     }
 
 
-    .second-match{
+    .second{
         width: 100%;
         border-right: none;
         border-bottom: 0.5px solid black;
@@ -103,7 +104,7 @@
         font-weight: bold;
     }
 
-    .third-match{
+    .third{
         width: 100%;
         border-right: none;
         border-bottom: 0.5px solid black;
@@ -238,19 +239,20 @@
         width: 100%;
         display: flex;
     }
-    .column-in-mobile-footer{
-        width: 50%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .column-in-mobile-footer{
-        width: 50%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
 
+    .column-in-mobile-footer{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .column-in-mobile-footer{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
     .column-in-mobile-footer a{
         text-align: left;
         text-decoration: none;
@@ -262,14 +264,10 @@
         margin-left: 3%;
     }
 
-    .column1-in-mobile-footer a:hover{
+    .column-in-mobile-footer a:hover{
         text-decoration: underline;
     }
-    .column2-in-mobile-footer a:hover{
-        text-decoration: underline;
-    }
-
-
+    
     .apps-social-channels{
         display: flex;
     }
@@ -279,6 +277,7 @@
         text-indent: 3%;
         color: white;
     }
+    
     .apps-in-mobile-footer{
         width: 50%;
         height: 100%;
@@ -286,6 +285,7 @@
         display: flex;
         flex-direction: column;
     }
+    
     .social-in-mobile-footer{
         width: 50%;
         height: 100%;
@@ -293,7 +293,7 @@
         display: flex;
         flex-direction: column;
     }
-
+    
     .apps-in-mobile-footer a{
         text-align: left;
         text-decoration: none;
@@ -309,7 +309,7 @@
         display: flex;
         padding-bottom: 2%;
     }
-
+    
     .bottom-line-mobile-footer a{
         margin-top: 3%;
         background-color: transparent;
