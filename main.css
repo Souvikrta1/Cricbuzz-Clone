@@ -1,0 +1,443 @@
+
+/*Header and menu button section line 1 code is above */
+
+/*Header and menu button section line 2 code is below */
+/* Featured Matches area sliding view */
+/* animation for sliding view in featured matches is above */
+
+/* Dont update anything below in main */
+/* main start*/
+main{
+    max-width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin: 0 auto;
+}
+/* dont update anything above in main */
+
+/*this left-aside-container is for left part of main content */
+.left-aside-container{
+    width: 20%;
+    
+    /* border: 1px solid black; this border & background color not required ,given to understand the area */
+}
+.more-news button{
+    color: rgb(103, 103, 244);
+    font-size:.95rem;
+    width: 100%;
+    border: 1px solid transparent;
+    margin-bottom:2.5% ;
+    background-color: white;
+    text-align: left;
+    text-indent: 5%;
+}
+.left-aside-container button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.l-content{
+    /* width: 90%; */
+    padding: 5%;
+    background-color: white;
+}
+.l-content .latest-news{
+    color: #009270;
+    font-weight: bold;
+    margin-bottom: 1vh;
+}
+.l-content .text{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+.l-content .text:hover{
+    text-decoration: underline;
+}
+.l-content .text-time{
+    font-size: .7rem;
+    padding-bottom: 5%;
+    border-bottom:1px solid #ecebeb;
+    margin-bottom: 5%;
+}
+
+.bottom-one{
+    font-size: .7rem;
+}
+/* designing the left side content2 latest photos section */
+.latest-photos{
+    color: #009270;
+    font-weight: bold;
+    margin-bottom: 1vh;
+}
+.content-2 img{
+    width:100%;
+    border: 1px solid transparent;
+    border-radius:3%;
+
+}
+.content-2{
+    padding: 5%;
+    background-color: white;
+}
+/* .content-2 hr{
+    margin-top:0.5rem;
+} */
+.content-2 a{
+    text-decoration: none;
+}
+.content-2 .text{
+    /* font-size: 1rem; */
+    color: black;
+    padding-top:0.5rem;
+}
+.date-time{
+    padding-top: 0.5rem;
+    color: #4a4a4a;
+    cursor: pointer;
+    border-bottom:1px solid #ecebeb;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+}
+.content-2 .text:hover{
+    text-decoration: underline;
+}
+.image2 {
+    margin-top: 2%;
+}
+
+.bottom-two{
+    padding-top: 0.5rem;
+    color: #4a4a4a;
+    cursor: pointer;
+}
+
+.more-photos button{
+    color: rgb(103, 103, 244);
+    font-size:.95rem;
+    border: 1px solid transparent;
+    width: 100%;
+    background-color: white;
+    text-align: left;
+    text-indent: 5%;
+}
+/* latest photos section ends here */
+
+/* designing left aside content 3 scheduled section */
+.content-3{
+    background-color: white;
+}
+
+.schedule {
+    color: #009270;
+    font-weight: bold;
+    margin-top: 3%;
+    font-size: 16px;
+    margin-left: 5%;
+    padding-top: 3%;
+}
+.scheduled-text {
+    color: black;
+    font-family: helvetica, "Segoe UI", Arial, sans-serif;
+    padding-top: 5%;
+    padding-left: 5%;
+    font-weight: 50px;
+    font-size: 14px;
+    width: 90%;
+}
+
+.schedule-time {
+    padding-top: 0.2rem;
+    color: #4a4a4a;
+    margin-left: 5%;
+    font-size: 12px;
+    border-bottom:1px solid #ecebeb;
+    padding-bottom: 5%;
+    width: 90%;
+}
+
+.bottom-three{
+    padding-top: 0.2rem;
+    color: #4a4a4a;
+    margin-left: 5%;
+    font-size: 12px;
+}
+
+.m-content {
+    margin: 3%;
+}
+.more-matches button{
+    color: rgb(103, 103, 244);
+    font-size:.95rem;
+    border: 1px solid transparent;
+    width: 100%;
+    background-color: white;
+    text-align: left;
+    text-indent: 5%;
+    padding-top: 5%;
+}
+/* design center content starts here */
+
+.score-container {
+    list-style: none;
+    background-color: #eeeeee;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 330px;
+    padding: 3% 1%;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border-left: 2px solid blue;
+    font-size: 14px;
+    position: relative;
+}
+
+.score-container svg{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 3%;
+    top: 40%;
+}
+
+.stories-extra span {
+    color: #d0021b;
+}
+
+.score-para{
+    color:rgb(135, 136, 137) ;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.team1{
+    width: 20%;
+    margin-left: 5%;
+    padding: 1.5% 0;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 2%;
+}
+
+.team2{
+    width: 20%;
+    margin-left: 5%;
+    padding: 1.5% 0;
+    font-weight: bold;
+}
+
+.team1-runs{
+    width: 60%;
+    text-align: left;
+    padding: 1.5% 0;
+    margin-bottom: 2%;
+}
+
+.team2-runs{
+    width: 60%;
+    text-align: left;
+    padding: 1.5% 0;
+}
+
+
+/* ahad design center content ends here */
+
+/*  */
+
+.match-heading {
+    color: rgb(135, 136, 137);
+    padding: 1%;
+}
+
+.stories-container {
+    margin-left: 2.5%;
+    margin-top: 3%;
+    width: 95%;
+    border-bottom: 1px solid #ecebeb;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+
+.stories-container img{
+    width: 100%;
+}
+
+
+.australia {
+    padding-top: 1%;
+    width: 95%;
+    border-radius: 10px;
+}
+
+.stories-headline{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 2%;
+}
+
+.stories-extra {
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 14px;
+    color: #1866DB;
+    margin-top: 2%;
+}
+
+.stories-headline:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.stories-para {
+    color: rgb(135, 136, 137);
+    font-size: 14px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.stories-extra span {
+    color: #d0021b;
+}
+
+.match-highlight a:hover {
+    text-decoration: underline;
+}
+.big-container hr{
+    margin-top: 4%;
+}
+/*  */
+
+
+/* left and center part css ends here */
+
+.m-content{
+    margin: 3%;
+}
+
+/*this center-container is for left part of main content */
+.center-container{
+    width: 49%;
+    background-color: white;
+    /* border: 1px solid black; this border & background color not required  ,given to understand the area */
+}
+
+.top-stories-mobile{
+    display: none;
+}
+
+.small{
+    font-size: .7rem;
+}
+.m-content img{
+    width: 100%;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+}
+
+.m-content .bold-text{
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.m-content .bold-text:hover{
+    text-decoration: underline;
+}
+
+
+/*this right-aside-container is for right part of main content */
+.right-aside-container{
+    width: 30%;
+    /* border: 1px solid black; this border & background color not required, given to understand the area */
+}
+/*ad area starts here*/
+.show-ad{
+    width: 100%;
+    height: 15em;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.ads{
+    height: 95%;
+    width: 95%;
+    /* border: 0.25px solid black; */
+}
+/* ad area ends here */
+
+/* featured videos start */
+
+.content{
+    padding: 5%;
+    background-color: white;
+}
+
+
+.featured{
+    font-size: 16px;
+    color: #009270;
+    margin-bottom: .2em;
+    font-weight: 700;
+}
+.videos1{
+    margin-bottom: 3%;
+}
+.videos1 .videos{
+    width: 100%;
+    height: 12em;
+}
+.fonts-right a{
+    font-size: 1.1rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+.fonts-right a:hover{
+    text-decoration: underline;
+}
+.content .more{
+    display: flex;
+    justify-content: center;
+}
+.more button{
+    font-size: 1rem;
+    padding: .5rem;
+    color: white;
+    background: #009270;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1vh;
+}
+.more button:hover{
+    opacity: .7;
+}
+/*featured videos end*/
+/* special section */
+.special-section{
+    background-color: white;
+    padding: 3%;
+    margin-top: 2%;
+}
+
+.special-section img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom:4%;
+    margin-top:8%;
+}
+.right-text{
+    font-size: 14px;
+}
+
+/* new footer css */

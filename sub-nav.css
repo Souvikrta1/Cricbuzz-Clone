@@ -1,0 +1,210 @@
+.sub-nav{
+    background-color: rgb(67, 64, 64);
+    color: white;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.sub-nav button{
+    width: max-content;
+    text-align: center;
+}
+
+.match{
+    height: 100%;
+    padding: 1%;
+    width: 17.2%;
+    background-color: rgb(67, 64, 64);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-bottom:0.25px solid #c4c6c4 ;
+    text-decoration: none;
+    font-size: small;
+}
+.matches{
+    height: 99%;
+    background-color:rgb(46, 43, 43) ;
+    border: none;
+    color: white;
+    padding: 1%;
+    cursor: pointer;
+    border-bottom: 1px solid #c4c6c4;
+    text-decoration: none;
+    font-size: small;
+}
+.all-btn{
+    cursor: pointer;
+    height: 99%;
+    background-color: rgb(46, 43, 43);
+    padding: 1%;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #c4c6c4;
+    padding: 1% 1.9%;
+}
+
+.all-btn i{
+    margin-left: 10%;
+}
+
+.close-btn{
+    display: none;
+    width: max-content;
+    cursor: pointer;
+    height: 100%;
+    background-color: rgb(46, 43, 43);
+    padding: 1%;
+    color: white;
+    border: none;
+    justify-content: center;
+}
+
+.close-btn i{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+/*Header and menu button section line 2 code is above */
+
+/* open-close-match-container starts here */
+.open-close-match-container{
+    max-width: 1080px;
+    margin: 0 auto;
+    height: 780px;
+    background-color: rgb(67, 64, 64);
+    display: none;
+    flex-direction: column;
+}
+
+.category-btn-in-open-close-container{
+    width: 100%;
+    height: 5%;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.category-btn-in-open-close-container button{
+    height: 60%;
+    width: max-content;
+    padding: 0 2%;
+    border-radius: 20px;
+    margin-left: 2%;
+    border: 0px white;
+    background-color: rgb(46, 43, 43);
+    color: white;
+}
+
+.all-matches-data-in-open-close-container{
+    display: flex;
+    width: 100%;
+    height: 95%;
+}
+
+.column1-match-details{
+    width: 33%;
+    height: 100%;
+    background-color: rgb(67, 64, 64);
+    list-style: none;
+}
+
+.column1-match-details h4{
+    color: rgb(6, 226, 6);
+    margin-left: 5%;
+    margin-top: 4%;
+}
+
+.Ind-Ban-series{
+    color: white;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.Ind-Ban-series h5{
+    margin-top: 5%;
+}
+
+.Ind-Ban-series a{
+    background-color: rgb(67, 64, 64);
+    color: white;
+    margin: 2% 0 1% 0;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* .Ind-Ban-series button:hover{
+    background-color: white;
+    color: black;
+    border-radius: 2px;
+} */
+
+.Ind-Ban-series p{
+    color: silver;
+    font-size: small;
+    margin-bottom: 1%;
+}
+
+.column2-match-details{
+    width: 34%;
+    background-color:rgb(67, 64, 64) ;
+    list-style: none;
+}
+
+.column2-match-details h4{
+    color: rgb(6, 226, 6);
+    margin-left: 5%;
+    margin-top: 3.5%;
+    margin-bottom: -1.5%;
+}
+
+.column3-match-details{
+    width: 33%;
+    background-color: rgb(67, 64, 64);
+    list-style: none;
+} 
+
+.column3-match-details h4{
+    color: rgb(6, 226, 6);
+    margin-left: 5%;
+    margin-top: 3.5%;
+    margin-bottom: -1.5%;
+}
+#all{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#live-now{
+    cursor: pointer;
+}
+
+#upcoming{
+    cursor: pointer;
+}
+
+@keyframes up{
+    from{
+        height: 780px;
+        opacity: 100%;
+    }
+    to {
+        height: 0px;
+        opacity: 0%;
+    }
+}
+
+@keyframes down{
+    from{
+        height: 0px;
+        opacity: 10%;
+    }
+    to{
+        height: 900px;
+        opacity: 100%;
+    }
+}
