@@ -16,7 +16,7 @@ function ValidateEmail(input) {
         // alert("Valid email address!");
         localStorage.setItem("emailid",input);
         localStorage.setItem("data","yes");
-        window.location.href="/HTML/logout.html";
+        window.location.href="logout.html";
         return true;
 
     } else {
@@ -60,7 +60,7 @@ if(checkbox.checked){
 
 //login related
 if(localStorage.getItem("data") == "yes"){
-    window.location.href = "/index.html";
+    window.location.href = "index.html";
 }
 
 

@@ -56,11 +56,11 @@ const logout = document.querySelector(".sign-out");
 
 let data = localStorage.getItem("data");
 if(data == "no"){
-    window.location.href = "/HTML/login.html";
+    window.location.href = "login.html";
 }
 
 logout.addEventListener("click",()=>{
     localStorage.clear();
     localStorage.setItem("data","no");
-    window.location.href="/index.html"
+    window.location.href="index.html"
 })

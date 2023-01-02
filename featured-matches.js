@@ -186,10 +186,10 @@ const loginPage = document.getElementById("user-login");
 
 loginPage.addEventListener("click",()=>{
     if(data == "yes"){
-        window.location.href="/HTML/logout.html";
+        window.location.href="logout.html";
     }
     else{
-        window.location.href="/HTML/login.html";
+        window.location.href="login.html";
     }
 })
 
