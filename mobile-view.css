@@ -1,5 +1,5 @@
 @media only screen and (max-width:600px){
-    .line1 img{
+    nav img{
         width: 80px;
     }
     .menu-btn{
@@ -58,11 +58,11 @@
         background-color: transparent;
     }
 
-    .line1{
+    nav{
         justify-content: space-between;
         background-color: rgb(67, 64, 64);
     }
-    .line2{
+    .sub-nav{
         display: none;
     }
     .featured-matches{
@@ -238,44 +238,34 @@
         width: 100%;
         display: flex;
     }
-    .column1-in-mobile-footer{
+    .column-in-mobile-footer{
         width: 50%;
         height: 100%;
         display: flex;
         flex-direction: column;
     }
-    .column2-in-mobile-footer{
+    .column-in-mobile-footer{
         width: 50%;
         height: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    .column1-in-mobile-footer button{
+    .column-in-mobile-footer a{
         text-align: left;
-        border: none;
-        padding: 1%;
+        text-decoration: none;
         background-color: transparent;
         color: white;
         font-weight: 600;
         margin-top: 9%;
-        text-indent: 3%;
-    }
-    .column2-in-mobile-footer button{
-        text-align: left;
-        border: none;
-        padding: 1%;
-        background-color: transparent;
-        color: white;
-        font-weight: 600;
-        margin-top: 9%;
-        text-indent: 3%;
+        font-size: 14px;
+        margin-left: 3%;
     }
 
-    .column1-in-mobile-footer button:hover{
+    .column1-in-mobile-footer a:hover{
         text-decoration: underline;
     }
-    .column2-in-mobile-footer button:hover{
+    .column2-in-mobile-footer a:hover{
         text-decoration: underline;
     }
 
@@ -304,20 +294,9 @@
         flex-direction: column;
     }
 
-    .apps-in-mobile-footer button{
+    .apps-in-mobile-footer a{
         text-align: left;
-        border: none;
-        padding: 1%;
-        background-color: transparent;
-        color: white;
-        font-weight: 600;
-        margin-top: 10%;
-        text-indent: 3%;
-    }
-
-    .social-in-mobile-footer button{
-        text-align: left;
-        border: none;
+        text-decoration: none;
         padding: 1%;
         background-color: transparent;
         color: white;
@@ -331,17 +310,15 @@
         padding-bottom: 2%;
     }
 
-    .bottom-line-mobile-footer button{
+    .bottom-line-mobile-footer a{
         margin-top: 3%;
         background-color: transparent;
         color: white;
         padding: 1%;
         border: none;
-        border-right: 0.5px solid white;
         text-align: center;
         font-weight: 500;
-        margin-left: 2%; 
-        padding-right: 3%;
+        text-decoration: none;
     }
 
     .copyright-area-in-mobile{

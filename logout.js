@@ -50,29 +50,17 @@ changeColor.forEach((element) => {
     })
     // console.log(element);
 });
-// for(let i=0;i<changeColor.length;i++){
-//     changeColor.addEventListener("click",()=>{
-//         let el=changeColor[0];
-//         while(el){
-//             if(el.classList.contains("newclass")){
-//                 el.classList.remove("newclass");
-//             }
-//             el=el.nextSibling;
-//         }
-//         element.classList.add("newclass");
-//     })
-// }
 
+//login related
 const logout = document.querySelector(".sign-out");
 
 let data = localStorage.getItem("data");
 if(data == "no"){
-    window.location.href = "index1.html";
+    window.location.href = "login.html";
 }
-
 
 logout.addEventListener("click",()=>{
     localStorage.clear();
     localStorage.setItem("data","no");
-    window.location.href="index.html";
+    window.location.href="index.html"
 })
