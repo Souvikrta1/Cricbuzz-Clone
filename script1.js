@@ -16,7 +16,7 @@ function ValidateEmail(input) {
         // alert("Valid email address!");
         localStorage.setItem("emailid",input);
         localStorage.setItem("data","yes");
-        window.location.href="/HTML/logout.html";
+        window.location.href="index2.html";
         return true;
 
     } else {
@@ -58,11 +58,10 @@ if(checkbox.checked){
     submitBtn.style.backgroundColor="rgba(58, 185, 173, .6)";
 }
 
-//login related
-if(localStorage.getItem("data") == "yes"){
-    window.location.href = "/index.html";
+let data = localStorage.getItem("data");
+if(data == "yes"){
+    window.location.href="index.html"
 }
-
 
 
 
