@@ -40,6 +40,7 @@ html,body{
     align-items: center;
     /* justify-content: space-between; */
     position: relative;
+    cursor: pointer;
 }
 .right2{
     width: 400px;

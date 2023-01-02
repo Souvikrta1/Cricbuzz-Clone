@@ -1,0 +1,214 @@
+.featured-matches{
+    height: 25%;
+    max-width: 1080px;
+    margin-left: 15%;
+    background-color: white;
+    overflow: hidden;
+    margin: 0.35% auto;
+    position: relative;
+}
+
+.featured-matches h4{
+    padding: 1%;
+}
+/* page 1 of sliding featured matches */
+.match-stats-p1{
+    display: flex;
+    height: 90%;
+    flex-direction: row;
+}
+
+.first-match{
+    display: flex;
+    flex-direction: column;
+    width: 24.8%;
+    background-color: white;
+    border-right: 1px solid rgb(214, 211, 211);
+}
+
+.stat-btn{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: none;
+    margin-bottom: 3%;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.stat-btn span{
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    padding-left: 7%;
+    font-weight: bolder;
+}
+
+.mobile-preview1{
+    display: none;
+}
+.mobile-preview2{
+    display: none;
+}
+
+.stat-btn span p{
+    width: 40%;
+    margin-right: 3%;
+    text-align: left;
+    font-size: 14px;
+}
+
+.match1-status{
+    color: rgb(58, 58, 250);
+    font-size: 14px;
+    padding-left: 7%;
+    margin-top: 1%;
+}
+
+.fantasy{
+    text-align: left;
+    font-size: medium;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    width: max-content;
+    padding-left: 7%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    text-decoration: none;
+    color: black;
+}
+
+
+.match2-status{
+    color: rgb(58, 58, 250);
+    font-size: 14px;
+    padding-left: 1.5%;
+    margin-top: 1%;
+}
+
+.match3-status{
+    color: rgb(58, 58, 250);
+    font-size: 14px;
+    padding-left: 2.5%;
+    margin-top: 1%;
+}
+
+.stat-btn4{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 1%;
+    text-decoration: none;
+    color: black;
+}
+
+.stat-btn4 span{
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    font-weight: bolder; 
+}
+
+.stat-btn4 span p{
+    width: 40%;
+    margin-right: 3%;
+    text-align: left;
+    font-size: 14px;
+}
+
+.match4-status{
+    color: rgb(58, 58, 250);
+    font-size: 14px;
+    padding-left: 2%;
+    margin-top: 1%;
+}
+
+.slider{
+    position: absolute;
+    right: 1%;
+    top: 30%;
+    width: 5%;
+    height: 33%;
+    border-radius: 50%;
+    background-color: #009270;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    opacity: 65%;
+    cursor: pointer;
+}
+
+/* page 1 of sliding featured matches is above */ 
+
+/* page 2 of sliding featured matches */
+.match-stats-p2{
+    display: none;
+    height: 90%;
+    flex-direction: row;
+    font-size: 14px;
+}
+
+.p2-first-match{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 24.8%;
+    background-color: white;
+    border-right: 1px solid rgb(214, 211, 211);
+    padding-bottom: 3.5%;
+    
+}
+
+.p2-match1-status{
+    color: rgb(218, 170, 108);
+    font-size: small;
+    padding-left: 7%;
+    margin-top: 1%;
+}
+
+.slider-left{
+    position: absolute;
+    left: 0;
+    top: 15%;
+    height: 40%;
+    width: 18%;
+    border-radius: 50%;
+    background-color: #009270;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    opacity: 65%;
+    cursor: pointer;
+    
+}
+/* page 2 of sliding featured matches is above */
+/* Featured Matches area sliding view is above */
+
+/* animation for sliding view in featured matches */
+@keyframes going{
+    from{
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+    to {
+        transform: translateX(-800px);
+        opacity: 0%;
+    }
+}
+
+@keyframes coming{
+    from{
+        transform: translateX(-800px);
+        opacity: 0%;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
