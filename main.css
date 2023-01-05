@@ -379,12 +379,13 @@ main{
 /* featured videos start */
 
 .content{
-    padding: 5%;
+    padding: 0% 5%;
     background-color: white;
 }
 
 
 .featured{
+    padding-top: 2%;
     font-size: 16px;
     color: #009270;
     margin-bottom: .2em;

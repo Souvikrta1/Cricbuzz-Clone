@@ -31,17 +31,18 @@ nav{
     align-items: center;
     overflow: hidden;
     height: 48px;
+    position: relative;
 }
 
 nav img{
     height: 80%;
-    width: 10%;
+    width: 8%;
     padding: 1%;
 }
 
 .menu-btn{
     display: flex;
-    width: 68%;
+    width: 72%;
     align-items: center;
 }
 
@@ -52,11 +53,14 @@ nav img{
     cursor: pointer;
     display: flex;
     align-items: center;
-    display: flex;
-    width: 14%;
+    width: 10.1%;
     justify-content: center;
     padding: 2.2% 1%;
     text-decoration: none;
+}
+
+.wrap{
+    white-space: nowrap;
 }
 
 .nav-btn p{
@@ -68,22 +72,47 @@ nav img{
 }
 
 .search-area{
-    width: 150%;
+    width: 83%;
     height: 40px;
+    margin-left: 12%;
     display: none;
+    position: absolute;
+    align-items: center;
+}
+
+.search-area i{
+    position: absolute;
+    color: white;
+    left: 1%;
 }
 
 #search-btn{
     width: 10%;
-    background-color: #009270;
+    background-color: #005e48;
+    height: 37px;
+    margin-left: 0;
+    border:1px solid #00785c;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 #search-input{
     width: 90%;
     color: white;
     background-color: #00785c;
-    font-size: medium;
-    font-weight: bolder;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 4%;
+    height: 35px;
+    border:1px solid #00785c;
+}
+
+#search-input::placeholder{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .user-area{
@@ -103,7 +132,7 @@ nav img{
     font-size: larger;
     color: white;
     cursor: pointer;
-    margin-right: 5%;
+    margin-right: 4%;
 }
 
 #user-login{
@@ -112,25 +141,29 @@ nav img{
     font-size: larger;
     color: white;
     cursor: pointer;
-    margin-right: 5%;
+    width: max-content;
+    margin-right: 2%;
+    position: absolute;
+    right: 1px;
 }
 
 .plus{
-    width: 50%;
+    width: max-content;
     border-radius: 20px;
+    height: 32px;
     border: none;
     background-color: white;
     font-size: larger;
     color: white;
     cursor: pointer;
     border: 1px solid white;
-    margin-right: 5%;
-    padding-top:1%;
-    padding-bottom: 1%;
+    margin-right: 4%;
+    padding-top:0.5%;
+    padding-bottom: 0.5%;
 }
 
 .plus p{
-    width: 100%;
+    white-space: nowrap;
     text-align: center;
     font-weight: bold;
     font-size: 14px;
@@ -147,7 +180,7 @@ nav img{
     background-color: whitesmoke;
     width: 13%;
     top: 54.7%;
-    left: 36.4%;
+    left: 34.3%;
     z-index: 5;
 }
 
@@ -173,7 +206,7 @@ nav img{
     width: 28%;
     background-color: whitesmoke;
     top: 54.7%;
-    left: 43.4%;
+    left: 41.9%;
     z-index: 5;
 }
 
@@ -212,7 +245,7 @@ nav img{
     display: none;
     background-color: whitesmoke;
     top: 54.7%;
-    left: 50.4%;
+    left: 49.4%;
     width: 22%;
     padding-left: 1%;
     z-index: 5;
@@ -277,7 +310,7 @@ nav img{
     width: 10%;
     background-color: whitesmoke;
     top: 54.7%;
-    left: 57.5%;
+    left: 56.9%;
     z-index: 5;
 }
 
@@ -304,7 +337,7 @@ nav img{
     width: 20%;
     background-color: whitesmoke;
     top: 54.7%;
-    left: 64.5%;
+    left: 64.4%;
     z-index: 5;
 }
 
@@ -330,7 +363,7 @@ nav img{
     width: 20%;
     background-color: whitesmoke;
     top: 54.7%;
-    left: 59%;
+    left: 59.4%;
     z-index: 5;
 }
 

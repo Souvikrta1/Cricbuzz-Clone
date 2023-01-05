@@ -21,7 +21,7 @@
             <div id="menu" class="menu-btn">
                 <a class="nav-btn"
                     href='https://www.cricbuzz.com/cricket-match/live-scores'>
-                    <p>Live Scores</p>
+                    <p class="wrap">Live Scores</p>
                 </a>
                 <a class="nav-btn"
                     href='https://www.cricbuzz.com/cricket-schedule/upcoming-series/international'>
@@ -55,26 +55,29 @@
             </div>
             
             <div id="search-area" class="search-area">
-                <input type="text" id="search-input" placeholder="Search for players"></input>
-                <button id="search-btn">Search</button>
+                <input class="search-input" type="text"  id="search-input" placeholder="Search for Players, Series, Teams, News or Videos, e.g: Sri Lanka Tour Of India"></input>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <button class="search-btn" id="search-btn">SEARCH</button>
             </div>
             <div class="user-area">
                 <button class="plus"
                     onclick="window.location.href='https://www.cricbuzz.com/cb-plus/premium-content/home'">
                     <p>Cricbuzz Plus</p>
                 </button>
-                <button id="search"><i class="fa-solid fa-magnifying-glass"></i></i></button>
+                <button id="search" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
                 <button id="user-login"><i class="fa-regular fa-circle-user"></i></button>
                 <button id="mobile-menu">Menu <i class="fa-solid fa-arrow-down"></i></button>
             </div>
         </nav>
         <div class="sub-nav">
             <a class="matches" href='https://www.cricbuzz.com/cricket-match/live-scores'>MATCHES</a>
-            <a class="match" href='https://www.cricbuzz.com/live-cricket-scores/52022/pak-vs-eng-3rd-test-england-tour-of-pakistan-2022'>PAK vs ENG -Stumps</a>
-            <a class="match" href='https://www.cricbuzz.com/live-cricket-scores/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022'>IND vs BAN - IND won</a>
-            <a class="match" href='https://www.cricbuzz.com/live-cricket-scores/50293/syt-vs-mlr-7th-match-big-bash-league-2022-23'>SYT vs MLR - MLR won</a>
-            <a class="match" href='https://www.cricbuzz.com/live-cricket-scores/56901/kdf-vs-dma-18th-match-lanka-premier-league-2022'>KDF vs DMA - Complete</a>
-            <a class="match" href='https://www.cricbuzz.com/live-cricket-scores/48128/rsa-vs-aus-1st-test-south-africa-tour-of-australia-2022-23'>AUS vs RSA - AUS won</a>
+            <div class="matches-sub-nav">
+                <a class="match" href='https://www.cricbuzz.com/live-cricket-scores/52022/pak-vs-eng-3rd-test-england-tour-of-pakistan-2022'>PAK vs ENG -Stumps</a>
+                <a class="match" href='https://www.cricbuzz.com/live-cricket-scores/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022'>IND vs BAN - IND won</a>
+                <a class="match" href='https://www.cricbuzz.com/live-cricket-scores/50293/syt-vs-mlr-7th-match-big-bash-league-2022-23'>SYT vs MLR - MLR won</a>
+                <a class="match" href='https://www.cricbuzz.com/live-cricket-scores/56901/kdf-vs-dma-18th-match-lanka-premier-league-2022'>KDF vs DMA - Complete</a>
+                <a class="match" href='https://www.cricbuzz.com/live-cricket-scores/48128/rsa-vs-aus-1st-test-south-africa-tour-of-australia-2022-23'>AUS vs RSA - AUS won</a>
+            </div>
             <button class="all-btn">All <i class="fa-solid fa-caret-down"></i></button>
             <button class ="close-btn">Close <i class="fa-solid fa-caret-up"></i></button>
         </div>
@@ -315,64 +318,7 @@
     <div class="featured-matches">
         <h4>FEATURED MATCHES</h4>
         <div id="stat-page1" class="match-stats-p1">
-            <div class="first-match first">
-                <!-- <button class="stat-btn" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/52022/pak-vs-eng-3rd-test-england-tour-of-pakistan-2022'">
-                    <p class="mobile-preview1">2nd Test • India Tour Of Bangladesh, 2022</p>
-                    <span>
-                        <p>Ban</p>
-                        <p class="firstMatch-runs1">227 (73.5)</p>
-                    </span>
-                    <span>
-                        <p>IND</p>
-                        <p class="firstMatch-runs2">19-0 (8)</p>
-                    </span>
-                    <p class="match1-status">Day 1: Stumps - India trail by 208 runs</p>
-                </button>
-                <button class="fantasy"><i class="fa-solid fa-trophy" onclick="window.location.href='https://www.cricbuzz.com/cricket-fantasy-handbook/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022#!/expert-picks'"></i> Fantasy Handbook</button> -->
-
-            </div>
-            <div class="first-match second">
-                <!-- <button class="stat-btn2" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56969/ind-vs-ban-1st-test-india-tour-of-bangladesh-2022'">
-                    <p class="mobile-preview2">1st Test • India Tour Of Bangladesh, 2022</p>
-                    <span>
-                        <p>IND</p>
-                        <p class="secondMatch-runs1">404 & 258-2 d</p>
-                    </span>
-                    <span>
-                        <p>BAN</p>
-                        <p class="secondMatch-runs2">150 & 324</p>
-                    </span>
-                    <p class="match2-status">India won by 188 runs</p>
-                </button> -->
-            </div>
-            <div class="first-match third">
-                <!-- <button class="stat-btn3" onclick="window.location.href='https://www.cricbuzz.com/live-cricket-scores/56901/kdf-vs-dma-18th-match-lanka-premier-league-2022'">
-                    <p class="mobile-preview2">League Match • Lanka Premier League 2022</p>
-                    <span>
-                        <p>KDF</p>
-                        <p class="thirdMatch-runs1">160-7 (20)</p>
-                    </span>
-                    <span>
-                        <p>DMA</p>
-                        <p class="thirdMatch-runs2">121-9 (20)</p>
-                    </span>
-                    <p class="match3-status">KDF won by 39 runs</p>
-                </button> -->
-            </div>
-            <div class="first-match fourth">
-                <a class="stat-btn4" href='https://www.cricbuzz.com/live-cricket-scores/53016/cntbry-vs-akl-3rd-match-super-smash-2022-23'>
-                    <p id ="fourth-match" class="mobile-preview2"></p>
-                    <span id="team-1">
-                        <p></p>
-                        <p class="fourthMatch-runs1"></p>
-                    </span>
-                    <span id="team-2">
-                        <p></p>
-                        <p class="fourthMatch-runs2"></p>
-                    </span>
-                    <p class="match4-status"></p>
-                </a>
-            </div>
+            <!--something here-->
         </div>
         <button id="slide-right" class="slider"><i class="fa-solid fa-arrow-right"></i></button>
         <div id="stat-page2" class="match-stats-p2">
@@ -409,46 +355,8 @@
         <div class="left-aside-container">
             <!-- write HTML for Left Content of MAin section -->
             <div class="l-content">
-                <div class="latest-news">LATEST NEWS</div>
-                <a href="https://www.cricbuzz.com/cricket-news/124871/focus-was-on-being-patient-mhambrey-on-indias-bowling"
-                    class="text">'Focus was on being patient' - Mhambrey on India's bowling</a>
-                <p class="text-time">1h ago</p>
-
-                <a href="https://www.cricbuzz.com/cricket-news/124871/focus-was-on-being-patient-mhambrey-on-indias-bowling"
-                    class="text">"All I wanted was to bat long" - Zakir Hasan on debut ton</a>
-                <p class="text-time">1h ago</p>
-
-                <a href="https://www.cricbuzz.com/cricket-news/124871/focus-was-on-being-patient-mhambrey-on-indias-bowling"
-                    class="text">Zimbabwe boys in Mumbai with an eye on Sri Lanka</a>
-                <p class="text-time">1h ago</p>
-
-                <a href="https://www.cricbuzz.com/cricket-news/124871/focus-was-on-being-patient-mhambrey-on-indias-bowling"
-                    class="text">Didn't feel much pressure as I have been with the team regularly: Kuldeep</a>
-                <p class="text-time">1h ago</p>
-
-                <a href="https://www.cricbuzz.com/cricket-news/124871/focus-was-on-being-patient-mhambrey-on-indias-bowling"
-                    class="text">Injuries add to Bangladesh's woes in first Test against India</a>
-                <p class="text-time">1h ago</p>
-
-                <a href="https://www.cricbuzz.com/cricket-news/124871/focus-was-on-being-patient-mhambrey-on-indias-bowling"
-                    class="text">Azhar Ali to retire from Tests after England series</a>
-                <p class="text-time">1h ago</p>
-
-                <a href="https://www.cricbuzz.com/cricket-news/124871/focus-was-on-being-patient-mhambrey-on-indias-bowling"
-                    class="text">Hasaranga, Miller, Hales and Rajapaksa among star players picked in PSL draft</a>
-                <p class="text-time">1h ago</p>
-
-                <a href="https://www.cricbuzz.com/cricket-news/124871/focus-was-on-being-patient-mhambrey-on-indias-bowling"
-                    class="text">Not about technique but decision making - Herath on Bangladesh's Test woes</a>
-                <p class="text-time">1h ago</p>
-
-                <a href="https://www.cricbuzz.com/cricket-news/124871/focus-was-on-being-patient-mhambrey-on-indias-bowling"
-                    class="text">I trust wobble seam because I get success from it - Siraj</a>
-                <p class="text-time">1h ago</p>
-
-                <a href="https://www.cricbuzz.com/cricket-news/124871/focus-was-on-being-patient-mhambrey-on-indias-bowling"
-                    class="text">Ish Sodhi returns to New Zealand squad for Pakistan Tests</a>
-                <p class="bottom-one">1h ago</p>
+                <p class="latest-news">LATEST NEWS</p>
+                
             </div>
             <a class="more-news" href="https://www.cricbuzz.com/cricket-news/latest-news">
                 <button><i>More News..</i></button>
@@ -456,61 +364,7 @@
 
             <!-- left content2 html -->
             <div class="content-2">
-                <div class="latest-photos">LATEST PHOTOS</div>
-                <a href="https://www.cricbuzz.com/cricket-gallery/5560/pakistan-vs-england-3rd-test-day-2-karachi">
-                    <img src="https://www.cricbuzz.com/a/img/v1/165x95/i1/c251237/pakistan-vs-england-3rd-test.jpg"
-                        alt="pakistan-vs-england-3rd-test">
-                    <p class="text">Pakistan vs England, 3rd Test, Day 2, Karachi</p>
-                </a>
-                <p class="date-time">Sun, Dec 18 2022</p>
-
-                <a href="https://www.cricbuzz.com/cricket-gallery/5560/pakistan-vs-england-3rd-test-day-2-karachi">
-                    <img class="image2"
-                        src="https://www.cricbuzz.com/a/img/v1/165x95/i1/c251215/australia-vs-south-africa-1st.jpg"
-                        alt="australia-vs-south-africa">
-                    <p class="text">Australia vs South Africa, 1st Test, Day 2, Brisbane</p>
-                </a>
-                <p class="date-time">Sun, Dec 18 2022</p>
-
-                <a href="https://www.cricbuzz.com/cricket-gallery/5560/pakistan-vs-england-3rd-test-day-2-karachi">
-                    <img class="image2"
-                        src="https://www.cricbuzz.com/a/img/v1/165x95/i1/c251102/bangladesh-vs-india-1st-test.jpg"
-                        alt="bangladesh-vs-india-1st-test">
-                    <p class="text">Bangladesh vs India, 1st Test, Day 4, Chattogram</p>
-                </a>
-                <p class="date-time">Sun, Dec 18 2022</p>
-
-                <a href="https://www.cricbuzz.com/cricket-gallery/5560/pakistan-vs-england-3rd-test-day-2-karachi">
-                    <img class="image2"
-                        src="https://www.cricbuzz.com/a/img/v1/165x95/i1/c251058/pakistan-vs-england-3rd-test.jpg"
-                        alt="pakistan-vs-england-3rd-test">
-                    <p class="text">Pakistan vs England, 3rd Test, Day 2, Karachi</p>
-                </a>
-                <p class="date-time">Sat, Dec 17 2022</p>
-
-                <a href="https://www.cricbuzz.com/cricket-gallery/5560/pakistan-vs-england-3rd-test-day-2-karachi">
-                    <img class="image2"
-                        src="https://www.cricbuzz.com/a/img/v1/165x95/i1/c250958/australia-vs-south-africa-1st.jpg"
-                        alt="australia-vs-south-africa">
-                    <p class="text">Pakistan vs England, 3rd Test, Day 2, Karachi</p>
-                </a>
-                <p class="date-time">Sat, Dec 17 2022</p>
-
-                <a href="https://www.cricbuzz.com/cricket-gallery/5560/pakistan-vs-england-3rd-test-day-2-karachi">
-                    <img class="image2"
-                        src="https://www.cricbuzz.com/a/img/v1/165x95/i1/c250793/bangladesh-vs-india-1st-test.jpg"
-                        alt="bangladesh-vs-india-1st-test">
-                    <p class="text">Australia vs South Africa, 1st Test, Day 1, Brisbane</p>
-                </a>
-                <p class="date-time">Sat, Dec 17 2022</p>
-
-                <a href="https://www.cricbuzz.com/cricket-gallery/5560/pakistan-vs-england-3rd-test-day-2-karachi">
-                    <img class="image2"
-                        src="https://www.cricbuzz.com/a/img/v1/165x95/i1/c251102/bangladesh-vs-india-1st-test.jpg"
-                        alt="bangladesh-vs-india-1st-test">
-                    <p class="text">Bangladesh vs India, 1st Test, Day 3, Chattogram</p>
-                </a>
-                <p class="bottom-two">Fri, Dec 16 2022</p>
+                
             </div>
             <a class="more-photos" href="https://www.cricbuzz.com/cricket-photo-gallery">
                 <button><i>More Photos..</i></button>
@@ -518,62 +372,7 @@
             <!-- content 3 html starts here -->
             <div class="content-3">
                 <div class="schedule">SCHEDULE</div>
-                <p class="scheduled-text">Malaysia vs Singapore, 6th Match</p>
-                <p class="schedule-time">Sun Dec 18 • 11:30 AM GMT</p>
-
-                <p class="scheduled-text">Pakistan vs England, 3rd Test, Day 2</p>
-                <p class="schedule-time">Sun Dec 18 • 10:30 AM GMT</p>
-
-                <p class="scheduled-text">Tanzania vs Uganda, 9th Match</p>
-                <p class="schedule-time">Sun Dec 18 • 1:00 PM GMT</p>
-
-                <p class="scheduled-text">Rwanda vs Tanzania, 10th Match</p>
-                <p class="schedule-time">Sun Dec 18 • 5:15 PM GMT</p>
-
-                <p class="scheduled-text">Qatar vs Singapore, 7th Match</p>
-                <p class="schedule-time">Mon Dec 19 • 7:00 AM GMT</p>
-
-                <p class="scheduled-text">Malaysia vs Bahrain, 8th Match</p>
-                <p class="schedule-time">Mon Dec 19 • 11:30 AM GMT</p>
-
-                <p class="scheduled-text">Pakistan vs England, 3rd Test, Day 3</p>
-                <p class="schedule-time">Mon Dec 19 • 10:30 AM GMT</p>
-
-                <p class="scheduled-text">Tanzania vs Uganda, 11th Match</p>
-                <p class="schedule-time">Mon Dec 19 • 1:00 PM GMT</p>
                 
-                <p class="scheduled-text">Rwanda vs Tanzania, 12th Match</p>
-                <p class="schedule-time">Mon Dec 19 • 5:15 PM GMT</p>
-
-                <p class="scheduled-text">Pakistan vs England, 3rd Test, Day 4</p>
-                <p class="schedule-time">Tue Dec 20 • 10:30 AM GMT</p>
-
-                <p class="scheduled-text">Rwanda vs Tanzania, 13th Match</p>
-                <p class="schedule-time">Tue Dec 20 • 1:00 PM GMT</p>
-
-                <p class="scheduled-text">Rwanda vs Uganda, 14th Match</p>
-                <p class="schedule-time">Tue Dec 20 • 5:15 PM GMT</p>
-
-                <p class="scheduled-text">Bahrain vs Singapore, 9th Match</p>
-                <p class="schedule-time">Wed Dec 21 • 7:00 PM GMT</p>
-
-                <p class="scheduled-text">Malaysia vs Qatar, 10th Match</p>
-                <p class="schedule-time">Wed Dec 21 • 11:30 AM GMT</p>
-
-                <p class="scheduled-text">Pakistan vs England, 3rd Test, Day 5</p>
-                <p class="schedule-time">Wed Dec 21 • 10:30 AM GMT</p>
-
-                <p class="scheduled-text">Bangladesh vs India, 2nd Test, Day 1</p>
-                <p class="schedule-time">Thur Dec 22 • 9:00 AM GMT</p>
-
-                <p class="scheduled-text">Malaysia vs Singapore, 11th Match</p>
-                <p class="schedule-time">Thur Dec 22 • 7:00 AM GMT</p>
-
-                <p class="scheduled-text">Bahrain vs Qatar, 12th Match</p>
-                <p class="schedule-time">Thur Dec 22 • 11:30 AM GMT</p>
-
-                <p class="scheduled-text">Rwanda vs Tanzania, 15th Match</p>
-                <p class="bottom-three">Thur Dec 22 • 1:00 PM GMT</p>
             </div>
 
             <a class="more-matches" href="https://www.cricbuzz.com/cricket-schedule/upcoming-series/international">
@@ -583,99 +382,7 @@
 
         <ul class="center-container">
             <h4 class="top-stories-mobile">Top Stories</h4>
-            <!-- write HTML for mid Content of MAin section -->
-            <!-- <li class="stories-container">
-                <h3>INDIA TOUR OF BANGLADESH, 2022</h3>
-                    <img class="australia"
-                        src="https://www.cricbuzz.com/a/img/v1/420x235/i1/c251246/injured-rohit-sharma-to-miss-d.jpg"
-                        alt="">
-                <a class="stories-headline" href="">Injured Rohit Sharma to miss Dhaka Test</a>
-                <p class="stories-para">The regular Indian captain's finger injury hasn't healed completely; KL Rahul will continue to
-                    lead the visitors</p>
-                <a class="stories-extra" href="">Bangladesh include Nasum Ahmed for Dhaka Test</a>
-                <a class="stories-extra" href="">One bad session with the bat destroyed our chances: Domingo</a>
-                <a class="stories-extra" href="">Domingo Rahul chuffed with India's intensity in Chattogram victory</a>
-            </li>
-
-            <li class="stories-container">
-                <h3>PAK VS ENG, 3RD TEST</h3>
-                    <img class="australia"
-                        src="https://www.cricbuzz.com/a/img/v1/420x235/i1/c251248/rehan-fifer-bundles-out-pak.jpg"
-                        alt="">
-                <a class="stories-headline" href="">Rehan fifer bundles out PAK</a>
-                <p class="stories-para">Earlier, Babar and Shakeel stroked fifties</p>
-                <div class="score-container">
-                    <p class="team1">ENG</p> <p class="team1-runs">354 , 59-0 (6.2)</p>
-                    <p class="team2">PAK</p> <p class="team2-runs">304 , 216</p>
-                    <p class="score-para">Day 3: 3rd Session - England need 108 runs</p>
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 384 512">
-                        <path d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                    </svg>
-                </div>
-                <a class="stories-extra" href=""><span>Tea Report : </span>Rehan Ahmed dents Pakistan further with
-                    triple strike</a>
-                <a class="stories-extra" href="">The enduring connection between Pakistan and England </a>
-            </li>
-
-            <li class="stories-container">
-                <h3>AUS VS RSA, 1ST TEST</h3>
-                    <img class="australia"
-                        src="https://www.cricbuzz.com/a/img/v1/420x235/i1/c251205/pacers-propel-australia-to-1-0.jpg"
-                        alt="">
-                <a class="stories-headline" href="">Pacers propel Australia to 1-0 lead inside two days</a>
-                <div class="score-container">
-                    <p class="team1">AUS</p> <p class="team1-runs">218 , 35-4 (7.5)</p>
-                    <p class="team2">RSA</p> <p class="team2-runs">152 , 99</p>
-                    <p class="score-para">Australia lead by 1 - 0</p>
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 384 512">
-                        <path d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                    </svg>
-                </div>
-                <a class="stories-extra" href=""><span>AUS vs RSA / </span>Day 2: In pictures</a>
-                <a class="stories-extra" href="">Australia wrap up Brisbane Test in less than two
-                    days</a>
-                <a class="stories-extra" href="">Umpires ignored questions about Gabba pitch - Dean Elgar</a>
-            </li>
-
-                <li class="stories-container">
-                    <h3>NEW ZEALAND TOUR OF PAKISTAN AND INDIA</h3>
-                        <img class="australia"
-                            src="https://www.cricbuzz.com/a/img/v1/420x235/i1/c251243/kane-williamson-gary-stead-to.jpg"
-                            alt="">
-                    <a class="stories-headline" href="">Kane Williamson, Gary Stead to skip India tour</a>
-                    <p class="stories-para">Uncapped allrounder Henry Shipley has earned a maiden call-up to the ODI squad for both the Pakistan and India series after impressing in the domestic circuit</p>
-                    <a class="stories-extra" href="">Mark Chapman earns first NZC central contract</a>
-                </li>
-
-                <li class="stories-container">
-                    <h3>AUSTRALIA WOMEN TOUR OF INDIA</h3>
-                        <img class="australia"
-                            src="https://www.cricbuzz.com/a/img/v1/420x235/i1/c251068/richa-ghosh-cameo-in-vain-as-a.jpg"
-                            alt="">
-                    <a class="stories-headline" href="">Richa Ghosh cameo in vain as Australia clinch series</a>
-                    <p class="stories-para">Richa Ghosh's thrilling cameo went in vain as India fell short again to lose the fourth T20I</p>
-                    <a class="stories-extra" href="">Australia Won the 4th Match & The Series</a>
-                </li>
-
-                <li class="stories-container">
-                    <h3>DIALOGUE ROOM</h3>
-                        <img class="australia"
-                            src="https://www.cricbuzz.com/a/img/v1/420x235/i1/c250653/the-dean-elgar-enigma.jpg"
-                            alt="">
-                    <a class="stories-headline" href="">The Dean Elgar enigma</a>
-                    <p class="stories-para">A guarded extrovert. An old school modern thinker. A sensitive, tough, straight-shooter who is alive to cultural nuance. South Africa's captain opens up in an unguarded interview</p>
-                </li>
-
-                <li class="stories-container">
-                    <h3>DIALOGUE ROOM</h3>
-                        <img class="australia"
-                            src="https://www.cricbuzz.com/a/img/v1/420x235/i1/c250228/how-anrich-nortje-is-releasing.jpg"
-                            alt="">
-                    <a class="stories-headline" href="">How Anrich Nortje is releasing the fear factor</a>
-                    <p class="stories-para">South Africa's fastest bowler is reaching his peak. Anrich Nortje explains how an improved action gives him confidence that he can get even quicker</p>
-                </li> -->
+            
             </ul>
         <ul class="right-aside-container">
             <!-- write HTML for right Content of MAin section -->
@@ -868,14 +575,15 @@
             <a href='https://m.cricbuzz.com/termsofuse'>Terms Of Service |</a>
             <a href='https://m.cricbuzz.com/info/contact'>Contact Us</a>
         </li>
-        <p class="copyright-area-in-mobile">
+        <li class="copyright-area-in-mobile">
             © 2022 Cricbuzz.com, Times Internet Limited. All Rights Reserved.
-        </p>
+        </li>
     </ul>
     <script src="navbar.js"></script>
     <script src="sub-navbar.js"></script>
     <script src="ad-feature.js"></script>
     <script src="featured-matches.js"></script>
-    <script src="news-script.js"></script>
+    <script src="left-news-script.js"></script>
+    <script src="center-news-script.js"></script>
 </body>
 </html>
