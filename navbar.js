@@ -182,6 +182,9 @@ function dropBtnHover(ele){
     })
 }
 
+
+
+
 const cricPlus = document.querySelector(".plus");
 // search features
 search.addEventListener("click", () => {
@@ -192,13 +195,70 @@ search.addEventListener("click", () => {
         search.style.display = "none";
         menuDiv.style.display = "none";
         searchArea.style.display = "flex";
-        searchArea.firstElementChild.focus();
     }, 10)
 })
 
-searchArea.addEventListener("focusout", () => {
+window.addEventListener("click",(e)=>{
+    if(!e.target.classList.contains("search-input") && !e.target.classList.contains("search-btn") && window.innerWidth>750){
+        search.style.display = "flex";
+        menuDiv.style.display = "flex";
+        searchArea.style.display = "none";
+        setTimeout(()=>{
+            cricPlus.style.display = "flex";
+        },300)
+    }
+})
+
+
+const searchData = document.getElementById("search-input");
+
+const searchDataBtn = document.getElementById("search-btn");
+
+searchDataBtn.addEventListener("click",()=>{
+    if(searchData.value.length>= 3){ 
+    window.location.href = `https://www.cricbuzz.com/search?q=${searchData.value}`
+    searchData.value ="";
+    searchData.placeholder = "Search for Players, Series, Teams, News or Videos, e.g: Sri Lanka Tour Of India";
+    } else {
+        searchData.value ="";
+        searchData.placeholder = "Please Enter Minimum 3 Charecters";
+    }
+})
+
+document.addEventListener("keypress",(e)=>{
+    if(e.key === "Enter"){
+        searchDataBtn.click();
+    }
+})
+
+const subNavbar = document.querySelector(".sub-nav");
+
+window.onresize = () =>{
     search.style.display = "flex";
     menuDiv.style.display = "flex";
     searchArea.style.display = "none";
-    cricPlus.style.display = "flex";
-})
+    cricPlus.style.display="block";
+    subNavbar.style.display = "flex";
+    openCloseContainer.style.animation ="up 0.4s" // animation close in all match section
+    setTimeout(()=>{
+        openCloseContainer.style.display ="none";
+        allBtn.style.display = "flex";
+        closeBtn.style.display = "none";
+    },370);
+    slideToRight.style.display = "block";
+    
+    if(window.innerWidth <= 750){
+        menuDiv.style.display = "none";
+        search.style.display = "none";
+        cricPlus.style.display="none";
+        subNavbar.style.display = "none";
+        slideToRight.style.display = "none";
+    }
+}
+
+
+
+
+
+
+

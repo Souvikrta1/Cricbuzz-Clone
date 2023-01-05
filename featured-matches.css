@@ -1,5 +1,5 @@
 .featured-matches{
-    height: 25%;
+    height: 160px;
     max-width: 1080px;
     margin-left: 15%;
     background-color: white;
@@ -10,6 +10,7 @@
 
 .featured-matches h4{
     padding: 1%;
+    color: #009270;
 }
 /* page 1 of sliding featured matches */
 .match-stats-p1{
@@ -18,10 +19,11 @@
     flex-direction: row;
 }
 
-.first-match{
+.featured-scorecard{
     display: flex;
     flex-direction: column;
     width: 24.8%;
+    height: 107px;
     background-color: white;
     border-right: 1px solid rgb(214, 211, 211);
 }
@@ -56,20 +58,19 @@
     width: 40%;
     margin-right: 3%;
     text-align: left;
-    font-size: 14px;
+    font-size: 12.5px;
 }
 
 .match1-status{
     color: rgb(58, 58, 250);
-    font-size: 14px;
+    font-size: 12.5px;
     padding-left: 7%;
     margin-top: 1%;
 }
 
-.fantasy{
+.IND{
     text-align: left;
     font-size: medium;
-    border: none;
     background-color: white;
     cursor: pointer;
     width: max-content;
@@ -80,17 +81,21 @@
     color: black;
 }
 
+.hideFantasy{
+    display: none;
+}
+
 
 .match2-status{
     color: rgb(58, 58, 250);
-    font-size: 14px;
+    font-size: 12px;
     padding-left: 1.5%;
     margin-top: 1%;
 }
 
 .match3-status{
     color: rgb(58, 58, 250);
-    font-size: 14px;
+    font-size: 12px;
     padding-left: 2.5%;
     margin-top: 1%;
 }
@@ -101,7 +106,6 @@
     background-color: white;
     border: none;
     cursor: pointer;
-    padding-left: 1%;
     text-decoration: none;
     color: black;
 }
@@ -115,15 +119,15 @@
 
 .stat-btn4 span p{
     width: 40%;
-    margin-right: 3%;
+    padding-left: 5%;
     text-align: left;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .match4-status{
     color: rgb(58, 58, 250);
-    font-size: 14px;
-    padding-left: 2%;
+    font-size: 12px;
+    padding-left: 7%;
     margin-top: 1%;
 }
 
@@ -150,7 +154,7 @@
     display: none;
     height: 90%;
     flex-direction: row;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .p2-first-match{
@@ -175,8 +179,8 @@
     position: absolute;
     left: 0;
     top: 15%;
-    height: 40%;
-    width: 18%;
+    height: 35%;
+    width: 20%;
     border-radius: 50%;
     background-color: #009270;
     color: white;
