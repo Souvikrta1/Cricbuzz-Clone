@@ -86,51 +86,6 @@
 }
 
 
-.match2-status{
-    color: rgb(58, 58, 250);
-    font-size: 12px;
-    padding-left: 1.5%;
-    margin-top: 1%;
-}
-
-.match3-status{
-    color: rgb(58, 58, 250);
-    font-size: 12px;
-    padding-left: 2.5%;
-    margin-top: 1%;
-}
-
-.stat-btn4{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-}
-
-.stat-btn4 span{
-    width: 100%;
-    display: flex;
-    padding: 2%;
-    font-weight: bolder; 
-}
-
-.stat-btn4 span p{
-    width: 40%;
-    padding-left: 5%;
-    text-align: left;
-    font-size: 12px;
-}
-
-.match4-status{
-    color: rgb(58, 58, 250);
-    font-size: 12px;
-    padding-left: 7%;
-    margin-top: 1%;
-}
-
 .slider{
     position: absolute;
     right: 1%;
@@ -163,9 +118,11 @@
     flex-direction: column;
     width: 24.8%;
     background-color: white;
+}
+
+.p2-first-match a{
     border-right: 1px solid rgb(214, 211, 211);
-    padding-bottom: 3.5%;
-    
+    height:75%;
 }
 
 .p2-match1-status{
