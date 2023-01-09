@@ -62,3 +62,17 @@ changeColor.forEach((element) => {
 //         element.classList.add("newclass");
 //     })
 // }
+
+const logout = document.querySelector(".sign-out");
+
+let data = localStorage.getItem("data");
+if(data == "no"){
+    window.location.href = "index1.html";
+}
+
+
+logout.addEventListener("click",()=>{
+    localStorage.clear();
+    localStorage.setItem("data","no");
+    window.location.href="index.html";
+})
