@@ -1,0 +1,351 @@
+@import url("");
+/* Don't update anything here */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family: helvetica,"Segoe UI",Arial,sans-serif;
+    background-color: #E3E6E3;
+    
+}
+/*don't update anything above */
+
+/*Header and menu button section */
+header{
+    max-width: 1080px;
+    height: 12%;
+    /* margin-left: 15%; */
+    margin-bottom: 0.25%;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav{
+    display:flex ;
+    width: 100%;
+    background-color: #009270;
+    align-items: center;
+    overflow: hidden;
+    height: 48px;
+}
+
+nav img{
+    height: 80%;
+    width: 10%;
+    padding: 1%;
+}
+
+.menu-btn{
+    display: flex;
+    width: 68%;
+    align-items: center;
+}
+
+.nav-btn{
+    border : none;
+    color: white;
+    background-color: #009270;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    display: flex;
+    width: 14%;
+    justify-content: center;
+    padding: 2.2% 1%;
+    text-decoration: none;
+}
+
+.nav-btn p{
+    width: max-content;
+}
+
+.nav-btn i{
+    margin-left: 5%;
+}
+
+.search-area{
+    width: 150%;
+    height: 40px;
+    display: none;
+}
+
+#search-btn{
+    width: 10%;
+    background-color: #009270;
+}
+
+#search-input{
+    width: 90%;
+    color: white;
+    background-color: #00785c;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.user-area{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mobile-menu{
+    display: none;
+}
+
+#search{
+    border: none;
+    background-color: #009270;
+    font-size: larger;
+    color: white;
+    cursor: pointer;
+    margin-right: 5%;
+}
+
+#user-login{
+    border: none;
+    background-color: #009270;
+    font-size: larger;
+    color: white;
+    cursor: pointer;
+    margin-right: 5%;
+}
+
+.plus{
+    width: 50%;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    font-size: larger;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    margin-right: 5%;
+    padding-top:1%;
+    padding-bottom: 1%;
+}
+
+.plus p{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.news-drop{
+    position:absolute;
+    display: none;
+    flex-direction: column;
+    width:12%;
+    background-color: whitesmoke;
+    width: 13%;
+    top: 54.7%;
+    left: 36.4%;
+    z-index: 5;
+}
+
+.news-drop a{
+    width: 87%;
+    font-size: medium;
+    line-height: 180%;
+    text-decoration: none;
+    color: black;
+    padding-left: 10%;
+    padding-top: 2%;
+    padding-right: 3%;
+}
+
+.news-drop a:hover{
+    background-color:#c4c6c4;
+}
+
+.series-drop{
+    position:absolute;
+    display: none;
+    flex-direction: column;
+    width: 28%;
+    background-color: whitesmoke;
+    top: 54.7%;
+    left: 43.4%;
+    z-index: 5;
+}
+
+.series-drop a{
+    width: max-content;
+    text-align: left;
+    width: 100%;
+    padding: 1%;
+    font-size: medium;
+    line-height: 180%;
+    background-color: whitesmoke;
+    padding-left: 5%;
+    text-decoration: none;
+    color: black;
+}
+
+.series-drop a:hover{
+    background-color: #c4c6c4;
+}
+
+#all-series{
+    color: blue;
+    font-size: 13px;
+}
+
+#all-series span{
+    font-size: 10px;
+}
+
+#all-series:hover{
+    text-decoration: underline;
+}
+
+.teams-drop{
+    position:absolute;
+    display: none;
+    background-color: whitesmoke;
+    top: 54.7%;
+    left: 50.4%;
+    width: 22%;
+    padding-left: 1%;
+    z-index: 5;
+    padding: 0% 10% 1% 5%;
+    z-index: 5;
+}
+
+.test-teams{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: whitesmoke;
+    padding: 2%;
+    padding-right: 4%;
+    padding-right: 40%;
+}
+
+.test-teams h4{
+    width: max-content;
+}
+
+.associate-teams{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: whitesmoke;
+    padding: 2%;
+    padding-right: 20%;
+    position: relative;
+}
+
+.teams-drop a{
+    width: 100%;
+    text-align: left;
+    border: none;
+    line-height: 180%;
+    font-size: medium;
+    background-color: whitesmoke;
+    text-decoration: none;
+    color: black;
+}
+
+.teams-drop a:hover{
+    background-color: #c4c6c4;
+}
+
+#more-teams{
+    position: absolute;
+    width: max-content;
+    right: 5%;
+    bottom: 0;
+    color: #1866DB;
+    font-size: 12px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.videos-drop{
+    position:absolute;
+    display: none;
+    flex-direction: column;
+    width: 10%;
+    background-color: whitesmoke;
+    top: 54.7%;
+    left: 57.5%;
+    z-index: 5;
+}
+
+.videos-drop a{
+    width: 100%;
+    padding-left: 5%;
+    text-align: left;
+    line-height: 180%;
+    font-size: medium;
+    background-color: whitesmoke;
+    padding-left: 10%;
+    text-decoration: none;
+    color: black;
+}
+
+.videos-drop a:hover{
+    background-color: #c4c6c4;
+}
+
+.rankings-drop{
+    position:absolute;
+    display: none;
+    flex-direction: column;
+    width: 20%;
+    background-color: whitesmoke;
+    top: 54.7%;
+    left: 64.5%;
+    z-index: 5;
+}
+
+.rankings-drop a{
+    width: 100%;
+    text-align: left;
+    padding-left: 5%;
+    line-height: 180%;
+    font-size: medium;
+    background-color: whitesmoke;
+    text-decoration: none;
+    color: black;
+}
+
+.rankings-drop a:hover{
+    background-color: #c4c6c4;
+}
+
+.more-drop{
+    position:absolute;
+    display: none;
+    flex-direction: column;
+    width: 20%;
+    background-color: whitesmoke;
+    top: 54.7%;
+    left: 59%;
+    z-index: 5;
+}
+
+.more-drop a{
+    width: 100%;
+    text-align: left;
+    padding-left: 5%;
+    border: none;
+    line-height: 180%;
+    font-size: medium;
+    background-color: whitesmoke;
+    text-decoration: none;
+    color: black;
+}
+
+.more-drop a:hover{
+    background-color: #c4c6c4;
+}
